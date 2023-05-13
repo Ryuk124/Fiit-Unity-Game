@@ -3,26 +3,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class testjump : MonoBehaviour
+public class jumpskug : MonoBehaviour
 {
     private bool flipRight = true;
-    private Rigidbody2D rb;
-    [SerializeField] private float jumpForce = 0.1f;
-    private Animator anim;
-    [SerializeField]private bool isGrounded = false;
-    private bool del = false;
-    public Vector3 playerCoordinate;
-    public GameObject slug;
-    [SerializeField]public float wait = 0f;
-    public Vector3 slugCoordinate;
-
-    public bool afterJump = false;
-    public AudioSource soundAfterJump;
     public bool kostl = false;
+    public bool afterJump = false;
+    private Rigidbody2D rb;
     
-    private SlugStates1 State
+    [SerializeField] private float jumpForce = 0.1f;
+    [SerializeField]private bool isGrounded = false;
+    private Animator anim;
+    
+    public Vector3 playerCoordinate;
+    public Vector3 slugCoordinate;
+    
+    public AudioSource soundAfterJump;
+    private SlugStates11 State
     {
-        get { return (SlugStates1)anim.GetInteger("state"); }
+        get { return (SlugStates11)anim.GetInteger("state"); }
         set { anim.SetInteger("state", (int)value); }
     }
     
@@ -36,7 +34,6 @@ public class testjump : MonoBehaviour
         
     }
     
-    // Update is called once per frame
     void Update()
     {
         var player = GameObject.Find("Player");
@@ -46,6 +43,7 @@ public class testjump : MonoBehaviour
 
         if (isGrounded)
         {
+            State = SlugStates11.afk;
             if (Math.Abs(slugCoordinate.x - playerCoordinate.x) < 10 && 
                 Math.Abs(slugCoordinate.y - playerCoordinate.y - 2.65) < 3)
             {
@@ -58,17 +56,7 @@ public class testjump : MonoBehaviour
                 {
                     Flip();
                 }
-                State = SlugStates1.jump;
-                wait += Time.deltaTime;
-                if (wait > 2f)
-                {
-                    Jump();
-                    while (!isGrounded)
-                    {
-                        wait += Time.deltaTime;
-                    }
-                    wait = 0;
-                }
+                State = SlugStates11.jump;
             }
         }
     }
@@ -76,8 +64,9 @@ public class testjump : MonoBehaviour
     
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.CompareTag("Ground"))
+        if (collision.collider.CompareTag("Ground") || collision.collider.CompareTag("floor"))
         {
+            State = SlugStates11.afk;
             isGrounded = true;
             rb.velocity = Vector2.zero;
             if (afterJump == true && kostl == true)
@@ -86,14 +75,14 @@ public class testjump : MonoBehaviour
                 afterJump = false;
             }
 
-            State = SlugStates1.afk;
+            
         }
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.collider.CompareTag("Ground"))
+        if (collision.collider.CompareTag("Ground") || collision.collider.CompareTag("floor"))
         {
-            State = SlugStates1.jump1;
+            State = SlugStates11.jump1;
             afterJump = true;
             isGrounded = false;
         }
@@ -117,7 +106,7 @@ public class testjump : MonoBehaviour
         transform.localScale = theScale;
     }
 }
-public enum SlugStates1
+public enum SlugStates11
 {
     afk,
     jump,

@@ -10,6 +10,7 @@ TagManager:
   - Bonic
   - fireBall
   - slug
+  - floor
   layers:
   - Default
   - TransparentFX
@@ -18,7 +19,7 @@ TagManager:
   - Water
   - UI
   - player
-  - 
+  - floor
   - 
   - 
   - 

@@ -13,6 +13,7 @@ public class Move : MonoBehaviour
     private Animator anim;
     public static bool isAttacking = false;
     public bool isRecharged = true;
+    public bool isMoving = false;
     public static Move Instance { get; set; }
     public Transform attackPoint;
     public float attackRange;
@@ -22,7 +23,7 @@ public class Move : MonoBehaviour
     [SerializeField] public AudioSource shootFromPlayer;
     [SerializeField] public AudioSource miss;
     [SerializeField] public AudioSource soundOfMove;
-
+    [SerializeField] public AudioSource soundOfMoveOnFloor;
 
 
     private void SetState(States value) => anim.SetInteger("state", (int)value);
@@ -52,16 +53,12 @@ public class Move : MonoBehaviour
         if (isGrounded && !isAttacking) SetState(States.afk);
         if (isGrounded && move != 0 && !isAttacking)
         {
+            isMoving = true;
             SetState(States.run);
         }
+
+        if (move == 0) isMoving = false;
         
-        if (isGrounded && move != 0 && !isAttacking)
-        {
-            if (soundOfMove.isPlaying) return;
-            soundOfMove.Play();
-        }
-        else soundOfMove.Stop();    
-            
         if (Input.GetButtonDown("Fire1"))
             if (isGrounded && !isAttacking && move == 0)
                 if (Time.time >= nextAttackTime)
@@ -76,12 +73,29 @@ public class Move : MonoBehaviour
     {
         if (collision.gameObject.tag != "wall" && collision.gameObject.tag != "Border")
             isGrounded = true;
+        if (collision.gameObject.tag == "floor" && isMoving)
+        {
+            if (soundOfMoveOnFloor.isPlaying) return;
+            soundOfMoveOnFloor.Play();
+            
+        }
+        else soundOfMoveOnFloor.Stop();
+        
+        if (collision.gameObject.tag == "Ground" && isMoving)
+        {
+            if (soundOfMove.isPlaying) return;
+            soundOfMove.Play();
+            
+        }
+        else soundOfMove.Stop();
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
         SetState(States.jump);
         isGrounded = false;
+        soundOfMove.Stop();
+        soundOfMoveOnFloor.Stop();
     }
 
     private void Jump()

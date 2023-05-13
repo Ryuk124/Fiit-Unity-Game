@@ -58,7 +58,6 @@ public class ckeletagr : MonoBehaviour
         {
             rb.velocity = Vector2.zero;
             wait += Time.deltaTime;
-            rb.velocity = Vector2.zero;
             SetState(CkeletStates.hit);
             if (wait >= 2.09f)
             {
@@ -92,7 +91,11 @@ public class ckeletagr : MonoBehaviour
             }
             else rb.velocity = new Vector2(2, rb.velocity.y);
         }
-        else soundOfMove.Stop();
+        else
+        {
+            rb.velocity = Vector2.zero;
+            soundOfMove.Stop();
+        }
     }
 
     private void SoundOfHit()
