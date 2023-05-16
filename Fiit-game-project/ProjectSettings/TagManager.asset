@@ -11,6 +11,8 @@ TagManager:
   - fireBall
   - slug
   - floor
+  - green
+  - blue
   layers:
   - Default
   - TransparentFX
