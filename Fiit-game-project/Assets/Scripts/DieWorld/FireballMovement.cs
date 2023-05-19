@@ -2,50 +2,49 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class fireMove : MonoBehaviour
+public class FireballMovement : MonoBehaviour
 {
-    [SerializeField]private bool flipRight = true;
+    [SerializeField]
+    private bool flipRight = true;
+
+    public Vector3 PlayerCoordinate;
+    public Vector3 FireCoordinate;
+
     private Rigidbody2D rbFire;
     private bool turn;
-    public Vector3 playerCoordinate;
-    public Vector3 fireCoordinate;
-    // Start is called before the first frame update
+
+
     void Start()
     {
         var player = GameObject.Find("Player");
-        playerCoordinate = player.transform.position;
-        fireCoordinate = this.transform.position;
-        if (playerCoordinate.x < fireCoordinate.x)
-        {
+        PlayerCoordinate = player.transform.position;
+        FireCoordinate = this.transform.position;
+
+        if (PlayerCoordinate.x < FireCoordinate.x)
             turn = false;
-        }
         else
-        {
             turn = true;
-        }
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (turn == true)
+        if (turn)
         {
             rbFire.velocity = new Vector2(4, rbFire.velocity.y);
+
             if (flipRight)
-            {
                 Flip();
-            }
         }
         else
         {
             rbFire.velocity = new Vector2(-4, rbFire.velocity.y);
+
             if (!flipRight)
-            {
                 Flip();
-            }
         }
         
     }
+
     private void Awake()
     {
         rbFire = GetComponent<Rigidbody2D>();

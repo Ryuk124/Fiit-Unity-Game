@@ -15,7 +15,7 @@ public class shootFIRE : MonoBehaviour
     {
         if (other.name == "Player")
         {
-            other.GetComponent<health>().TakeDamage(damage);
+            other.GetComponent<Health>().TakeDamage(damage);
             Destroy(gameObject);
         }
         if (other.tag == "wall" || other.tag == "Ground")

@@ -15,7 +15,7 @@ public class shoot : MonoBehaviour
     {
         if (other.name == "Player")
         {
-            other.GetComponent<health>().TakeDamage(damage);
+            other.GetComponent<Health>().TakeDamage(damage);
         }
     }
 

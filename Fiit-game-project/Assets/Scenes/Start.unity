@@ -7529,17 +7529,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 565b5a8cb7189354b8d46ebeaeba08dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundOfMove: {fileID: 0}
+  SoundOfMove: {fileID: 0}
   soundOfHit: {fileID: 0}
-  playerCoordinate: {x: 0, y: 0, z: 0}
-  skeletCoordinate: {x: 0, y: 0, z: 0}
+  Wait: 0
   flipRight: 1
-  wait: 0
-  attackPoint: {fileID: 0}
-  attackRange: 0
-  playerLayers:
+  AttackPoint: {fileID: 194291353}
+  PlayerCoordinate: {x: 0, y: 0, z: 0}
+  SkeletCoordinate: {x: 0, y: 0, z: 0}
+  PlayerLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
+  AttackRange: 2
 --- !u!114 &203143924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49509,17 +49509,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 565b5a8cb7189354b8d46ebeaeba08dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundOfMove: {fileID: 0}
+  SoundOfMove: {fileID: 0}
   soundOfHit: {fileID: 0}
-  playerCoordinate: {x: 0, y: 0, z: 0}
-  skeletCoordinate: {x: 0, y: 0, z: 0}
+  Wait: 0
   flipRight: 1
-  wait: 0
-  attackPoint: {fileID: 0}
-  attackRange: 0
-  playerLayers:
+  AttackPoint: {fileID: 140014648}
+  PlayerCoordinate: {x: 0, y: 0, z: 0}
+  SkeletCoordinate: {x: 0, y: 0, z: 0}
+  PlayerLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
+  AttackRange: 2
 --- !u!114 &1237555198
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62774,6 +62774,7 @@ MonoBehaviour:
   isGrounded: 0
   jumpForce: 14
   isRecharged: 1
+  isMoving: 0
   attackPoint: {fileID: 361734780}
   attackRange: 1.3
   enemyLayers:
@@ -62783,6 +62784,7 @@ MonoBehaviour:
   shootFromPlayer: {fileID: 0}
   miss: {fileID: 0}
   soundOfMove: {fileID: 0}
+  soundOfMoveOnFloor: {fileID: 0}
 --- !u!61 &1589484635
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -37,7 +37,7 @@ public class soundOfdie : MonoBehaviour
         {
             if (bonic != null)
             {
-                if (bonic.GetComponent<Enemy>().currentHealth == 0)
+                if (bonic.GetComponent<Enemy>().CurrentHealth == 0)
                 {
                     soundOfDieBonic.Play();
                 }
@@ -51,7 +51,7 @@ public class soundOfdie : MonoBehaviour
         {
             if (fireBall != null)
             {
-                if (fireBall.GetComponent<Enemy>().currentHealth == 0)
+                if (fireBall.GetComponent<Enemy>().CurrentHealth == 0)
                 {
                     soundOfDieFireBall.Play();
                 }
@@ -65,7 +65,7 @@ public class soundOfdie : MonoBehaviour
         {
             if (slug != null)
             {
-                if (slug.GetComponent<Enemy>().currentHealth == 0)
+                if (slug.GetComponent<Enemy>().CurrentHealth == 0)
                 {
                     soundOfDieSlug.Play();
                 }
