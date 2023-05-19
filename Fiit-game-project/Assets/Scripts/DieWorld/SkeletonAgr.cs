@@ -1,31 +1,29 @@
 using System;
 using UnityEngine;
 
-public class ckeletagr : MonoBehaviour
+public class SkeletonAgr : MonoBehaviour
 {
     [SerializeField] public AudioSource SoundOfMove;
-    [SerializeField] public AudioSource soundOfHit;
+    [SerializeField] public AudioSource SoundOfHit;
     [SerializeField] public float Wait;
 
     [SerializeField] private bool flipRight = true;
 
-    private bool flag = true;
-    private bool firstEnter;
-
-    private Animator animator;
-    private Rigidbody2D rb;
-
+    public static bool Hit;
     public Transform AttackPoint;
-
     public Vector3 PlayerCoordinate;
     public Vector3 SkeletCoordinate;
     public LayerMask PlayerLayers;
-    public static bool Hit;
     public float AttackRange;
+
+    private bool flag = true;
+    private bool firstEnter;
+    private Animator animator;
+    private Rigidbody2D rigidBody;
 
     private void Awake()
     {
-        rb = GetComponent<Rigidbody2D>();
+        rigidBody = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
     }
 
@@ -39,7 +37,7 @@ public class ckeletagr : MonoBehaviour
         foreach (var player in hitEnemies)
         {
             Debug.Log("We hit" + player);
-            player.GetComponent<health>().TakeDamage(2f);
+            player.GetComponent<Health>().TakeDamage(2f);
         }
     }
 
@@ -60,7 +58,6 @@ public class ckeletagr : MonoBehaviour
         }
 
         CheckFirstEnter();
-
         ControlMovement();
     }
 
@@ -69,30 +66,32 @@ public class ckeletagr : MonoBehaviour
         if (Math.Abs(SkeletCoordinate.x - PlayerCoordinate.x) < 13 &&
             Math.Abs(SkeletCoordinate.y - PlayerCoordinate.y) < 2 && flag)
         {
-            if (SoundOfMove.isPlaying) return;
+            if (SoundOfMove.isPlaying) 
+                return;
+
             SoundOfMove.Play();
+
             if (SkeletCoordinate.x > PlayerCoordinate.x && !flipRight)
                 Flip();
 
             if (SkeletCoordinate.x < PlayerCoordinate.x && flipRight)
                 Flip();
 
-            rb.velocity = flipRight
-                ? new Vector2(-2, rb.velocity.y)
-                : new Vector2(2, rb.velocity.y);
+            rigidBody.velocity = flipRight
+                ? new Vector2(-2, rigidBody.velocity.y)
+                : new Vector2(2, rigidBody.velocity.y);
+            return;
         }
-        else
-        {
-            rb.velocity = Vector2.zero;
-            SoundOfMove.Stop();
-        }
+
+        rigidBody.velocity = Vector2.zero;
+        SoundOfMove.Stop();
     }
 
     private void CheckFirstEnter()
     {
         if (firstEnter)
         {
-            rb.velocity = Vector2.zero;
+            rigidBody.velocity = Vector2.zero;
             Wait += Time.deltaTime;
 
             SetState(SkeletonStates.Hit);
@@ -107,10 +106,11 @@ public class ckeletagr : MonoBehaviour
         }
     }
 
-    private void SoundOfHit()
+    private void PlayHitSound()
     {
-        soundOfHit.Play();
+        SoundOfHit.Play();
     }
+
     private void Flip()
     {
         flipRight = !flipRight;
@@ -121,6 +121,7 @@ public class ckeletagr : MonoBehaviour
 
 
 }
+
 public enum SkeletonStates
 {
     Afk,

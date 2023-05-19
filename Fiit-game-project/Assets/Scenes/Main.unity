@@ -674,8 +674,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170b1fef420bc0c4cb582e6d509a5b07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 1
-  currentHealth: 0
+  CurrentHealth: 1
+  MaxHealth: 1
 --- !u!114 &19067045
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6373,8 +6373,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170b1fef420bc0c4cb582e6d509a5b07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 2
-  currentHealth: 0
+  CurrentHealth: 1
+  MaxHealth: 1
 --- !u!60 &356464031
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6956,8 +6956,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1859048208}
   - {fileID: 825811874}
+  - {fileID: 1859048208}
   - {fileID: 917144290}
   - {fileID: 19067050}
   - {fileID: 1727480059}
@@ -10188,8 +10188,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170b1fef420bc0c4cb582e6d509a5b07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 3
-  currentHealth: 0
+  CurrentHealth: 3
+  MaxHealth: 3
 --- !u!95 &572040329
 Animator:
   serializedVersion: 5
@@ -12507,8 +12507,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170b1fef420bc0c4cb582e6d509a5b07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 2
-  currentHealth: 0
+  CurrentHealth: 1
+  MaxHealth: 1
 --- !u!60 &682320415
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -15655,7 +15655,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c922e765e55fb8468c3b4e414890734, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 5
+  Hp: 5
 --- !u!82 &795594843
 AudioSource:
   m_ObjectHideFlags: 0
@@ -16957,8 +16957,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flipRight: 1
-  playerCoordinate: {x: 0, y: 0, z: 0}
-  fireCoordinate: {x: 0, y: 0, z: 0}
+  PlayerCoordinate: {x: 0, y: 0, z: 0}
+  FireCoordinate: {x: 0, y: 0, z: 0}
 --- !u!114 &825811876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18027,8 +18027,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170b1fef420bc0c4cb582e6d509a5b07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 1
-  currentHealth: 0
+  CurrentHealth: 1
+  MaxHealth: 1
 --- !u!114 &917144285
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24823,8 +24823,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170b1fef420bc0c4cb582e6d509a5b07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 3
-  currentHealth: 0
+  CurrentHealth: 3
+  MaxHealth: 3
 --- !u!95 &1322379205
 Animator:
   serializedVersion: 5
@@ -31595,8 +31595,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flipRight: 1
-  playerCoordinate: {x: 0, y: 0, z: 0}
-  fireCoordinate: {x: 0, y: 0, z: 0}
+  PlayerCoordinate: {x: 0, y: 0, z: 0}
+  FireCoordinate: {x: 0, y: 0, z: 0}
 --- !u!114 &1645827298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32466,8 +32466,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170b1fef420bc0c4cb582e6d509a5b07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 2
-  currentHealth: 0
+  CurrentHealth: 1
+  MaxHealth: 1
 --- !u!60 &1696175475
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -33400,8 +33400,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170b1fef420bc0c4cb582e6d509a5b07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 1
-  currentHealth: 0
+  CurrentHealth: 1
+  MaxHealth: 1
 --- !u!114 &1727480054
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34082,8 +34082,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170b1fef420bc0c4cb582e6d509a5b07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 3
-  currentHealth: 0
+  CurrentHealth: 3
+  MaxHealth: 3
 --- !u!95 &1746062923
 Animator:
   serializedVersion: 5
@@ -36288,8 +36288,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170b1fef420bc0c4cb582e6d509a5b07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 3
-  currentHealth: 0
+  CurrentHealth: 3
+  MaxHealth: 3
 --- !u!95 &1831641609
 Animator:
   serializedVersion: 5
@@ -37088,8 +37088,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170b1fef420bc0c4cb582e6d509a5b07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 1
-  currentHealth: 0
+  CurrentHealth: 1
+  MaxHealth: 1
 --- !u!82 &1859048213
 AudioSource:
   m_ObjectHideFlags: 0
@@ -39953,8 +39953,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 170b1fef420bc0c4cb582e6d509a5b07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 2
-  currentHealth: 0
+  CurrentHealth: 1
+  MaxHealth: 1
 --- !u!60 &2036455157
 PolygonCollider2D:
   m_ObjectHideFlags: 0

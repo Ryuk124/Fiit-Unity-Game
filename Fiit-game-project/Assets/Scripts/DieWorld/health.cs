@@ -3,18 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class health : MonoBehaviour
+public class Health : MonoBehaviour
 {
-    [SerializeField]public float hp = 3;
-    void Start()
-    {
-        
-    }
+    [SerializeField] public float Hp = 3;
 
     public void TakeDamage(float damage)
     {
-        hp -= damage;
-        if (hp <= 0f)
+        Hp -= damage;
+        if (Hp <= 0f)
         {
             Die();
         }

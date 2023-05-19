@@ -1,67 +1,61 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class jumpskug : MonoBehaviour
+public class SlugJumping : MonoBehaviour
 {
+    public bool IsAgred;
+    public bool IsJump;
+
+    public Vector3 PlayerCoordinate;
+    public Vector3 SlugCoordinate;
+    public AudioSource SoundAfterJump;
+
     private bool flipRight = true;
-    public bool kostl = false;
-    public bool afterJump = false;
     private Rigidbody2D rb;
-    
+
     [SerializeField] private float jumpForce = 0.1f;
-    [SerializeField]private bool isGrounded = false;
+    [SerializeField] private bool isGrounded;
+
     private Animator anim;
-    
-    public Vector3 playerCoordinate;
-    public Vector3 slugCoordinate;
-    
-    public AudioSource soundAfterJump;
+
     private SlugStates11 State
     {
-        get { return (SlugStates11)anim.GetInteger("state"); }
+        get => (SlugStates11)anim.GetInteger("state");
         set { anim.SetInteger("state", (int)value); }
     }
-    
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
     }
-    void Start()
-    {
-        
-    }
-    
+
     void Update()
     {
         var player = GameObject.Find("Player");
-        playerCoordinate = player.transform.position;
-        slugCoordinate = this.transform.position;
+        PlayerCoordinate = player.transform.position;
+        SlugCoordinate = this.transform.position;
 
 
         if (isGrounded)
         {
             State = SlugStates11.afk;
-            if (Math.Abs(slugCoordinate.x - playerCoordinate.x) < 10 && 
-                Math.Abs(slugCoordinate.y - playerCoordinate.y - 2.65) < 3)
+
+            if (Math.Abs(SlugCoordinate.x - PlayerCoordinate.x) < 10 &&
+                Math.Abs(SlugCoordinate.y - PlayerCoordinate.y - 2.65) < 3)
             {
-                kostl = true;
-                if (slugCoordinate.x > playerCoordinate.x && flipRight)
-                {
+                IsAgred = true;
+                if (SlugCoordinate.x > PlayerCoordinate.x && flipRight)
                     Flip();
-                }
-                if (slugCoordinate.x < playerCoordinate.x && !flipRight)
-                {
+                if (SlugCoordinate.x < PlayerCoordinate.x && !flipRight)
                     Flip();
-                }
+
                 State = SlugStates11.jump;
             }
         }
     }
 
-    
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.CompareTag("Ground") || collision.collider.CompareTag("floor"))
@@ -69,13 +63,13 @@ public class jumpskug : MonoBehaviour
             State = SlugStates11.afk;
             isGrounded = true;
             rb.velocity = Vector2.zero;
-            if (afterJump == true && kostl == true)
+            if (IsJump == true && IsAgred == true)
             {
-                soundAfterJump.Play();
-                afterJump = false;
+                SoundAfterJump.Play();
+                IsJump = false;
             }
 
-            
+
         }
     }
     private void OnCollisionExit2D(Collision2D collision)
@@ -83,11 +77,11 @@ public class jumpskug : MonoBehaviour
         if (collision.collider.CompareTag("Ground") || collision.collider.CompareTag("floor"))
         {
             State = SlugStates11.jump1;
-            afterJump = true;
+            IsJump = true;
             isGrounded = false;
         }
     }
-    
+
     private void Jump()
     {
         rb.AddForce(transform.up * jumpForce, ForceMode2D.Impulse);
@@ -97,7 +91,7 @@ public class jumpskug : MonoBehaviour
         }
         else rb.velocity = new Vector2(-3, rb.velocity.y);
     }
-    
+
     private void Flip()
     {
         flipRight = !flipRight;

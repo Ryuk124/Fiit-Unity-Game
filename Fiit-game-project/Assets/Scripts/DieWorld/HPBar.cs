@@ -17,7 +17,7 @@ public class HPPlayerMover : MonoBehaviour
     void Update()
     {
         var player = GameObject.Find("Player");
-        var Hp = player.GetComponent<health>().hp;
+        var Hp = player.GetComponent<Health>().Hp;
         OnHealthChanged(1f - 0.20f*Hp);
     }
 

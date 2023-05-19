@@ -3,17 +3,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class fireagr : MonoBehaviour
+public class FireballAgr : MonoBehaviour
 {
     [SerializeField] public AudioSource soundOfSpawn;
+
     private Rigidbody2D rb;
     private Rigidbody2D rbFire;
     private bool del = false;
+
     public Vector3 playerCoordinate;
     public Vector3 fireBallCoordinate;
     public GameObject obj;
     public GameObject placeOfSpawnLeft;
     public GameObject placeOfSpawnRight;
+
     private bool flipRight = true;
     
 
