@@ -1,37 +1,41 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using System;
+using UnityEngine;
 
 public class ckeletagr : MonoBehaviour
 {
-    [SerializeField] public AudioSource soundOfMove;
+    [SerializeField] public AudioSource SoundOfMove;
     [SerializeField] public AudioSource soundOfHit;
-    private Animator anim;
-    private Rigidbody2D rb;
-    public Vector3 playerCoordinate;
-    public Vector3 skeletCoordinate;
-    [SerializeField]private bool flipRight = true;
+    [SerializeField] public float Wait;
+
+    [SerializeField] private bool flipRight = true;
+
     private bool flag = true;
-    private bool firstEnter = false;
-    [SerializeField]public float wait;
-    public static bool hit = false;
-    public Transform attackPoint;
-    public float attackRange;
-    public LayerMask playerLayers;
-    
-    // Start is called before the first frame update
+    private bool firstEnter;
+
+    private Animator animator;
+    private Rigidbody2D rb;
+
+    public Transform AttackPoint;
+
+    public Vector3 PlayerCoordinate;
+    public Vector3 SkeletCoordinate;
+    public LayerMask PlayerLayers;
+    public static bool Hit;
+    public float AttackRange;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>();
+        animator = GetComponent<Animator>();
     }
 
-    private void SetState(CkeletStates value) => anim.SetInteger("state", (int)value);
+    private void SetState(SkeletonStates value) => animator.SetInteger("state", (int)value);
 
     void OnAttack()
     {
-        var hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, playerLayers);
+        var hitEnemies = Physics2D.OverlapCircleAll(AttackPoint.position,
+            AttackRange, PlayerLayers);
+
         foreach (var player in hitEnemies)
         {
             Debug.Log("We hit" + player);
@@ -39,62 +43,67 @@ public class ckeletagr : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
         var player = GameObject.Find("Player");
-        playerCoordinate = player.transform.position;
-        skeletCoordinate = transform.position;
-        SetState(CkeletStates.afk);
-        
-        if (Math.Abs(skeletCoordinate.x - playerCoordinate.x) < 3 &&
-            Math.Abs(skeletCoordinate.y - playerCoordinate.y) < 2)
+
+        PlayerCoordinate = player.transform.position;
+        SkeletCoordinate = transform.position;
+
+        SetState(SkeletonStates.Afk);
+
+        if (Math.Abs(SkeletCoordinate.x - PlayerCoordinate.x) < 3 &&
+            Math.Abs(SkeletCoordinate.y - PlayerCoordinate.y) < 2)
         {
             firstEnter = true;
             flag = false;
         }
 
-        if (firstEnter)
-        {
-            rb.velocity = Vector2.zero;
-            wait += Time.deltaTime;
-            SetState(CkeletStates.hit);
-            if (wait >= 2.09f)
-            {
-                flag = true;
-                hit = true;
-                firstEnter = false;
-                wait = 0f;
-                
-            }
-            
-        }
-        
-        if (Math.Abs(skeletCoordinate.x - playerCoordinate.x) < 13 &&
-            Math.Abs(skeletCoordinate.y - playerCoordinate.y) < 2 && flag)
-        {
-            if (soundOfMove.isPlaying) return;
-            soundOfMove.Play();
-            if (skeletCoordinate.x > playerCoordinate.x && !flipRight)
-            {
-                Flip();
-            }
+        CheckFirstEnter();
 
-            if (skeletCoordinate.x < playerCoordinate.x && flipRight)
-            {
+        ControlMovement();
+    }
+
+    private void ControlMovement()
+    {
+        if (Math.Abs(SkeletCoordinate.x - PlayerCoordinate.x) < 13 &&
+            Math.Abs(SkeletCoordinate.y - PlayerCoordinate.y) < 2 && flag)
+        {
+            if (SoundOfMove.isPlaying) return;
+            SoundOfMove.Play();
+            if (SkeletCoordinate.x > PlayerCoordinate.x && !flipRight)
                 Flip();
-            }
-            
-            if (flipRight)
-            {
-                rb.velocity = new Vector2(-2, rb.velocity.y);
-            }
-            else rb.velocity = new Vector2(2, rb.velocity.y);
+
+            if (SkeletCoordinate.x < PlayerCoordinate.x && flipRight)
+                Flip();
+
+            rb.velocity = flipRight
+                ? new Vector2(-2, rb.velocity.y)
+                : new Vector2(2, rb.velocity.y);
         }
         else
         {
             rb.velocity = Vector2.zero;
-            soundOfMove.Stop();
+            SoundOfMove.Stop();
+        }
+    }
+
+    private void CheckFirstEnter()
+    {
+        if (firstEnter)
+        {
+            rb.velocity = Vector2.zero;
+            Wait += Time.deltaTime;
+
+            SetState(SkeletonStates.Hit);
+
+            if (Wait >= 2.09f)
+            {
+                flag = true;
+                Hit = true;
+                firstEnter = false;
+                Wait = 0f;
+            }
         }
     }
 
@@ -109,11 +118,11 @@ public class ckeletagr : MonoBehaviour
         theScale.x *= -1;
         transform.localScale = theScale;
     }
-    
-    
+
+
 }
-public enum CkeletStates
+public enum SkeletonStates
 {
-    afk,
-    hit,
+    Afk,
+    Hit,
 }

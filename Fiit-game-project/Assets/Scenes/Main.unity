@@ -400,11 +400,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 12421987}
   m_LocalRotation: {x: -0.009695536, y: -0.0040326477, z: 0.3840143, w: 0.9232675}
-  m_LocalPosition: {x: -15.858146, y: 3.602785, z: 0.2418716}
+  m_LocalPosition: {x: -15.858147, y: 3.6027832, z: 0.2418716}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 761190596}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: -0.848, y: -0.853, z: 45.174}
 --- !u!212 &12421989
@@ -560,7 +560,7 @@ GameObject:
   - component: {fileID: 19067044}
   - component: {fileID: 19067043}
   m_Layer: 3
-  m_Name: fireball (4)
+  m_Name: Fireball 3
   m_TagString: fireBall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -953,7 +953,7 @@ GameObject:
   - component: {fileID: 21953808}
   - component: {fileID: 21953807}
   m_Layer: 0
-  m_Name: 1-12744_download-clipart-prison-clip-art-prison (10)
+  m_Name: grid 24
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1050,12 +1050,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 22052778}
-  m_LocalRotation: {x: -0, y: -0, z: 0.9455145, w: -0.32557988}
-  m_LocalPosition: {x: 35.402397, y: 13.134428, z: 0.2418716}
-  m_LocalScale: {x: -1.3392274, y: 1.2038, z: 1.2038}
+  m_LocalRotation: {x: -0, y: -0, z: 0.94551456, w: -0.3255799}
+  m_LocalPosition: {x: 35.402397, y: 13.13443, z: 0.2418716}
+  m_LocalScale: {x: -1.3392272, y: 1.2037997, z: 1.2038}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 147366276}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 218.001}
 --- !u!212 &22052780
@@ -1369,7 +1369,7 @@ GameObject:
   - component: {fileID: 42123975}
   - component: {fileID: 42123976}
   m_Layer: 0
-  m_Name: 1-12744_download-clipart-prison-clip-art-prison (1)
+  m_Name: grid 8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1894,11 +1894,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 80872786}
   m_LocalRotation: {x: -0, y: -0, z: 0.4755231, w: 0.8797033}
-  m_LocalPosition: {x: 35.665, y: 12.828001, z: 0.2418716}
-  m_LocalScale: {x: -1.3392274, y: 1.2038, z: 1.2038}
+  m_LocalPosition: {x: 35.665, y: 12.828003, z: 0.2418716}
+  m_LocalScale: {x: -1.3392276, y: 1.2038, z: 1.2038}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 147366276}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 56.787}
 --- !u!212 &80872788
@@ -2353,11 +2353,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 107248754}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 34.940998, y: 12.770998, z: 0.2418716}
+  m_LocalPosition: {x: 34.940998, y: 12.770996, z: 0.2418716}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 147366276}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &107248756
@@ -2512,7 +2512,7 @@ GameObject:
   - component: {fileID: 125385026}
   - component: {fileID: 125385027}
   m_Layer: 0
-  m_Name: 1-12744_download-clipart-prison-clip-art-prison (17)
+  m_Name: grid 23
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2597,7 +2597,7 @@ GameObject:
   - component: {fileID: 140127267}
   - component: {fileID: 140127266}
   m_Layer: 0
-  m_Name: 1663822945_5-phonoteka-org-p-fon-gori-risunok-pinterest-8 (4)
+  m_Name: Background Frame 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2738,6 +2738,64 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 12.128188, y: 1.5955162}
   m_EdgeRadius: 0
+--- !u!1 &147366275
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 147366276}
+  m_Layer: 0
+  m_Name: BonesHeap 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &147366276
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 147366275}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2059206112}
+  - {fileID: 1017779549}
+  - {fileID: 80872787}
+  - {fileID: 107248755}
+  - {fileID: 703461290}
+  - {fileID: 734158933}
+  - {fileID: 1746752818}
+  - {fileID: 165992527}
+  - {fileID: 22052779}
+  - {fileID: 314189011}
+  - {fileID: 813317192}
+  - {fileID: 967193430}
+  - {fileID: 1564067872}
+  - {fileID: 671177847}
+  - {fileID: 1568314860}
+  - {fileID: 1637923687}
+  - {fileID: 921203894}
+  - {fileID: 485305455}
+  - {fileID: 923690583}
+  - {fileID: 1073201056}
+  - {fileID: 246745937}
+  - {fileID: 730740817}
+  - {fileID: 1200221977}
+  - {fileID: 947990096}
+  - {fileID: 1184657482}
+  - {fileID: 370105486}
+  - {fileID: 528224615}
+  m_Father: {fileID: 1825824658}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &148985967 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7334556278161073377, guid: 6d8ae37c8c88c724bb1a1818ad37823d, type: 3}
@@ -2803,7 +2861,7 @@ GameObject:
   m_Component:
   - component: {fileID: 159281955}
   m_Layer: 0
-  m_Name: Dekor
+  m_Name: Decor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2826,7 +2884,7 @@ Transform:
   - {fileID: 1230392753}
   - {fileID: 460764632}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &161716180
 GameObject:
@@ -2839,7 +2897,7 @@ GameObject:
   - component: {fileID: 161716182}
   - component: {fileID: 161716181}
   m_Layer: 0
-  m_Name: 1-12744_download-clipart-prison-clip-art-prison (9)
+  m_Name: grid 27
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3046,12 +3104,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 165992526}
-  m_LocalRotation: {x: -0, y: -0, z: 0.9865932, w: 0.16319866}
-  m_LocalPosition: {x: 35.30955, y: 13.311766, z: 0.2418716}
-  m_LocalScale: {x: -1.1125, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.98659325, w: 0.16319868}
+  m_LocalPosition: {x: 35.30955, y: 13.311768, z: 0.2418716}
+  m_LocalScale: {x: -1.1124997, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 147366276}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 161.215}
 --- !u!212 &165992528
@@ -3200,7 +3258,7 @@ GameObject:
   m_Component:
   - component: {fileID: 190951171}
   m_Layer: 0
-  m_Name: Background fon
+  m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3225,14 +3283,8 @@ Transform:
   - {fileID: 767908998}
   - {fileID: 814080596}
   - {fileID: 2137092728}
-  - {fileID: 1198912137}
-  - {fileID: 657201569}
-  - {fileID: 1347115205}
-  - {fileID: 664755872}
-  - {fileID: 214797980}
-  - {fileID: 407763879}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &197363486
 PrefabInstance:
@@ -3578,7 +3630,7 @@ GameObject:
   - component: {fileID: 214797980}
   - component: {fileID: 214797981}
   m_Layer: 0
-  m_Name: 1-12744_download-clipart-prison-clip-art-prison (10)
+  m_Name: grid 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3592,11 +3644,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 214797979}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.9670005, y: -0.5554272, z: 0.13753831}
+  m_LocalPosition: {x: 11.420088, y: -19.88, z: 1.4597151}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 190951171}
+  m_Father: {fileID: 745240858}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &214797981
@@ -3754,11 +3806,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 219776374}
   m_LocalRotation: {x: -0, y: -0, z: 0.83831924, w: -0.54517967}
-  m_LocalPosition: {x: -15.489796, y: 6.5224934, z: 0.2418716}
+  m_LocalPosition: {x: -15.489796, y: 6.5224915, z: 0.2418716}
   m_LocalScale: {x: -1.33923, y: 1.2038, z: 1.2038}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 1451118914}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 246.074}
 --- !u!212 &219776376
@@ -3922,11 +3974,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 228612926}
   m_LocalRotation: {x: -0.034645807, y: 0.004527, z: 0.79351515, w: 0.6075466}
-  m_LocalPosition: {x: 16.336761, y: 8.997473, z: 0.4970331}
-  m_LocalScale: {x: 2.5513, y: 2.5513, z: 2.5513}
+  m_LocalPosition: {x: 16.336761, y: 8.997475, z: 0.49703306}
+  m_LocalScale: {x: 2.5512998, y: 2.5513, z: 2.5513}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 1716771281}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: -2.825, y: -2.84, z: 105.192}
 --- !u!212 &228612928
@@ -3981,6 +4033,46 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &230089810
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 230089811}
+  m_Layer: 0
+  m_Name: BonesHeap 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &230089811
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230089810}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1984441367}
+  - {fileID: 540666363}
+  - {fileID: 1780251902}
+  - {fileID: 965793330}
+  - {fileID: 1322454670}
+  - {fileID: 1494380468}
+  - {fileID: 726598173}
+  - {fileID: 341605636}
+  - {fileID: 708291633}
+  m_Father: {fileID: 1825824658}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &232507099
 GameObject:
   m_ObjectHideFlags: 0
@@ -4156,7 +4248,7 @@ GameObject:
   - component: {fileID: 238843255}
   - component: {fileID: 238843256}
   m_Layer: 0
-  m_Name: 1-12744_download-clipart-prison-clip-art-prison (4)
+  m_Name: grid 10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4369,11 +4461,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 246745936}
   m_LocalRotation: {x: -0, y: -0, z: 0.94551456, w: -0.3255799}
-  m_LocalPosition: {x: 36.28925, y: 13.819216, z: 0.2418716}
-  m_LocalScale: {x: -1.3392296, y: 1.2037997, z: 1.2038}
+  m_LocalPosition: {x: 36.28925, y: 13.819214, z: 0.2418716}
+  m_LocalScale: {x: -1.3392297, y: 1.2037997, z: 1.2038}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 147366276}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 218.001}
 --- !u!212 &246745938
@@ -4622,11 +4714,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 285588589}
   m_LocalRotation: {x: -0.009695536, y: -0.0040326477, z: 0.3840143, w: 0.9232675}
-  m_LocalPosition: {x: 6.3289003, y: 22.778101, z: 0.2418716}
+  m_LocalPosition: {x: 6.3289, y: 22.7781, z: 0.2418716}
   m_LocalScale: {x: 2.5513, y: 2.5513, z: 2.5513}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 1716771281}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: -0.848, y: -0.853, z: 45.174}
 --- !u!212 &285588591
@@ -4984,11 +5076,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 292889202}
   m_LocalRotation: {x: -0, y: -0, z: 0.3044314, w: -0.95253426}
-  m_LocalPosition: {x: -15.218145, y: 6.3227863, z: 0.2418716}
+  m_LocalPosition: {x: -15.218145, y: 6.3227844, z: 0.2418716}
   m_LocalScale: {x: -1.33923, y: 1.2038001, z: 1.2038}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 1451118914}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 324.552}
 --- !u!212 &292889204
@@ -5072,7 +5164,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 761190596}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: -0.21, y: -1.185, z: 79.948}
 --- !u!212 &296499387
@@ -5325,11 +5417,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 314189010}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 37.440002, y: 13.060002, z: 0.2418716}
+  m_LocalPosition: {x: 37.440002, y: 13.060001, z: 0.2418716}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 147366276}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &314189012
@@ -5911,12 +6003,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 341605635}
-  m_LocalRotation: {x: -0, y: -0, z: 0.9865932, w: 0.16319866}
+  m_LocalRotation: {x: -0, y: -0, z: 0.98659325, w: 0.16319868}
   m_LocalPosition: {x: 36.84455, y: -31.823235, z: 0.2418716}
-  m_LocalScale: {x: -1.1125, y: 1, z: 1}
+  m_LocalScale: {x: -1.1124997, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 230089811}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 161.215}
 --- !u!212 &341605637
@@ -6154,7 +6246,7 @@ GameObject:
   - component: {fileID: 356464028}
   - component: {fileID: 356464027}
   m_Layer: 3
-  m_Name: slug (3)
+  m_Name: Slug 1
   m_TagString: slug
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6613,11 +6705,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 370105485}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 36.696857, y: 13.374788, z: 0.2418716}
+  m_LocalPosition: {x: 36.696857, y: 13.374786, z: 0.2418716}
   m_LocalScale: {x: -1.1125, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 147366276}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &370105487
@@ -6889,7 +6981,7 @@ GameObject:
   - component: {fileID: 407763879}
   - component: {fileID: 407763880}
   m_Layer: 0
-  m_Name: 1-12744_download-clipart-prison-clip-art-prison (11)
+  m_Name: grid 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6903,11 +6995,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 407763878}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.44, y: -0.5554272, z: 0.13753831}
+  m_LocalPosition: {x: 13.947088, y: -19.88, z: 1.4597151}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 190951171}
+  m_Father: {fileID: 745240858}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &407763880
@@ -7057,7 +7149,7 @@ GameObject:
   - component: {fileID: 409548513}
   - component: {fileID: 409548514}
   m_Layer: 0
-  m_Name: 1-12744_download-clipart-prison-clip-art-prison (7)
+  m_Name: grid 13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7744,11 +7836,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 447606048}
   m_LocalRotation: {x: -0.009695536, y: -0.0040326477, z: 0.3840143, w: 0.9232675}
-  m_LocalPosition: {x: -15.858146, y: -3.777214, z: 0.2418716}
+  m_LocalPosition: {x: -15.858147, y: -3.777214, z: 0.2418716}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 761190596}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: -0.848, y: -0.853, z: 45.174}
 --- !u!212 &447606050
@@ -7813,7 +7905,7 @@ GameObject:
   m_Component:
   - component: {fileID: 451570636}
   m_Layer: 0
-  m_Name: ckeletAttack
+  m_Name: AttackPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7859,11 +7951,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 458008048}
   m_LocalRotation: {x: -0, y: -0, z: 0.082792304, w: -0.99656683}
-  m_LocalPosition: {x: -15.863411, y: 6.056059, z: 0.2418716}
+  m_LocalPosition: {x: -15.863411, y: 6.056061, z: 0.2418716}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 1451118914}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 350.502}
 --- !u!212 &458008050
@@ -7929,7 +8021,7 @@ GameObject:
   - component: {fileID: 459929677}
   - component: {fileID: 459929678}
   m_Layer: 0
-  m_Name: 1-12744_download-clipart-prison-clip-art-prison (11)
+  m_Name: grid 17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8012,7 +8104,7 @@ GameObject:
   m_Component:
   - component: {fileID: 460764632}
   m_Layer: 0
-  m_Name: colonnu
+  m_Name: Columns
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8107,12 +8199,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 485305454}
-  m_LocalRotation: {x: -0, y: -0, z: 0.9455145, w: -0.32557988}
-  m_LocalPosition: {x: 37.0754, y: 13.295431, z: 0.2418716}
-  m_LocalScale: {x: -1.3392274, y: 1.2038, z: 1.2038}
+  m_LocalRotation: {x: -0, y: -0, z: 0.94551456, w: -0.3255799}
+  m_LocalPosition: {x: 37.0754, y: 13.295433, z: 0.2418716}
+  m_LocalScale: {x: -1.3392272, y: 1.2037997, z: 1.2038}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 147366276}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 218.001}
 --- !u!212 &485305456
@@ -8582,7 +8674,7 @@ GameObject:
   m_Component:
   - component: {fileID: 513619353}
   m_Layer: 0
-  m_Name: ckeletAttack
+  m_Name: AttackPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8818,7 +8910,7 @@ GameObject:
   - component: {fileID: 524227596}
   - component: {fileID: 524227597}
   m_Layer: 0
-  m_Name: 1-12744_download-clipart-prison-clip-art-prison (15)
+  m_Name: grid 21
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8916,11 +9008,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 528224614}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 36.65385, y: 13.583788, z: 0.2418716}
+  m_LocalPosition: {x: 36.65385, y: 13.583786, z: 0.2418716}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 147366276}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &528224616
@@ -9256,7 +9348,7 @@ Transform:
   m_LocalScale: {x: -1.1125, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 230089811}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &540666364
@@ -9785,7 +9877,7 @@ GameObject:
   - component: {fileID: 572040325}
   - component: {fileID: 572040324}
   m_Layer: 3
-  m_Name: "\u0421\u043A\u0435\u043B\u0435\u0442 (9)"
+  m_Name: Skeleton 3
   m_TagString: Bonic
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10073,17 +10165,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 565b5a8cb7189354b8d46ebeaeba08dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundOfMove: {fileID: 572040325}
+  SoundOfMove: {fileID: 572040325}
   soundOfHit: {fileID: 572040324}
-  playerCoordinate: {x: 0, y: 0, z: 0}
-  skeletCoordinate: {x: 0, y: 0, z: 0}
+  Wait: 0
   flipRight: 1
-  wait: 0
-  attackPoint: {fileID: 738280484}
-  attackRange: 2
-  playerLayers:
+  AttackPoint: {fileID: 738280484}
+  PlayerCoordinate: {x: 0, y: 0, z: 0}
+  SkeletCoordinate: {x: 0, y: 0, z: 0}
+  PlayerLayers:
     serializedVersion: 2
     m_Bits: 64
+  AttackRange: 2
 --- !u!114 &572040328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10270,7 +10362,7 @@ GameObject:
   - component: {fileID: 572817584}
   - component: {fileID: 572817583}
   m_Layer: 0
-  m_Name: 1-12744_download-clipart-prison-clip-art-prison (14)
+  m_Name: grid 32
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10528,7 +10620,7 @@ Transform:
   - {fileID: 1467728546}
   - {fileID: 1438937330}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &602578101
 GameObject:
@@ -10724,10 +10816,10 @@ Transform:
   m_GameObject: {fileID: 615713977}
   m_LocalRotation: {x: -0.034645807, y: 0.004527, z: 0.79351515, w: 0.6075466}
   m_LocalPosition: {x: 13.41, y: 10.68, z: 0.31902874}
-  m_LocalScale: {x: 2.5513, y: 2.5513, z: 2.5513}
+  m_LocalScale: {x: 2.5512998, y: 2.5513, z: 2.5513}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 1716771281}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: -2.825, y: -2.84, z: 105.192}
 --- !u!212 &615713979
@@ -11175,7 +11267,7 @@ GameObject:
   - component: {fileID: 640990620}
   - component: {fileID: 640990619}
   m_Layer: 0
-  m_Name: 1-12744_download-clipart-prison-clip-art-prison (13)
+  m_Name: grid 34
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11531,7 +11623,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 761190596}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: -0.688, y: -0.987, z: 55.151}
 --- !u!212 &656278503
@@ -11597,7 +11689,7 @@ GameObject:
   - component: {fileID: 657201569}
   - component: {fileID: 657201570}
   m_Layer: 0
-  m_Name: 1-12744_download-clipart-prison-clip-art-prison (7)
+  m_Name: grid 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11611,11 +11703,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 657201568}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.44, y: -4.2954288, z: 0.13753831}
+  m_LocalPosition: {x: 13.947088, y: -23.62, z: 1.4597151}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 190951171}
+  m_Father: {fileID: 745240858}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &657201570
@@ -11841,7 +11933,7 @@ GameObject:
   - component: {fileID: 664755872}
   - component: {fileID: 664755873}
   m_Layer: 0
-  m_Name: 1-12744_download-clipart-prison-clip-art-prison (9)
+  m_Name: grid 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11855,11 +11947,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 664755871}
   m_LocalRotation: {x: 1, y: -0, z: -0, w: 0}
-  m_LocalPosition: {x: -3.44, y: -2.4054275, z: 0.13753831}
+  m_LocalPosition: {x: 13.947088, y: -21.73, z: 1.4597151}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 190951171}
+  m_Father: {fileID: 745240858}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
 --- !u!212 &664755873
@@ -11939,11 +12031,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 671177846}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 36.657005, y: 12.7230015, z: 0.2418716}
+  m_LocalPosition: {x: 36.657005, y: 12.723, z: 0.2418716}
   m_LocalScale: {x: -1.1125, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 147366276}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &671177848
@@ -12093,7 +12185,7 @@ GameObject:
   - component: {fileID: 674435911}
   - component: {fileID: 674435910}
   m_Layer: 0
-  m_Name: 1-12744_download-clipart-prison-clip-art-prison (16)
+  m_Name: grid 30
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12269,7 +12361,7 @@ GameObject:
   - component: {fileID: 682320412}
   - component: {fileID: 682320411}
   m_Layer: 3
-  m_Name: slug (7)
+  m_Name: Slug 4
   m_TagString: slug
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12746,7 +12838,7 @@ Transform:
   - {fileID: 1414476553}
   - {fileID: 1591757632}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &702153084
 PrefabInstance:
@@ -12849,11 +12941,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 703461289}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 34.984, y: 12.561998, z: 0.2418716}
+  m_LocalPosition: {x: 34.984, y: 12.561996, z: 0.2418716}
   m_LocalScale: {x: -1.1125, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 147366276}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &703461291
@@ -12932,12 +13024,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 708291632}
-  m_LocalRotation: {x: -0, y: -0, z: 0.9455145, w: -0.32557988}
+  m_LocalRotation: {x: -0, y: -0, z: 0.94551456, w: -0.3255799}
   m_LocalPosition: {x: 36.937397, y: -32.000572, z: 0.2418716}
-  m_LocalScale: {x: -1.3392274, y: 1.2038, z: 1.2038}
+  m_LocalScale: {x: -1.3392272, y: 1.2037997, z: 1.2038}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 230089811}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 218.001}
 --- !u!212 &708291634
@@ -13329,11 +13421,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 717920521}
   m_LocalRotation: {x: -0.009695536, y: -0.0040326477, z: 0.3840143, w: 0.9232675}
-  m_LocalPosition: {x: -15.838145, y: -2.5372143, z: 0.2418716}
+  m_LocalPosition: {x: -15.838146, y: -2.5372143, z: 0.2418716}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 761190596}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: -0.848, y: -0.853, z: 45.174}
 --- !u!212 &717920523
@@ -13580,12 +13672,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 726598172}
-  m_LocalRotation: {x: -0, y: -0, z: 0.9865932, w: 0.16319866}
+  m_LocalRotation: {x: -0, y: -0, z: 0.98659325, w: 0.16319868}
   m_LocalPosition: {x: 36.818, y: -32.035, z: 0.2418716}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 230089811}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 161.215}
 --- !u!212 &726598174
@@ -13651,7 +13743,7 @@ GameObject:
   - component: {fileID: 728277985}
   - component: {fileID: 728277984}
   m_Layer: 0
-  m_Name: 1-12744_download-clipart-prison-clip-art-prison (17)
+  m_Name: grid 31
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13749,11 +13841,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 730740816}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 35.827854, y: 13.455786, z: 0.2418716}
+  m_LocalPosition: {x: 35.827854, y: 13.455788, z: 0.2418716}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 147366276}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &730740818
@@ -13833,11 +13925,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 734158932}
   m_LocalRotation: {x: -0, y: -0, z: 0.4755231, w: 0.8797033}
-  m_LocalPosition: {x: 34.839, y: 12.699999, z: 0.2418716}
-  m_LocalScale: {x: -1.3392274, y: 1.2038, z: 1.2038}
+  m_LocalPosition: {x: 34.839, y: 12.699997, z: 0.2418716}
+  m_LocalScale: {x: -1.3392276, y: 1.2038, z: 1.2038}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 147366276}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 56.787}
 --- !u!212 &734158934
@@ -14089,7 +14181,7 @@ GameObject:
   m_Component:
   - component: {fileID: 738280484}
   m_Layer: 0
-  m_Name: ckeletAttack
+  m_Name: AttackPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14328,7 +14420,7 @@ GameObject:
   m_Component:
   - component: {fileID: 745240858}
   m_Layer: 0
-  m_Name: reshetka
+  m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14346,6 +14438,12 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1198912137}
+  - {fileID: 657201569}
+  - {fileID: 1347115205}
+  - {fileID: 664755872}
+  - {fileID: 214797980}
+  - {fileID: 407763879}
   - {fileID: 1878560806}
   - {fileID: 42123975}
   - {fileID: 1845177640}
@@ -14536,6 +14634,50 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d8ae37c8c88c724bb1a1818ad37823d, type: 3}
+--- !u!1 &761190595
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 761190596}
+  m_Layer: 0
+  m_Name: Hand
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &761190596
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 761190595}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 12421988}
+  - {fileID: 1115960824}
+  - {fileID: 1014555041}
+  - {fileID: 1237958997}
+  - {fileID: 1523782938}
+  - {fileID: 717920522}
+  - {fileID: 447606049}
+  - {fileID: 1308347986}
+  - {fileID: 296499386}
+  - {fileID: 986792157}
+  - {fileID: 656278502}
+  - {fileID: 1265823523}
+  - {fileID: 1604229399}
+  m_Father: {fileID: 1825824658}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &763292834
 GameObject:
   m_ObjectHideFlags: 0
@@ -14632,7 +14774,7 @@ GameObject:
   - component: {fileID: 767638763}
   - component: {fileID: 767638762}
   m_Layer: 0
-  m_Name: 1663822945_5-phonoteka-org-p-fon-gori-risunok-pinterest-8 (2)
+  m_Name: Background Frame 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14730,7 +14872,7 @@ GameObject:
   - component: {fileID: 767909000}
   - component: {fileID: 767908999}
   m_Layer: 0
-  m_Name: 1663822945_5-phonoteka-org-p-fon-gori-risunok-pinterest-8 (5)
+  m_Name: Background Frame 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15373,13 +15515,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 795594830}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.22, y: -19.65, z: 0}
+  m_LocalPosition: {x: -22.22, y: -1.0299988, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2090373293}
-  m_Father: {fileID: 859225350}
-  m_RootOrder: -1
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &795594833
 Animator:
@@ -16215,7 +16357,7 @@ GameObject:
   m_Component:
   - component: {fileID: 812723398}
   m_Layer: 0
-  m_Name: interface Player
+  m_Name: InterfacePlayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16268,7 +16410,7 @@ Transform:
   m_LocalScale: {x: -1.1125, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 147366276}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &813317193
@@ -16335,7 +16477,7 @@ GameObject:
   - component: {fileID: 814080598}
   - component: {fileID: 814080597}
   m_Layer: 0
-  m_Name: 1663822945_5-phonoteka-org-p-fon-gori-risunok-pinterest-8 (6)
+  m_Name: Background Frame 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16530,11 +16672,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 824983032}
   m_LocalRotation: {x: -0, y: -0, z: 0.082792304, w: -0.99656683}
-  m_LocalPosition: {x: -15.855491, y: 5.842787, z: 0.2418716}
+  m_LocalPosition: {x: -15.855492, y: 5.8427887, z: 0.2418716}
   m_LocalScale: {x: -1.1125, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 1451118914}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 350.502}
 --- !u!212 &824983034
@@ -17144,7 +17286,7 @@ Transform:
   - {fileID: 88281612}
   - {fileID: 1866104974}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &859225349
 GameObject:
@@ -17178,7 +17320,6 @@ Transform:
   - {fileID: 1696175480}
   - {fileID: 2036455162}
   - {fileID: 682320420}
-  - {fileID: 795594832}
   m_Father: {fileID: 1545337846}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -17501,7 +17642,7 @@ GameObject:
   - component: {fileID: 886875537}
   - component: {fileID: 886875536}
   m_Layer: 0
-  m_Name: 1663822945_5-phonoteka-org-p-fon-gori-risunok-pinterest-8 (3)
+  m_Name: Background Frame 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17612,11 +17753,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 902256398}
   m_LocalRotation: {x: -0, y: -0, z: 0.83831924, w: -0.54517967}
-  m_LocalPosition: {x: -16.28439, y: 6.2628193, z: 0.2418716}
+  m_LocalPosition: {x: -16.28439, y: 6.2628174, z: 0.2418716}
   m_LocalScale: {x: -1.33923, y: 1.2038, z: 1.2038}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 1451118914}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 246.074}
 --- !u!212 &902256400
@@ -17772,7 +17913,7 @@ GameObject:
   - component: {fileID: 917144284}
   - component: {fileID: 917144283}
   m_Layer: 3
-  m_Name: fireball (3)
+  m_Name: Fireball 2
   m_TagString: fireBall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18178,12 +18319,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 921203893}
-  m_LocalRotation: {x: -0, y: -0, z: 0.9865932, w: 0.16319866}
-  m_LocalPosition: {x: 36.98255, y: 13.472769, z: 0.2418716}
-  m_LocalScale: {x: -1.1125, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.98659325, w: 0.16319868}
+  m_LocalPosition: {x: 36.98255, y: 13.472771, z: 0.2418716}
+  m_LocalScale: {x: -1.1124997, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 147366276}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 161.215}
 --- !u!212 &921203895
@@ -18263,11 +18404,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 923690582}
   m_LocalRotation: {x: -0, y: -0, z: 0.98659325, w: 0.16319868}
-  m_LocalPosition: {x: 36.169857, y: 13.784788, z: 0.2418716}
+  m_LocalPosition: {x: 36.169857, y: 13.78479, z: 0.2418716}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 147366276}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 161.215}
 --- !u!212 &923690584
@@ -18333,7 +18474,7 @@ GameObject:
   - component: {fileID: 932698713}
   - component: {fileID: 932698712}
   m_Layer: 0
-  m_Name: 1-12744_download-clipart-prison-clip-art-prison (12)
+  m_Name: grid 35
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18582,7 +18723,7 @@ RectTransform:
   m_Children:
   - {fileID: 2116823488}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -18619,11 +18760,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 947990095}
   m_LocalRotation: {x: -0, y: -0, z: 0.4755231, w: 0.8797033}
-  m_LocalPosition: {x: 35.725857, y: 13.384787, z: 0.2418716}
+  m_LocalPosition: {x: 35.725857, y: 13.3847885, z: 0.2418716}
   m_LocalScale: {x: -1.33923, y: 1.2038, z: 1.2038}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 147366276}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 56.787}
 --- !u!212 &947990097
@@ -18853,7 +18994,7 @@ GameObject:
   - component: {fileID: 960107680}
   - component: {fileID: 960107679}
   m_Layer: 0
-  m_Name: 1-12744_download-clipart-prison-clip-art-prison (8)
+  m_Name: grid 26
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18955,7 +19096,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 230089811}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &965793331
@@ -19035,11 +19176,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 967193429}
   m_LocalRotation: {x: -0, y: -0, z: 0.4755231, w: 0.8797033}
-  m_LocalPosition: {x: 37.338005, y: 12.989004, z: 0.2418716}
-  m_LocalScale: {x: -1.3392274, y: 1.2038, z: 1.2038}
+  m_LocalPosition: {x: 37.338005, y: 12.989006, z: 0.2418716}
+  m_LocalScale: {x: -1.3392276, y: 1.2038, z: 1.2038}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 147366276}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 56.787}
 --- !u!212 &967193431
@@ -19105,7 +19246,7 @@ GameObject:
   - component: {fileID: 970343146}
   - component: {fileID: 970343147}
   m_Layer: 0
-  m_Name: 1-12744_download-clipart-prison-clip-art-prison (9)
+  m_Name: grid 15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19322,7 +19463,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 761190596}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: -1.203, y: -0.03, z: 1.418}
 --- !u!212 &986792158
@@ -19402,11 +19543,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 992843352}
   m_LocalRotation: {x: -0.009695536, y: -0.0040326477, z: 0.3840143, w: 0.9232675}
-  m_LocalPosition: {x: 6.38, y: 19.64, z: 0.2418716}
+  m_LocalPosition: {x: 6.3799996, y: 19.64, z: 0.2418716}
   m_LocalScale: {x: 2.5513, y: 2.5513, z: 2.5513}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 1716771281}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: -0.848, y: -0.853, z: 45.174}
 --- !u!212 &992843354
@@ -19724,7 +19865,7 @@ GameObject:
   - component: {fileID: 1006303818}
   - component: {fileID: 1006303817}
   m_Layer: 0
-  m_Name: 1-12744_download-clipart-prison-clip-art-prison (11)
+  m_Name: grid 25
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19822,11 +19963,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1014555040}
   m_LocalRotation: {x: -0.009695536, y: -0.0040326477, z: 0.3840143, w: 0.9232675}
-  m_LocalPosition: {x: -15.858146, y: 1.1327858, z: 0.2418716}
+  m_LocalPosition: {x: -15.858147, y: 1.1327858, z: 0.2418716}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 761190596}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: -0.848, y: -0.853, z: 45.174}
 --- !u!212 &1014555042
@@ -19906,11 +20047,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1017779548}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 35.81, y: 12.69, z: 0.2418716}
+  m_LocalPosition: {x: 35.81, y: 12.689999, z: 0.2418716}
   m_LocalScale: {x: -1.1125, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 147366276}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1017779550
@@ -20049,7 +20190,7 @@ GameObject:
   - component: {fileID: 1027513092}
   - component: {fileID: 1027513091}
   m_Layer: 0
-  m_Name: 1-12744_download-clipart-prison-clip-art-prison (15)
+  m_Name: grid 33
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20133,7 +20274,7 @@ GameObject:
   - component: {fileID: 1028189723}
   - component: {fileID: 1028189724}
   m_Layer: 0
-  m_Name: 1-12744_download-clipart-prison-clip-art-prison (13)
+  m_Name: grid 19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20690,11 +20831,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1073201055}
   m_LocalRotation: {x: -0, y: -0, z: 0.98659325, w: 0.16319868}
-  m_LocalPosition: {x: 36.196407, y: 13.996553, z: 0.2418716}
-  m_LocalScale: {x: -1.1124997, y: 1, z: 1}
+  m_LocalPosition: {x: 36.196407, y: 13.9965515, z: 0.2418716}
+  m_LocalScale: {x: -1.1124998, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 147366276}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 161.215}
 --- !u!212 &1073201057
@@ -21004,11 +21145,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1115960823}
   m_LocalRotation: {x: -0.009695536, y: -0.0040326477, z: 0.3840143, w: 0.9232675}
-  m_LocalPosition: {x: -15.838145, y: 2.3727856, z: 0.2418716}
+  m_LocalPosition: {x: -15.838146, y: 2.3727875, z: 0.2418716}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 761190596}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: -0.848, y: -0.853, z: 45.174}
 --- !u!212 &1115960825
@@ -21161,11 +21302,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1118641401}
   m_LocalRotation: {x: -0, y: -0, z: 0.99671763, w: -0.08095671}
-  m_LocalPosition: {x: -15.655206, y: 6.635229, z: 0.2418716}
-  m_LocalScale: {x: -1.1124998, y: 1, z: 1}
+  m_LocalPosition: {x: -15.655207, y: 6.635231, z: 0.2418716}
+  m_LocalScale: {x: -1.1124997, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 1451118914}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 189.287}
 --- !u!212 &1118641403
@@ -21399,7 +21540,7 @@ GameObject:
   - component: {fileID: 1125403824}
   - component: {fileID: 1125403825}
   m_Layer: 0
-  m_Name: 1-12744_download-clipart-prison-clip-art-prison (10)
+  m_Name: grid 16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21939,11 +22080,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1153288175}
   m_LocalRotation: {x: -0.010444575, y: -0.0010849038, z: 0.10331292, w: 0.9945935}
-  m_LocalPosition: {x: 3.5094943, y: 10.935759, z: 0.2418716}
-  m_LocalScale: {x: 2.5513, y: 2.5513, z: 2.5513}
+  m_LocalPosition: {x: 3.5094943, y: 10.9357605, z: 0.2418716}
+  m_LocalScale: {x: 2.5513003, y: 2.5513, z: 2.5513}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 1716771281}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: -1.178, y: -0.247, z: 11.863}
 --- !u!212 &1153288177
@@ -22023,11 +22164,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1174341656}
   m_LocalRotation: {x: -0, y: -0, z: 0.99671763, w: -0.08095671}
-  m_LocalPosition: {x: -16.449684, y: 6.3756237, z: 0.2418716}
-  m_LocalScale: {x: -1.1124998, y: 1, z: 1}
+  m_LocalPosition: {x: -16.449684, y: 6.3756256, z: 0.2418716}
+  m_LocalScale: {x: -1.1124997, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 1451118914}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 189.287}
 --- !u!212 &1174341658
@@ -22246,11 +22387,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1184657481}
   m_LocalRotation: {x: -0, y: -0, z: 0.4755231, w: 0.8797033}
-  m_LocalPosition: {x: 36.551853, y: 13.512789, z: 0.2418716}
+  m_LocalPosition: {x: 36.551853, y: 13.512787, z: 0.2418716}
   m_LocalScale: {x: -1.33923, y: 1.2038, z: 1.2038}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 147366276}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 56.787}
 --- !u!212 &1184657483
@@ -22316,7 +22457,7 @@ GameObject:
   - component: {fileID: 1198912137}
   - component: {fileID: 1198912138}
   m_Layer: 0
-  m_Name: 1-12744_download-clipart-prison-clip-art-prison (6)
+  m_Name: grid 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22330,11 +22471,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1198912136}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.9670005, y: -4.2954288, z: 0.13753831}
+  m_LocalPosition: {x: 11.420088, y: -23.62, z: 1.4597151}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 190951171}
+  m_Father: {fileID: 745240858}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1198912138
@@ -22469,11 +22610,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1200221976}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 35.870853, y: 13.246786, z: 0.2418716}
+  m_LocalPosition: {x: 35.870853, y: 13.246788, z: 0.2418716}
   m_LocalScale: {x: -1.1125, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 147366276}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1200221978
@@ -22627,7 +22768,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1230392753}
   m_Layer: 0
-  m_Name: cepi
+  m_Name: Chains
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23129,11 +23270,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1237958996}
   m_LocalRotation: {x: -0.009695536, y: -0.0040326477, z: 0.3840143, w: 0.9232675}
-  m_LocalPosition: {x: -15.838145, y: -0.097213745, z: 0.2418716}
+  m_LocalPosition: {x: -15.838146, y: -0.097213745, z: 0.2418716}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 761190596}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: -0.848, y: -0.853, z: 45.174}
 --- !u!212 &1237958998
@@ -23213,11 +23354,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1238939781}
   m_LocalRotation: {x: -0.034645807, y: 0.004527, z: 0.79351515, w: 0.6075466}
-  m_LocalPosition: {x: 19.2, y: 7.39, z: 0.4970331}
-  m_LocalScale: {x: 2.5513, y: 2.5513, z: 2.5513}
+  m_LocalPosition: {x: 19.2, y: 7.3899994, z: 0.49703306}
+  m_LocalScale: {x: 2.5512998, y: 2.5513, z: 2.5513}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 1716771281}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: -2.825, y: -2.84, z: 105.192}
 --- !u!212 &1238939783
@@ -23373,11 +23514,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1263660343}
   m_LocalRotation: {x: -0.034645807, y: 0.004527, z: 0.79351515, w: 0.6075466}
-  m_LocalPosition: {x: 22.06, y: 5.79, z: 0.4970331}
-  m_LocalScale: {x: 2.5513, y: 2.5513, z: 2.5513}
+  m_LocalPosition: {x: 22.06, y: 5.790001, z: 0.49703306}
+  m_LocalScale: {x: 2.5512998, y: 2.5513, z: 2.5513}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 1716771281}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: -2.825, y: -2.84, z: 105.192}
 --- !u!212 &1263660345
@@ -23457,11 +23598,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1265823522}
   m_LocalRotation: {x: -0.009749952, y: -0.0038992586, z: 0.3713123, w: 0.92844874}
-  m_LocalPosition: {x: -15.8481455, y: -5.2872143, z: 0.2418716}
+  m_LocalPosition: {x: -15.848146, y: -5.2872143, z: 0.2418716}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 761190596}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: -0.871, y: -0.83, z: 43.602}
 --- !u!212 &1265823524
@@ -23616,7 +23757,7 @@ GameObject:
   - component: {fileID: 1284902055}
   - component: {fileID: 1284902056}
   m_Layer: 0
-  m_Name: 1-12744_download-clipart-prison-clip-art-prison (8)
+  m_Name: grid 14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24039,11 +24180,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1308347985}
   m_LocalRotation: {x: -0.004074633, y: -0.00967803, z: 0.92159694, w: 0.3880062}
-  m_LocalPosition: {x: -15.858146, y: -4.567215, z: 0.2418716}
+  m_LocalPosition: {x: -15.858147, y: -4.567215, z: 0.2418716}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 761190596}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0.841, y: -0.861, z: 134.33}
 --- !u!212 &1308347987
@@ -24371,7 +24512,7 @@ GameObject:
   - component: {fileID: 1322379201}
   - component: {fileID: 1322379200}
   m_Layer: 3
-  m_Name: "\u0421\u043A\u0435\u043B\u0435\u0442 (10)"
+  m_Name: Skeleton 4
   m_TagString: Bonic
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24659,17 +24800,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 565b5a8cb7189354b8d46ebeaeba08dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundOfMove: {fileID: 1322379201}
+  SoundOfMove: {fileID: 1322379201}
   soundOfHit: {fileID: 1322379200}
-  playerCoordinate: {x: 0, y: 0, z: 0}
-  skeletCoordinate: {x: 0, y: 0, z: 0}
+  Wait: 0
   flipRight: 1
-  wait: 0
-  attackPoint: {fileID: 513619353}
-  attackRange: 2
-  playerLayers:
+  AttackPoint: {fileID: 513619353}
+  PlayerCoordinate: {x: 0, y: 0, z: 0}
+  SkeletCoordinate: {x: 0, y: 0, z: 0}
+  PlayerLayers:
     serializedVersion: 2
     m_Bits: 64
+  AttackRange: 2
 --- !u!114 &1322379204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24874,7 +25015,7 @@ Transform:
   m_LocalScale: {x: -1.1125, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 230089811}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1322454671
@@ -25243,7 +25384,7 @@ GameObject:
   - component: {fileID: 1347115205}
   - component: {fileID: 1347115206}
   m_Layer: 0
-  m_Name: 1-12744_download-clipart-prison-clip-art-prison (8)
+  m_Name: grid 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25257,11 +25398,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1347115204}
   m_LocalRotation: {x: 1, y: -0, z: -0, w: 0}
-  m_LocalPosition: {x: -5.9670005, y: -2.4054275, z: 0.13753831}
+  m_LocalPosition: {x: 11.420088, y: -21.73, z: 1.4597151}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 190951171}
+  m_Father: {fileID: 745240858}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
 --- !u!212 &1347115206
@@ -26664,7 +26805,7 @@ GameObject:
   - component: {fileID: 1414476554}
   - component: {fileID: 1414476555}
   m_Layer: 3
-  m_Name: soundOfdie
+  m_Name: DeathSound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26796,7 +26937,7 @@ MonoBehaviour:
   soundOfDieBonic: {fileID: 1414476552}
   soundOfDieSlug: {fileID: 1414476555}
   soundOfDieFireBall: {fileID: 1414476556}
-  soundOfDiePlayer: {fileID: 0}
+  soundOfDiePlayer: {fileID: 1414476552}
 --- !u!82 &1414476555
 AudioSource:
   m_ObjectHideFlags: 0
@@ -27880,6 +28021,47 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.368, y: 63.254032}
   m_EdgeRadius: 0
+--- !u!1 &1451118913
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1451118914}
+  m_Layer: 0
+  m_Name: BonesHeap 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1451118914
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1451118913}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 458008049}
+  - {fileID: 824983033}
+  - {fileID: 1885287601}
+  - {fileID: 2133812093}
+  - {fileID: 1118641402}
+  - {fileID: 219776375}
+  - {fileID: 902256399}
+  - {fileID: 1174341657}
+  - {fileID: 1730481120}
+  - {fileID: 292889203}
+  m_Father: {fileID: 1825824658}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1463806714
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28281,11 +28463,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1473992660}
   m_LocalRotation: {x: -0.010444575, y: -0.0010849038, z: 0.10331292, w: 0.9945935}
-  m_LocalPosition: {x: 5.19, y: 13.58647, z: 0.2418716}
-  m_LocalScale: {x: 2.5513, y: 2.5513, z: 2.5513}
+  m_LocalPosition: {x: 5.19, y: 13.586472, z: 0.2418716}
+  m_LocalScale: {x: 2.5513003, y: 2.5513, z: 2.5513}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 1716771281}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: -1.178, y: -0.247, z: 11.863}
 --- !u!212 &1473992662
@@ -28673,10 +28855,10 @@ Transform:
   m_GameObject: {fileID: 1494380467}
   m_LocalRotation: {x: -0, y: -0, z: 0.4755231, w: 0.8797033}
   m_LocalPosition: {x: 36.374, y: -32.435, z: 0.2418716}
-  m_LocalScale: {x: -1.3392274, y: 1.2038, z: 1.2038}
+  m_LocalScale: {x: -1.3392276, y: 1.2038, z: 1.2038}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 230089811}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 56.787}
 --- !u!212 &1494380469
@@ -29197,7 +29379,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1521107187}
   m_Layer: 3
-  m_Name: Bonics
+  m_Name: Skeletons
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29302,11 +29484,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1523782937}
   m_LocalRotation: {x: -0.009695536, y: -0.0040326477, z: 0.3840143, w: 0.9232675}
-  m_LocalPosition: {x: -15.858146, y: -1.3072147, z: 0.2418716}
+  m_LocalPosition: {x: -15.858147, y: -1.3072147, z: 0.2418716}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 761190596}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: -0.848, y: -0.853, z: 45.174}
 --- !u!212 &1523782939
@@ -29466,7 +29648,7 @@ Transform:
   - {fileID: 1521107187}
   - {fileID: 398998251}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1545877491
 GameObject:
@@ -29776,11 +29958,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1564067871}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 36.614, y: 12.932001, z: 0.2418716}
+  m_LocalPosition: {x: 36.614, y: 12.931999, z: 0.2418716}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 147366276}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1564067873
@@ -29860,11 +30042,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1568314859}
   m_LocalRotation: {x: -0, y: -0, z: 0.4755231, w: 0.8797033}
-  m_LocalPosition: {x: 36.512, y: 12.861002, z: 0.2418716}
-  m_LocalScale: {x: -1.3392274, y: 1.2038, z: 1.2038}
+  m_LocalPosition: {x: 36.512, y: 12.861, z: 0.2418716}
+  m_LocalScale: {x: -1.3392276, y: 1.2038, z: 1.2038}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 147366276}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 56.787}
 --- !u!212 &1568314861
@@ -30164,7 +30346,7 @@ GameObject:
   - component: {fileID: 1591757631}
   - component: {fileID: 1591757633}
   m_Layer: 0
-  m_Name: SoundFon
+  m_Name: BackgrounsSound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30399,11 +30581,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1598235719}
   m_LocalRotation: {x: -0.010444575, y: -0.0010849038, z: 0.10331292, w: 0.9945935}
-  m_LocalPosition: {x: 1.7295337, y: 8.319788, z: 0.2418716}
-  m_LocalScale: {x: 2.5513, y: 2.5513, z: 2.5513}
+  m_LocalPosition: {x: 1.7295337, y: 8.319786, z: 0.2418716}
+  m_LocalScale: {x: 2.5513003, y: 2.5513, z: 2.5513}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 1716771281}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: -1.178, y: -0.247, z: 11.863}
 --- !u!212 &1598235721
@@ -30567,7 +30749,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 761190596}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: -0.997, y: -0.674, z: 34.078}
 --- !u!212 &1604229400
@@ -30633,7 +30815,7 @@ GameObject:
   - component: {fileID: 1605606504}
   - component: {fileID: 1605606505}
   m_Layer: 0
-  m_Name: 1-12744_download-clipart-prison-clip-art-prison (3)
+  m_Name: grid 9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30983,11 +31165,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1624204621}
   m_LocalRotation: {x: -0.034645807, y: 0.004527, z: 0.79351515, w: 0.6075466}
-  m_LocalPosition: {x: 10.700493, y: 12.305376, z: 0.1505214}
-  m_LocalScale: {x: 2.5513, y: 2.5513, z: 2.5513}
+  m_LocalPosition: {x: 10.700493, y: 12.305374, z: 0.1505214}
+  m_LocalScale: {x: 2.5512998, y: 2.5513, z: 2.5513}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 1716771281}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: -2.825, y: -2.84, z: 105.192}
 --- !u!212 &1624204623
@@ -31137,7 +31319,7 @@ GameObject:
   - component: {fileID: 1637641164}
   - component: {fileID: 1637641163}
   m_Layer: 0
-  m_Name: 1-12744_download-clipart-prison-clip-art-prison (6)
+  m_Name: grid 29
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31234,12 +31416,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1637923686}
-  m_LocalRotation: {x: -0, y: -0, z: 0.9865932, w: 0.16319866}
-  m_LocalPosition: {x: 36.956, y: 13.2610035, z: 0.2418716}
+  m_LocalRotation: {x: -0, y: -0, z: 0.98659325, w: 0.16319868}
+  m_LocalPosition: {x: 36.956, y: 13.261002, z: 0.2418716}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 147366276}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 161.215}
 --- !u!212 &1637923688
@@ -31976,11 +32158,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1663642207}
   m_LocalRotation: {x: -0.010444575, y: -0.0010849038, z: 0.10331292, w: 0.9945935}
-  m_LocalPosition: {x: -0.12, y: 5.49, z: 0.2418716}
-  m_LocalScale: {x: 2.5513, y: 2.5513, z: 2.5513}
+  m_LocalPosition: {x: -0.119999886, y: 5.489998, z: 0.2418716}
+  m_LocalScale: {x: 2.5513003, y: 2.5513, z: 2.5513}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 1716771281}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: -1.178, y: -0.247, z: 11.863}
 --- !u!212 &1663642209
@@ -32138,7 +32320,7 @@ GameObject:
   - component: {fileID: 1696175472}
   - component: {fileID: 1696175471}
   m_Layer: 3
-  m_Name: slug (5)
+  m_Name: Slug 2
   m_TagString: slug
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32819,6 +33001,51 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1716771280
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1716771281}
+  m_Layer: 0
+  m_Name: BonesConstruction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1716771281
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1716771280}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 285588590}
+  - {fileID: 992843353}
+  - {fileID: 2097869987}
+  - {fileID: 1473992661}
+  - {fileID: 1153288176}
+  - {fileID: 1598235720}
+  - {fileID: 1663642208}
+  - {fileID: 1818223938}
+  - {fileID: 1624204622}
+  - {fileID: 615713978}
+  - {fileID: 228612927}
+  - {fileID: 1238939782}
+  - {fileID: 1263660344}
+  - {fileID: 1838716000}
+  m_Father: {fileID: 1825824658}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1717601130
 GameObject:
   m_ObjectHideFlags: 0
@@ -33059,7 +33286,7 @@ GameObject:
   - component: {fileID: 1727480053}
   - component: {fileID: 1727480052}
   m_Layer: 3
-  m_Name: fireball (5)
+  m_Name: Fireball 4
   m_TagString: fireBall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33382,11 +33609,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1730481119}
   m_LocalRotation: {x: -0, y: -0, z: 0.99671763, w: -0.08095671}
-  m_LocalPosition: {x: -16.373531, y: 6.1762905, z: 0.2418716}
+  m_LocalPosition: {x: -16.373531, y: 6.1762924, z: 0.2418716}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 1451118914}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 189.287}
 --- !u!212 &1730481121
@@ -33452,7 +33679,7 @@ GameObject:
   - component: {fileID: 1740351145}
   - component: {fileID: 1740351144}
   m_Layer: 0
-  m_Name: 1-12744_download-clipart-prison-clip-art-prison (7)
+  m_Name: grid 28
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33544,7 +33771,7 @@ GameObject:
   - component: {fileID: 1746062919}
   - component: {fileID: 1746062918}
   m_Layer: 3
-  m_Name: "\u0421\u043A\u0435\u043B\u0435\u0442 (7)"
+  m_Name: Skeleton 1
   m_TagString: Bonic
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33832,17 +34059,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 565b5a8cb7189354b8d46ebeaeba08dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundOfMove: {fileID: 1746062919}
+  SoundOfMove: {fileID: 1746062919}
   soundOfHit: {fileID: 1746062918}
-  playerCoordinate: {x: 0, y: 0, z: 0}
-  skeletCoordinate: {x: 0, y: 0, z: 0}
+  Wait: 0
   flipRight: 1
-  wait: 0
-  attackPoint: {fileID: 2124645382}
-  attackRange: 2
-  playerLayers:
+  AttackPoint: {fileID: 2124645382}
+  PlayerCoordinate: {x: 0, y: 0, z: 0}
+  SkeletCoordinate: {x: 0, y: 0, z: 0}
+  PlayerLayers:
     serializedVersion: 2
     m_Bits: 64
+  AttackRange: 2
 --- !u!114 &1746062922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34042,12 +34269,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1746752817}
-  m_LocalRotation: {x: -0, y: -0, z: 0.9865932, w: 0.16319866}
-  m_LocalPosition: {x: 35.283, y: 13.1, z: 0.2418716}
+  m_LocalRotation: {x: -0, y: -0, z: 0.98659325, w: 0.16319868}
+  m_LocalPosition: {x: 35.283, y: 13.099998, z: 0.2418716}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 147366276}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 161.215}
 --- !u!212 &1746752819
@@ -34686,7 +34913,7 @@ Transform:
   - {fileID: 286694749}
   - {fileID: 1940904628}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1765080661
 GameObject:
@@ -35151,10 +35378,10 @@ Transform:
   m_GameObject: {fileID: 1780251901}
   m_LocalRotation: {x: -0, y: -0, z: 0.4755231, w: 0.8797033}
   m_LocalPosition: {x: 37.2, y: -32.307, z: 0.2418716}
-  m_LocalScale: {x: -1.3392274, y: 1.2038, z: 1.2038}
+  m_LocalScale: {x: -1.3392276, y: 1.2038, z: 1.2038}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 230089811}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 56.787}
 --- !u!212 &1780251903
@@ -35552,11 +35779,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1818223937}
   m_LocalRotation: {x: -0.034645807, y: 0.004527, z: 0.79351515, w: 0.6075466}
-  m_LocalPosition: {x: 7.961824, y: 13.829596, z: -0.013289899}
-  m_LocalScale: {x: 2.5513, y: 2.5513, z: 2.5513}
+  m_LocalPosition: {x: 7.961825, y: 13.829597, z: -0.013289899}
+  m_LocalScale: {x: 2.5512998, y: 2.5513, z: 2.5513}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 1716771281}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: -2.825, y: -2.84, z: 105.192}
 --- !u!212 &1818223939
@@ -35705,7 +35932,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1825824658}
   m_Layer: 0
-  m_Name: boniic
+  m_Name: Bones
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35723,79 +35950,11 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1984441367}
-  - {fileID: 540666363}
-  - {fileID: 1780251902}
-  - {fileID: 965793330}
-  - {fileID: 1322454670}
-  - {fileID: 1494380468}
-  - {fileID: 726598173}
-  - {fileID: 341605636}
-  - {fileID: 708291633}
-  - {fileID: 12421988}
-  - {fileID: 1115960824}
-  - {fileID: 1014555041}
-  - {fileID: 1237958997}
-  - {fileID: 1523782938}
-  - {fileID: 717920522}
-  - {fileID: 447606049}
-  - {fileID: 1308347986}
-  - {fileID: 296499386}
-  - {fileID: 986792157}
-  - {fileID: 656278502}
-  - {fileID: 1265823523}
-  - {fileID: 1604229399}
-  - {fileID: 2059206112}
-  - {fileID: 1017779549}
-  - {fileID: 80872787}
-  - {fileID: 107248755}
-  - {fileID: 703461290}
-  - {fileID: 734158933}
-  - {fileID: 1746752818}
-  - {fileID: 165992527}
-  - {fileID: 22052779}
-  - {fileID: 314189011}
-  - {fileID: 813317192}
-  - {fileID: 967193430}
-  - {fileID: 1564067872}
-  - {fileID: 671177847}
-  - {fileID: 1568314860}
-  - {fileID: 1637923687}
-  - {fileID: 921203894}
-  - {fileID: 485305455}
-  - {fileID: 285588590}
-  - {fileID: 992843353}
-  - {fileID: 2097869987}
-  - {fileID: 1473992661}
-  - {fileID: 1153288176}
-  - {fileID: 1598235720}
-  - {fileID: 1663642208}
-  - {fileID: 1818223938}
-  - {fileID: 1624204622}
-  - {fileID: 615713978}
-  - {fileID: 228612927}
-  - {fileID: 1238939782}
-  - {fileID: 1263660344}
-  - {fileID: 1838716000}
-  - {fileID: 923690583}
-  - {fileID: 1073201056}
-  - {fileID: 246745937}
-  - {fileID: 730740817}
-  - {fileID: 1200221977}
-  - {fileID: 947990096}
-  - {fileID: 1184657482}
-  - {fileID: 370105486}
-  - {fileID: 528224615}
-  - {fileID: 458008049}
-  - {fileID: 824983033}
-  - {fileID: 1885287601}
-  - {fileID: 2133812093}
-  - {fileID: 1118641402}
-  - {fileID: 219776375}
-  - {fileID: 902256399}
-  - {fileID: 1174341657}
-  - {fileID: 1730481120}
-  - {fileID: 292889203}
+  - {fileID: 230089811}
+  - {fileID: 761190596}
+  - {fileID: 147366276}
+  - {fileID: 1451118914}
+  - {fileID: 1716771281}
   m_Father: {fileID: 159281955}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -35818,7 +35977,7 @@ GameObject:
   - component: {fileID: 1831641605}
   - component: {fileID: 1831641604}
   m_Layer: 3
-  m_Name: "\u0421\u043A\u0435\u043B\u0435\u0442 (8)"
+  m_Name: Skeleton 2
   m_TagString: Bonic
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36106,17 +36265,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 565b5a8cb7189354b8d46ebeaeba08dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundOfMove: {fileID: 1831641605}
+  SoundOfMove: {fileID: 1831641605}
   soundOfHit: {fileID: 1831641604}
-  playerCoordinate: {x: 0, y: 0, z: 0}
-  skeletCoordinate: {x: 0, y: 0, z: 0}
+  Wait: 0
   flipRight: 1
-  wait: 0
-  attackPoint: {fileID: 451570636}
-  attackRange: 2
-  playerLayers:
+  AttackPoint: {fileID: 451570636}
+  PlayerCoordinate: {x: 0, y: 0, z: 0}
+  SkeletCoordinate: {x: 0, y: 0, z: 0}
+  PlayerLayers:
     serializedVersion: 2
     m_Bits: 64
+  AttackRange: 2
 --- !u!114 &1831641608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36317,11 +36476,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1838715999}
   m_LocalRotation: {x: -0.034645807, y: 0.004527, z: 0.79351515, w: 0.6075466}
-  m_LocalPosition: {x: 24.89, y: 4.19, z: 0.4970331}
-  m_LocalScale: {x: 2.5513, y: 2.5513, z: 2.5513}
+  m_LocalPosition: {x: 24.89, y: 4.1899986, z: 0.49703306}
+  m_LocalScale: {x: 2.5512998, y: 2.5513, z: 2.5513}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 1716771281}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: -2.825, y: -2.84, z: 105.192}
 --- !u!212 &1838716001
@@ -36555,7 +36714,7 @@ GameObject:
   - component: {fileID: 1845177640}
   - component: {fileID: 1845177641}
   m_Layer: 0
-  m_Name: 1-12744_download-clipart-prison-clip-art-prison (2)
+  m_Name: grid 8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36729,7 +36888,7 @@ GameObject:
   - component: {fileID: 1859048212}
   - component: {fileID: 1859048213}
   m_Layer: 3
-  m_Name: fireball
+  m_Name: Fireball 1
   m_TagString: fireBall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37413,7 +37572,7 @@ GameObject:
   - component: {fileID: 1878560806}
   - component: {fileID: 1878560807}
   m_Layer: 0
-  m_Name: 1-12744_download-clipart-prison-clip-art-prison
+  m_Name: grid 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37511,11 +37670,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1885287600}
   m_LocalRotation: {x: -0, y: -0, z: -0.40105605, w: -0.91605353}
-  m_LocalPosition: {x: -15.975746, y: 6.002756, z: 0.2418716}
+  m_LocalPosition: {x: -15.975746, y: 6.002754, z: 0.2418716}
   m_LocalScale: {x: -1.33923, y: 1.2038, z: 1.2038}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 1451118914}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 407.288}
 --- !u!212 &1885287602
@@ -37804,7 +37963,7 @@ GameObject:
   - component: {fileID: 1915987115}
   - component: {fileID: 1915987116}
   m_Layer: 0
-  m_Name: 1-12744_download-clipart-prison-clip-art-prison (5)
+  m_Name: grid 11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -38461,7 +38620,7 @@ GameObject:
   - component: {fileID: 1941271069}
   - component: {fileID: 1941271070}
   m_Layer: 0
-  m_Name: 1-12744_download-clipart-prison-clip-art-prison (14)
+  m_Name: grid 20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -38798,7 +38957,7 @@ GameObject:
   - component: {fileID: 1973565467}
   - component: {fileID: 1973565469}
   m_Layer: 0
-  m_Name: 1663822945_5-phonoteka-org-p-fon-gori-risunok-pinterest-8 (1)
+  m_Name: Background Frame 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39057,7 +39216,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 230089811}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1984441368
@@ -39648,7 +39807,7 @@ GameObject:
   - component: {fileID: 2036455154}
   - component: {fileID: 2036455153}
   m_Layer: 3
-  m_Name: slug (6)
+  m_Name: Slug 3
   m_TagString: slug
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40020,7 +40179,7 @@ GameObject:
   - component: {fileID: 2046390391}
   - component: {fileID: 2046390392}
   m_Layer: 0
-  m_Name: 1-12744_download-clipart-prison-clip-art-prison (6)
+  m_Name: grid 12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40370,11 +40529,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2059206111}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 35.767, y: 12.899, z: 0.2418716}
+  m_LocalPosition: {x: 35.767, y: 12.899002, z: 0.2418716}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 147366276}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2059206113
@@ -41148,7 +41307,7 @@ GameObject:
   - component: {fileID: 2089886874}
   - component: {fileID: 2089886875}
   m_Layer: 0
-  m_Name: 1-12744_download-clipart-prison-clip-art-prison (12)
+  m_Name: grid 18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41294,7 +41453,7 @@ GameObject:
   - component: {fileID: 2096610800}
   - component: {fileID: 2096610801}
   m_Layer: 0
-  m_Name: 1-12744_download-clipart-prison-clip-art-prison (16)
+  m_Name: grid 22
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41476,11 +41635,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2097869986}
   m_LocalRotation: {x: -0.009695536, y: -0.0040326477, z: 0.3840143, w: 0.9232675}
-  m_LocalPosition: {x: 6.3289003, y: 16.4763, z: 0.2418716}
+  m_LocalPosition: {x: 6.3289, y: 16.4763, z: 0.2418716}
   m_LocalScale: {x: 2.5513, y: 2.5513, z: 2.5513}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 1716771281}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: -0.848, y: -0.853, z: 45.174}
 --- !u!212 &2097869988
@@ -42033,7 +42192,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2124645382}
   m_Layer: 0
-  m_Name: ckeletAttack
+  m_Name: AttackPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42089,11 +42248,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2133812092}
   m_LocalRotation: {x: -0, y: -0, z: 0.99671763, w: -0.08095671}
-  m_LocalPosition: {x: -15.578993, y: 6.435919, z: 0.2418716}
+  m_LocalPosition: {x: -15.578993, y: 6.4359207, z: 0.2418716}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1825824658}
+  m_Father: {fileID: 1451118914}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 189.287}
 --- !u!212 &2133812094
@@ -42244,7 +42403,7 @@ GameObject:
   - component: {fileID: 2137092730}
   - component: {fileID: 2137092729}
   m_Layer: 0
-  m_Name: 1663822945_5-phonoteka-org-p-fon-gori-risunok-pinterest-8 (7)
+  m_Name: Background Frame 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
