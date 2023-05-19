@@ -1,7 +1,5 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using static UnityEngine.EventSystems.EventTrigger;
 
 public class Move : MonoBehaviour
 {
@@ -32,6 +30,7 @@ public class Move : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         isRecharged = true;
+        isAttacking = false;
         Instance = this;
     }
 
