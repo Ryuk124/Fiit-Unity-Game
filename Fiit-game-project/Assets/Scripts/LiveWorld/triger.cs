@@ -17,7 +17,6 @@ public class triger : MonoBehaviour
     }
     public void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("fdsafsdf");
-        Destroy(other);
+        
     } 
 }
