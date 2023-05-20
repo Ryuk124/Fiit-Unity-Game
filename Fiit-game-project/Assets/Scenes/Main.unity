@@ -6600,13 +6600,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9482ce6e7e05d4b428dac2e8f66ca85c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  kostl: 0
-  afterJump: 0
+  IsAgred: 0
+  IsJump: 0
+  PlayerCoordinate: {x: 0, y: 0, z: 0}
+  SlugCoordinate: {x: 0, y: 0, z: 0}
+  SoundAfterJump: {fileID: 356464027}
   jumpForce: 12
   isGrounded: 0
-  playerCoordinate: {x: 0, y: 0, z: 0}
-  slugCoordinate: {x: 0, y: 0, z: 0}
-  soundAfterJump: {fileID: 0}
 --- !u!1001 &358043006
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10166,7 +10166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SoundOfMove: {fileID: 572040325}
-  soundOfHit: {fileID: 572040324}
+  SoundOfHit: {fileID: 0}
   Wait: 0
   flipRight: 1
   AttackPoint: {fileID: 738280484}
@@ -12488,13 +12488,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9482ce6e7e05d4b428dac2e8f66ca85c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  kostl: 0
-  afterJump: 0
+  IsAgred: 0
+  IsJump: 0
+  PlayerCoordinate: {x: 0, y: 0, z: 0}
+  SlugCoordinate: {x: 0, y: 0, z: 0}
+  SoundAfterJump: {fileID: 682320411}
   jumpForce: 12
   isGrounded: 0
-  playerCoordinate: {x: 0, y: 0, z: 0}
-  slugCoordinate: {x: 0, y: 0, z: 0}
-  soundAfterJump: {fileID: 0}
 --- !u!114 &682320414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24801,7 +24801,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SoundOfMove: {fileID: 1322379201}
-  soundOfHit: {fileID: 1322379200}
+  SoundOfHit: {fileID: 0}
   Wait: 0
   flipRight: 1
   AttackPoint: {fileID: 513619353}
@@ -32447,13 +32447,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9482ce6e7e05d4b428dac2e8f66ca85c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  kostl: 0
-  afterJump: 0
+  IsAgred: 0
+  IsJump: 0
+  PlayerCoordinate: {x: 0, y: 0, z: 0}
+  SlugCoordinate: {x: 0, y: 0, z: 0}
+  SoundAfterJump: {fileID: 1696175471}
   jumpForce: 12
   isGrounded: 0
-  playerCoordinate: {x: 0, y: 0, z: 0}
-  slugCoordinate: {x: 0, y: 0, z: 0}
-  soundAfterJump: {fileID: 0}
 --- !u!114 &1696175474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34060,7 +34060,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SoundOfMove: {fileID: 1746062919}
-  soundOfHit: {fileID: 1746062918}
+  SoundOfHit: {fileID: 0}
   Wait: 0
   flipRight: 1
   AttackPoint: {fileID: 2124645382}
@@ -36266,7 +36266,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SoundOfMove: {fileID: 1831641605}
-  soundOfHit: {fileID: 1831641604}
+  SoundOfHit: {fileID: 0}
   Wait: 0
   flipRight: 1
   AttackPoint: {fileID: 451570636}
@@ -39934,13 +39934,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9482ce6e7e05d4b428dac2e8f66ca85c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  kostl: 0
-  afterJump: 0
+  IsAgred: 0
+  IsJump: 0
+  PlayerCoordinate: {x: 0, y: 0, z: 0}
+  SlugCoordinate: {x: 0, y: 0, z: 0}
+  SoundAfterJump: {fileID: 2036455153}
   jumpForce: 12
   isGrounded: 0
-  playerCoordinate: {x: 0, y: 0, z: 0}
-  slugCoordinate: {x: 0, y: 0, z: 0}
-  soundAfterJump: {fileID: 0}
 --- !u!114 &2036455156
 MonoBehaviour:
   m_ObjectHideFlags: 0
