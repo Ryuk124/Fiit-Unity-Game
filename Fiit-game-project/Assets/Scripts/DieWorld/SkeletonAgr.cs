@@ -50,8 +50,7 @@ public class SkeletonAgr : MonoBehaviour
 
         SetState(SkeletonStates.Afk);
 
-        if (Math.Abs(SkeletCoordinate.x - PlayerCoordinate.x) < 3 &&
-            Math.Abs(SkeletCoordinate.y - PlayerCoordinate.y) < 2)
+        if (IsNeedToGo(3, 2))
         {
             firstEnter = true;
             flag = false;
@@ -61,20 +60,23 @@ public class SkeletonAgr : MonoBehaviour
         ControlMovement();
     }
 
+    private bool IsNeedToGo(int distanceX, int distanceY)
+    {
+        return Math.Abs(SkeletCoordinate.x - PlayerCoordinate.x) < distanceX &&
+               Math.Abs(SkeletCoordinate.y - PlayerCoordinate.y) < distanceY;
+    }
+
     private void ControlMovement()
     {
-        if (Math.Abs(SkeletCoordinate.x - PlayerCoordinate.x) < 13 &&
-            Math.Abs(SkeletCoordinate.y - PlayerCoordinate.y) < 2 && flag)
+        if (IsNeedToGo(13, 2) && flag)
         {
             if (SoundOfMove.isPlaying) 
                 return;
 
             SoundOfMove.Play();
 
-            if (SkeletCoordinate.x > PlayerCoordinate.x && !flipRight)
-                Flip();
-
-            if (SkeletCoordinate.x < PlayerCoordinate.x && flipRight)
+            if (SkeletCoordinate.x > PlayerCoordinate.x && !flipRight 
+                || SkeletCoordinate.x < PlayerCoordinate.x && flipRight)
                 Flip();
 
             rigidBody.velocity = flipRight

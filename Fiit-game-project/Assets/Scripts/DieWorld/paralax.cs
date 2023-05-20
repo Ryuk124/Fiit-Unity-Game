@@ -6,9 +6,9 @@ public class Parallax : MonoBehaviour
 {
     [SerializeField] [Range(0f, 1f)] float _lagAmount = 0f;
 
-    Vector3 _previousCameraPosition;
-    Transform _camera;
-    Vector3 _targetPosition;
+    private Vector3 _previousCameraPosition;
+    private Transform _camera;
+    private Vector3 _targetPosition;
 
     private float ParallaxAmount => 1f - _lagAmount;
 
@@ -21,8 +21,13 @@ public class Parallax : MonoBehaviour
     private void LateUpdate()
     {
         Vector3 movement = CameraMovement;
-        if (movement == Vector3.zero) return;
-        _targetPosition = new Vector3(transform.position.x + movement.x * ParallaxAmount, transform.position.y + movement.y * ParallaxAmount, transform.position.z);
+
+        if (movement == Vector3.zero) 
+            return;
+
+        _targetPosition = new Vector3(transform.position.x + movement.x * ParallaxAmount, 
+            transform.position.y + movement.y * ParallaxAmount, transform.position.z);
+
         transform.position = _targetPosition;
     }
 
