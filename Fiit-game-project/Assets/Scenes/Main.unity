@@ -10166,7 +10166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SoundOfMove: {fileID: 572040325}
-  SoundOfHit: {fileID: 0}
+  SoundOfHit: {fileID: 572040325}
   Wait: 0
   flipRight: 1
   AttackPoint: {fileID: 738280484}
@@ -24801,7 +24801,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SoundOfMove: {fileID: 1322379201}
-  SoundOfHit: {fileID: 0}
+  SoundOfHit: {fileID: 1322379201}
   Wait: 0
   flipRight: 1
   AttackPoint: {fileID: 513619353}
@@ -34060,7 +34060,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SoundOfMove: {fileID: 1746062919}
-  SoundOfHit: {fileID: 0}
+  SoundOfHit: {fileID: 1746062919}
   Wait: 0
   flipRight: 1
   AttackPoint: {fileID: 2124645382}
@@ -36266,7 +36266,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SoundOfMove: {fileID: 1831641605}
-  SoundOfHit: {fileID: 0}
+  SoundOfHit: {fileID: 1831641605}
   Wait: 0
   flipRight: 1
   AttackPoint: {fileID: 451570636}
