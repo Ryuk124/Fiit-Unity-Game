@@ -17,6 +17,7 @@ public class ExampleScript : MonoBehaviour
     public bool greenPortal = false;
     public bool bluePortal = false;
     public bool bothPortal = false;
+    public Vector2 normal;
     void Start()
     {
 
@@ -32,7 +33,7 @@ public class ExampleScript : MonoBehaviour
         if (hit)
         {
             point = hit.point;
-            
+            normal = hit.normal;
         }
         
         
@@ -64,15 +65,25 @@ public class ExampleScript : MonoBehaviour
         {
             var rotate = spawnLeft.transform.eulerAngles;
 
-            if (hit.normal.y != 0)
+            if (hit.normal.y == 1)
             {
                 rotate.z = 90;
                 Debug.Log(hit.normal.x);
             }
+            
+            else if (hit.normal.y == -1)
+            {
+                rotate.z = -90;
+            }
 
-            if (hit.normal.x != 0)
+            if (hit.normal.x == 1)
             {
                 rotate.z = 0;
+            }
+            
+            else if (hit.normal.x == -1)
+            {
+                rotate.z = 180;
             }
 
             if (hit.collider.CompareTag("wall"))
@@ -95,17 +106,26 @@ public class ExampleScript : MonoBehaviour
         {
             var rotate = spawnRight.transform.eulerAngles;
 
-            if (hit.normal.y != 0)
+            if (hit.normal.y == 1)
             {
                 rotate.z = 90;
                 Debug.Log(hit.normal.x);
             }
+            
+            else if (hit.normal.y == -1)
+            {
+                rotate.z = -90;
+            }
 
-            if (hit.normal.x != 0)
+            if (hit.normal.x == 1)
             {
                 rotate.z = 0;
             }
-
+            
+            else if (hit.normal.x == -1)
+            {
+                rotate.z = 180;
+            }
             if (hit.collider.CompareTag("wall"))
             {
                 cloneBlue = Instantiate(spawnRight, hit.point, Quaternion.Euler(rotate));
