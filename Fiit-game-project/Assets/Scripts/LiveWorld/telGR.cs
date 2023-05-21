@@ -10,6 +10,8 @@ public class telGR : MonoBehaviour
     public int number = 0;
     private Transform destination;
     public bool teleportedGreen;
+
+    public bool lazerTpGreen = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -60,24 +62,35 @@ public class telGR : MonoBehaviour
         other.transform.position = new Vector2(destination.position.x, destination.position.y);
         var rbObject = other.GetComponent<IsTeleported>().rb;
         var speed = other.GetComponent<IsTeleported>().Speed;
-        if (rot == 90)
-        {
-            Debug.Log(speed);
-            rbObject.AddForce(transform.right * speed, ForceMode2D.Impulse);
-        }
-        else if (rot == -180)
-        {
-            rbObject.AddForce(-transform.up * speed, ForceMode2D.Impulse);
-        }
-        
-        else if (rot == 0)
+        if (rot == 180)
         {
             rbObject.AddForce(transform.up * speed, ForceMode2D.Impulse);
         }
         
-        else if (rot == -90)
+        else if (rot == 0)
         {
-            rbObject.AddForce(-transform.right * speed, ForceMode2D.Impulse);
+            rbObject.AddForce(-transform.up * speed, ForceMode2D.Impulse);
+        }
+        
+        else if (rot == 90)
+        { 
+            Debug.Log(speed);
+            if (speed >= 70)
+            {
+                rbObject.AddForce(transform.right * (speed + 100), ForceMode2D.Impulse);
+            }
+            
+            else if (speed <= 20)
+            {
+                rbObject.AddForce(transform.right * (speed), ForceMode2D.Impulse);
+            }
+            
+            else
+            {
+                rbObject.AddForce(transform.right * (speed + 30), ForceMode2D.Impulse);
+            }
+            
+            
         }
         teleportedGreen = true;
         trig = true; 

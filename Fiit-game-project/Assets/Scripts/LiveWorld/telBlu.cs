@@ -8,6 +8,9 @@ public class telBlu : MonoBehaviour
     public bool trigBlue;
     private Transform destination;
     public bool teleportedBlue;
+    public bool lazerTpBlue = false;
+    public Vector2 normal;
+    public Vector2 point;
 
     public int number = 0;
     // Start is called before the first frame update
@@ -77,8 +80,20 @@ public class telBlu : MonoBehaviour
         
         else if (rot == 90)
         { 
-            rbObject.AddForce(transform.right * 50, ForceMode2D.Impulse);
-            Debug.Log("fdsffffffffffffffff");
+            if (speed >= 70)
+            {
+                rbObject.AddForce(transform.right * (speed + 100), ForceMode2D.Impulse);
+            }
+            
+            else if (speed <= 20)
+            {
+                rbObject.AddForce(transform.right * (speed), ForceMode2D.Impulse);
+            }
+            
+            else
+            {
+                rbObject.AddForce(transform.right * (speed + 30), ForceMode2D.Impulse);
+            }
         }
         
         teleportedBlue = true;
