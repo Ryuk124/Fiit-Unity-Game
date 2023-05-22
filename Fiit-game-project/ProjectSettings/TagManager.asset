@@ -13,6 +13,9 @@ TagManager:
   - floor
   - green
   - blue
+  - Koleso
+  - glass
+  - lazer
   layers:
   - Default
   - TransparentFX
