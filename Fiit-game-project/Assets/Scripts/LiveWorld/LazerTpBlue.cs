@@ -36,6 +36,11 @@ public class LazerTpBlue : MonoBehaviour
             ScaleRayWithoutContact(distanceHit);
         }
         
+        else
+        {
+            transform.localScale = new Vector2(0.4121f, 0.5f);
+        }
+        
     }
     
     public void ScaleRayWithoutContact(float distanceMouse)
@@ -44,7 +49,7 @@ public class LazerTpBlue : MonoBehaviour
         scale = distanceMouse / length;
         if (distanceMouse != 0)
         {
-            transform.localScale = new Vector2(1, scale);
+            transform.localScale = new Vector2(0.4121f, scale);
         }
     }
 }

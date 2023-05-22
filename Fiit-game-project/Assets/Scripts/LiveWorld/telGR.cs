@@ -26,21 +26,35 @@ public class telGR : MonoBehaviour
     
     public void OnTriggerEnter2D(Collider2D other)
     {
-        if (!other.gameObject.CompareTag("wall"))
+        if (other.gameObject.CompareTag("lazer") &&
+            !GameObject.FindGameObjectWithTag("blue").GetComponent<telBlu>().lazerTpBlue)
+        {
+            lazerTpGreen = true;
+        }
+
+        else
+        {
+            lazerTpGreen = false;
+        }
+        
+        if (!other.gameObject.CompareTag("wall") &&
+            !other.gameObject.CompareTag("lazer"))
         {
             trig = true;
             number += 1;
         }
         
         if (!other.gameObject.CompareTag("wall") &&  
-            !GameObject.FindGameObjectWithTag("blue").GetComponent<telBlu>().teleportedBlue)
+            !GameObject.FindGameObjectWithTag("blue").GetComponent<telBlu>().teleportedBlue &&
+            !other.gameObject.CompareTag("lazer"))
         {
             Teleport(other);
         }
         
         else if(!other.gameObject.CompareTag("wall") && 
                 GameObject.FindGameObjectWithTag("blue").GetComponent<telBlu>().teleportedBlue &&
-                trig == false)
+                trig == false &&
+                !other.gameObject.CompareTag("lazer"))
         {
             Teleport(other);
         }

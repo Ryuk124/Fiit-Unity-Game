@@ -29,9 +29,14 @@ public class LazerTp : MonoBehaviour
             (point.x - transform.position.x) * (point.x - transform.position.x)
             + (point.y - transform.position.y) * (point.y - transform.position.y)));
         
-        if (GameObject.FindGameObjectWithTag("blue").GetComponent<telBlu>().lazerTpBlue)
+        if (GameObject.FindGameObjectWithTag("green").GetComponent<telGR>().lazerTpGreen)
         {
             ScaleRayWithoutContact(distanceHit);
+        }
+        
+        else
+        {
+            transform.localScale = new Vector2(0.4121f, 0.5f);
         }
     }
     
@@ -41,7 +46,7 @@ public class LazerTp : MonoBehaviour
         scale = distanceMouse / length;
         if (distanceMouse != 0)
         {
-            transform.localScale = new Vector2(1, scale);
+            transform.localScale = new Vector2(0.4121f, scale);
         }
     }
 }

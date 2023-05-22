@@ -28,14 +28,26 @@ public class telBlu : MonoBehaviour
     
     public void OnTriggerEnter2D(Collider2D other)
     {
-        if (!other.gameObject.CompareTag("wall"))
+        if (other.gameObject.CompareTag("lazer") &&
+            !GameObject.FindGameObjectWithTag("green").GetComponent<telGR>().lazerTpGreen)
+        {
+            lazerTpBlue = true;
+        }
+
+        else
+        {
+            lazerTpBlue = false;
+        }
+        if (!other.gameObject.CompareTag("wall") &&
+            !other.gameObject.CompareTag("lazer"))
         {
             trigBlue = true;
             number += 1;
         }
         
         if (!other.gameObject.CompareTag("wall") &&  
-            !GameObject.FindGameObjectWithTag("green").GetComponent<telGR>().teleportedGreen)
+            !GameObject.FindGameObjectWithTag("green").GetComponent<telGR>().teleportedGreen &&
+            !other.gameObject.CompareTag("lazer"))
         {
             Teleport(other);
 
@@ -43,7 +55,8 @@ public class telBlu : MonoBehaviour
         
         else if(!other.gameObject.CompareTag("wall") && 
                 GameObject.FindGameObjectWithTag("green").GetComponent<telGR>().teleportedGreen &&
-                trigBlue == false)
+                trigBlue == false && 
+                !other.gameObject.CompareTag("lazer"))
         {
             Teleport(other);
         }
