@@ -12,6 +12,9 @@ public class LazerUP : MonoBehaviour
     public GameObject coleso;
     public Vector2 point;
     public Vector2 normal;
+    public bool getGreenPortal = false;
+    public bool getBluePortal = false;
+    public bool koleso = false;
     void Start()
     {
 
@@ -19,24 +22,27 @@ public class LazerUP : MonoBehaviour
 
     void Update()
     {
-        RaycastHit2D hit = Physics2D.Raycast(startPoint.transform.position,endPoint.transform.position);
-        Debug.DrawLine(startPoint.transform.position, endPoint.transform.position,Color.black);
-        if (!hit.collider.GameObject().CompareTag("glass"))
+        RaycastHit2D hit = Physics2D.Raycast(startPoint.transform.position,-transform.up);
+        if (hit)
         {
             point = hit.point;
             normal = hit.normal;
         }
-        
-        
         var distanceHit = (float)(Math.Sqrt(
-            (endPoint.transform.position.x - startPoint.transform.position.x) * (endPoint.transform.position.x - startPoint.transform.position.x)
-            + (endPoint.transform.position.y - startPoint.transform.position.y) * (endPoint.transform.position.y - startPoint.transform.position.y)));
+            (point.x - startPoint.transform.position.x) * (point.x - startPoint.transform.position.x)
+            + (point.y - startPoint.transform.position.y) * (point.y - startPoint.transform.position.y)));
+        Debug.Log(distanceHit);
 
         if (coleso.transform.rotation.eulerAngles.z > 350)
         {
             ScaleRayWithoutContact(point, distanceHit);
+            koleso = true;
         }
-        
+
+        if (koleso)
+        {
+            ScaleRayWithoutContact(point, distanceHit);
+        }
     }
 
     
@@ -46,8 +52,26 @@ public class LazerUP : MonoBehaviour
     {
         var length = 0.994f;
         scale = distanceMouse / length;
-        Debug.Log((distanceMouse));
         Debug.Log(scale);
         startPoint.transform.localScale = new Vector2(3.116098f, scale);
+    }
+
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("green"))
+        {
+            getGreenPortal = true;
+        }
+        
+        if (other.gameObject.CompareTag("blue"))
+        {
+            getBluePortal = true;
+        }
+    }
+
+    public void OnTriggerExit2D(Collider2D other)
+    {
+        getGreenPortal = false;
+        getBluePortal = false;
     }
 }

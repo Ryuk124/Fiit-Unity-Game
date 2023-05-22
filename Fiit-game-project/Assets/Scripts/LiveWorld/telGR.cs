@@ -22,6 +22,16 @@ public class telGR : MonoBehaviour
     void Update()
     {
         destination = GameObject.FindGameObjectWithTag("blue").GetComponent<Transform>();
+        if ((GameObject.FindGameObjectWithTag("lazer").GetComponent<LazerUP>().getGreenPortal) &&
+            !GameObject.FindGameObjectWithTag("blue").GetComponent<telBlu>().lazerTpBlue)
+        {
+            lazerTpGreen = true;
+        }
+
+        else
+        {
+            lazerTpGreen = false;
+        }
     }
     
     public void OnTriggerEnter2D(Collider2D other)
@@ -73,7 +83,10 @@ public class telGR : MonoBehaviour
     {
         var rot = GameObject.FindGameObjectWithTag("blue").transform.rotation.eulerAngles.z;
         //other.transform.rotation = rot;
-        other.transform.position = new Vector2(destination.position.x, destination.position.y);
+        if (!other.gameObject.CompareTag("Player"))
+        {
+            other.transform.position = new Vector2(destination.position.x, destination.position.y);
+        }
         var rbObject = other.GetComponent<IsTeleported>().rb;
         var speed = other.GetComponent<IsTeleported>().Speed;
         if (rot == 180)

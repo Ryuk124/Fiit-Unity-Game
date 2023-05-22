@@ -152,17 +152,38 @@ public class ExampleScript : MonoBehaviour
     {
         float angleSin = (float)(Math.Asin((point.y - startPoint.y) / distanceMouse) * 180 / Math.PI);
         var rotate = start.transform.eulerAngles;
-        if (startPoint.x < point.x)
+
+        if (GameObject.FindGameObjectWithTag("Player").GetComponent<MovePlayer>().flipRight)
         {
-            rotate.z = angleSin + 180;
+            if (startPoint.x < point.x)
+            {
+                rotate.z = angleSin + 180;
+            }
+
+            else
+            {
+                rotate.z = -angleSin;
+            }
+        
+            start.transform.rotation = Quaternion.Euler(rotate);
         }
 
         else
         {
-            rotate.z = -angleSin;
+            
+            if (startPoint.x < point.x)
+            {
+                rotate.z = angleSin;
+            }
+
+            else
+            {
+                rotate.z = -angleSin + 180;
+            }
+        
+            start.transform.rotation = Quaternion.Euler(rotate);
         }
         
-        start.transform.rotation = Quaternion.Euler(rotate);
     }
     
 }

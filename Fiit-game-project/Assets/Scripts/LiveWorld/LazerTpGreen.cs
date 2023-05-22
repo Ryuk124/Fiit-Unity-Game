@@ -22,13 +22,15 @@ public class LazerTp : MonoBehaviour
         {
             point = hit.point;
             normal = hit.normal;
-            Debug.Log(point);
+            
         }
         Debug.DrawLine(transform.position, point,Color.black);
+        
         var distanceHit = (float)(Math.Sqrt(
             (point.x - transform.position.x) * (point.x - transform.position.x)
             + (point.y - transform.position.y) * (point.y - transform.position.y)));
-        
+        Debug.Log(point);
+        Debug.Log(distanceHit);
         if (GameObject.FindGameObjectWithTag("green").GetComponent<telGR>().lazerTpGreen)
         {
             ScaleRayWithoutContact(distanceHit);
@@ -42,7 +44,7 @@ public class LazerTp : MonoBehaviour
     
     public void ScaleRayWithoutContact(float distanceMouse)
     {
-        var length = 0.207f;
+        var length = 0.812f;
         scale = distanceMouse / length;
         if (distanceMouse != 0)
         {
