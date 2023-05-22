@@ -23,12 +23,7 @@ public class telBlu : MonoBehaviour
     void Update()
     {
         destination = GameObject.FindGameObjectWithTag("green").GetComponent<Transform>();
-        
-    }
-    
-    public void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.CompareTag("lazer") &&
+        if ((GameObject.FindGameObjectWithTag("lazer").GetComponent<LazerUP>().getBluePortal) &&
             !GameObject.FindGameObjectWithTag("green").GetComponent<telGR>().lazerTpGreen)
         {
             lazerTpBlue = true;
@@ -38,6 +33,11 @@ public class telBlu : MonoBehaviour
         {
             lazerTpBlue = false;
         }
+        
+    }
+    
+    public void OnTriggerEnter2D(Collider2D other)
+    {
         if (!other.gameObject.CompareTag("wall") &&
             !other.gameObject.CompareTag("lazer"))
         {
@@ -76,8 +76,10 @@ public class telBlu : MonoBehaviour
     {
         
         var rot = GameObject.FindGameObjectWithTag("green").transform.rotation.eulerAngles.z;
-        //other.transform.rotation = rot;
-        other.transform.position = new Vector2(destination.position.x, destination.position.y);
+        if (!other.gameObject.CompareTag("Player"))
+        {
+            other.transform.position = new Vector2(destination.position.x, destination.position.y);
+        }
         var rbObject = other.GetComponent<IsTeleported>().rb;
         var speed = other.GetComponent<IsTeleported>().Speed;
         Debug.Log(rot);
