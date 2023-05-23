@@ -4,7 +4,7 @@ using UnityEngine;
 public class DeathCount : MonoBehaviour
 {
     TextMeshProUGUI text;
-    public static int enemies;
+    public static int Enemies;
 
     void Start()
     {
@@ -13,6 +13,6 @@ public class DeathCount : MonoBehaviour
 
     void Update()
     {
-        text.text = $"Убито: {enemies}";
+        text.text = $"Убито: {Enemies}";
     }
 }

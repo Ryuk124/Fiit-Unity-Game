@@ -26,6 +26,6 @@ public class Enemy : MonoBehaviour
     void Die()
     {
         Destroy(gameObject, 0.465f);
-        DeathCount.enemies++;
+        DeathCount.Enemies++;
     }
 }
