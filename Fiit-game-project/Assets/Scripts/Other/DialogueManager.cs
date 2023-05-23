@@ -1,4 +1,6 @@
+using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -51,7 +53,21 @@ public class DialogueManager : MonoBehaviour
         }
 
         var sentence = sentences.Dequeue();
-        DialogueText.text = sentence;
+
+        StopAllCoroutines();
+        StartCoroutine(TypeSentence(sentence));
+    }
+
+    private IEnumerator TypeSentence(string sentence)
+    {
+        DialogueText.text = "";
+
+        foreach (var letter in sentence.ToCharArray())
+        {
+            DialogueText.text += letter;
+            Thread.Sleep(50);
+            yield return null;
+        }
     }
 
     private void EndDialogue()
