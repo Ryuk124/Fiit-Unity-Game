@@ -7,7 +7,6 @@ public class LazerTpBlue : MonoBehaviour
 {
     public Vector2 point;
     public Vector2 normal;
-
     public float scale = 1;
     // Start is called before the first frame update
     void Start()
@@ -29,17 +28,18 @@ public class LazerTpBlue : MonoBehaviour
         var distanceHit = (float)(Math.Sqrt(
             (point.x - transform.position.x) * (point.x - transform.position.x)
             + (point.y - transform.position.y) * (point.y - transform.position.y)));
-        
-        if (GameObject.FindGameObjectWithTag("blue").GetComponent<telBlu>().lazerTpBlue)
+        if (GameObject.FindGameObjectWithTag("blue") == true)
         {
-            ScaleRayWithoutContact(distanceHit);
-        }
+            if (GameObject.FindGameObjectWithTag("blue").GetComponent<telBlu>().lazerTpBlue)
+            {
+                ScaleRayWithoutContact(distanceHit);
+            }
         
-        else
-        {
-            transform.localScale = new Vector2(0.4121f, 0.5f);
+            else
+            {
+                transform.localScale = new Vector2(0.4121f, 0.5f);
+            }
         }
-        
     }
     
     public void ScaleRayWithoutContact(float distanceMouse)
