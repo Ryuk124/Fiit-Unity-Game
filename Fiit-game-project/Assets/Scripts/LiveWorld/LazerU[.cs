@@ -12,16 +12,18 @@ public class LazerUP : MonoBehaviour
     public GameObject coleso;
     public Vector2 point;
     public Vector2 normal;
-    public bool getGreenPortal = false;
-    public bool getBluePortal = false;
+    public int getGreenPortal;
+    public int getBluePortal;
     public bool koleso = false;
+    public int number = 0;
     void Start()
     {
-
+        
     }
 
     void Update()
     {
+        Debug.Log(getBluePortal);
         RaycastHit2D hit = Physics2D.Raycast(startPoint.transform.position,-transform.up);
         if (hit)
         {
@@ -31,10 +33,10 @@ public class LazerUP : MonoBehaviour
         var distanceHit = (float)(Math.Sqrt(
             (point.x - startPoint.transform.position.x) * (point.x - startPoint.transform.position.x)
             + (point.y - startPoint.transform.position.y) * (point.y - startPoint.transform.position.y)));
-        Debug.Log(distanceHit);
-
-        if (coleso.transform.rotation.eulerAngles.z > 350)
+        
+        if (coleso.transform.rotation.eulerAngles.z >= 150 && coleso.transform.rotation.eulerAngles.z <= 180)
         {
+            
             ScaleRayWithoutContact(point, distanceHit);
             koleso = true;
         }
@@ -44,34 +46,10 @@ public class LazerUP : MonoBehaviour
             ScaleRayWithoutContact(point, distanceHit);
         }
     }
-
-    
-    
-    
     public void ScaleRayWithoutContact(Vector2 point, float distanceMouse)
     {
         var length = 0.994f;
         scale = distanceMouse / length;
-        Debug.Log(scale);
         startPoint.transform.localScale = new Vector2(3.116098f, scale);
-    }
-
-    public void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.CompareTag("green"))
-        {
-            getGreenPortal = true;
-        }
-        
-        if (other.gameObject.CompareTag("blue"))
-        {
-            getBluePortal = true;
-        }
-    }
-
-    public void OnTriggerExit2D(Collider2D other)
-    {
-        getGreenPortal = false;
-        getBluePortal = false;
     }
 }
