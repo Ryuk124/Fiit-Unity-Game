@@ -47,7 +47,7 @@ public class Move : MonoBehaviour
             Flip();
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded && !isAttacking)
+        if (Input.GetKeyDown(KeyCode.W) && isGrounded && !isAttacking)
             Jump();
         if (isGrounded && !isAttacking) SetState(States.afk);
         if (isGrounded && move != 0 && !isAttacking)

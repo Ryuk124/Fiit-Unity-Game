@@ -5,6 +5,8 @@ public class DeathCount : MonoBehaviour
 {
     TextMeshProUGUI text;
     public static int Enemies;
+    public GameObject Portal;
+    private int deathEnemiesForPortal = 5;
 
     void Start()
     {
@@ -14,5 +16,8 @@ public class DeathCount : MonoBehaviour
     void Update()
     {
         text.text = $"Убито: {Enemies}";
+        if (Enemies >= deathEnemiesForPortal)
+            Portal.SetActive(true);
+        else Portal.SetActive(false);
     }
 }

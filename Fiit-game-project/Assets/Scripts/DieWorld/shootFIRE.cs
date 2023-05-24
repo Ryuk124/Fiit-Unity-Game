@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ShootFire : MonoBehaviour
@@ -14,8 +11,7 @@ public class ShootFire : MonoBehaviour
             otherCollider.GetComponent<Health>().TakeDamage(damage);
             Destroy(gameObject);
         }
-        if (otherCollider.tag == "wall" || otherCollider.tag == "Ground")
+        if (otherCollider.tag == "wall" || otherCollider.tag == "Ground" || otherCollider.tag == "Border")
             Destroy(gameObject);
-
     }
 }
