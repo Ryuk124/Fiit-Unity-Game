@@ -6,7 +6,7 @@ public class DeathCount : MonoBehaviour
     TextMeshProUGUI text;
     public static int Enemies;
     public GameObject Portal;
-    private int deathEnemiesForPortal = 1;
+    private int deathEnemiesForPortal = 5;
 
     void Start()
     {
