@@ -18,11 +18,14 @@ public class Enemy : MonoBehaviour
         CurrentHealth -= damage;
 
         if (CurrentHealth <= 0)
+        {
             Die();
+        }
     }
 
     void Die()
     {
-        Destroy(gameObject,0.4f);
+        Destroy(gameObject, 0.465f);
+        DeathCount.Enemies++;
     }
 }

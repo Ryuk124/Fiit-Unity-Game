@@ -13,6 +13,7 @@ public class Health : MonoBehaviour
         if (Hp <= 0f)
         {
             Die();
+            DeathCount.Enemies = 0;
         }
     }
 
