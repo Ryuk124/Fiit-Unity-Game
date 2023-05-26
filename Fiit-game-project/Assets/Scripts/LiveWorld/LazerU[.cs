@@ -12,42 +12,44 @@ public class LazerUP : MonoBehaviour
     public GameObject coleso;
     public Vector2 point;
     public Vector2 normal;
+    public int getGreenPortal;
+    public int getBluePortal;
+    public bool koleso = false;
+    public int number = 0;
     void Start()
     {
-
+        
     }
 
     void Update()
     {
-        RaycastHit2D hit = Physics2D.Raycast(startPoint.transform.position,endPoint.transform.position);
-        Debug.DrawLine(startPoint.transform.position, endPoint.transform.position,Color.black);
-        if (!hit.collider.GameObject().CompareTag("glass"))
+        Debug.Log(getBluePortal);
+        RaycastHit2D hit = Physics2D.Raycast(startPoint.transform.position,-transform.up);
+        if (hit)
         {
             point = hit.point;
             normal = hit.normal;
         }
-        
-        
         var distanceHit = (float)(Math.Sqrt(
-            (endPoint.transform.position.x - startPoint.transform.position.x) * (endPoint.transform.position.x - startPoint.transform.position.x)
-            + (endPoint.transform.position.y - startPoint.transform.position.y) * (endPoint.transform.position.y - startPoint.transform.position.y)));
+            (point.x - startPoint.transform.position.x) * (point.x - startPoint.transform.position.x)
+            + (point.y - startPoint.transform.position.y) * (point.y - startPoint.transform.position.y)));
+        
+        if (coleso.transform.rotation.eulerAngles.z >= 150 && coleso.transform.rotation.eulerAngles.z <= 180)
+        {
+            
+            ScaleRayWithoutContact(point, distanceHit);
+            koleso = true;
+        }
 
-        if (coleso.transform.rotation.eulerAngles.z > 350)
+        if (koleso)
         {
             ScaleRayWithoutContact(point, distanceHit);
         }
-        
     }
-
-    
-    
-    
     public void ScaleRayWithoutContact(Vector2 point, float distanceMouse)
     {
         var length = 0.994f;
         scale = distanceMouse / length;
-        Debug.Log((distanceMouse));
-        Debug.Log(scale);
         startPoint.transform.localScale = new Vector2(3.116098f, scale);
     }
 }

@@ -1,13 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using System;
 public class IsTeleported : MonoBehaviour
 {
     public float Speed;
     public float UpdateDelay;
+     public Rigidbody2D rb;
 
-    public Rigidbody2D rb;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,8 +19,6 @@ public class IsTeleported : MonoBehaviour
     void Update()
     {
         StartCoroutine(SpeedReckoner());
-        
-        
     }
     
     private IEnumerator SpeedReckoner() {

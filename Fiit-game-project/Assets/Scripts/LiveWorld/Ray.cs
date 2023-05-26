@@ -16,8 +16,12 @@ public class ExampleScript : MonoBehaviour
     private GameObject cloneBlue;
     public bool greenPortal = false;
     public bool bluePortal = false;
-    public bool bothPortal = false;
     public Vector2 normal;
+    
+    [SerializeField]public bool createNowBlue = false;
+    [SerializeField]public bool createNowGreen = false;
+
+    
     void Start()
     {
 
@@ -25,7 +29,6 @@ public class ExampleScript : MonoBehaviour
 
     void Update()
     {
-        
         Vector2 cursorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         startPoint = new Vector2(start.transform.position.x, start.transform.position.y);
         RaycastHit2D hit = Physics2D.Raycast(start.transform.position,cursorPos - startPoint);
@@ -58,6 +61,7 @@ public class ExampleScript : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && greenPortal)
         {
             Destroy(cloneGreen);
+            createNowGreen = true;
             greenPortal = false;
         }
         
@@ -99,6 +103,7 @@ public class ExampleScript : MonoBehaviour
         if (Input.GetMouseButtonDown(1) && bluePortal)
         {
             Destroy(cloneBlue);
+            createNowBlue = true;
             bluePortal = false;
         }
         
@@ -152,17 +157,38 @@ public class ExampleScript : MonoBehaviour
     {
         float angleSin = (float)(Math.Asin((point.y - startPoint.y) / distanceMouse) * 180 / Math.PI);
         var rotate = start.transform.eulerAngles;
-        if (startPoint.x < point.x)
+
+        if (GameObject.FindGameObjectWithTag("Player").GetComponent<MovePlayer>().flipRight)
         {
-            rotate.z = angleSin + 180;
+            if (startPoint.x < point.x)
+            {
+                rotate.z = angleSin + 180;
+            }
+
+            else
+            {
+                rotate.z = -angleSin;
+            }
+        
+            start.transform.rotation = Quaternion.Euler(rotate);
         }
 
         else
         {
-            rotate.z = -angleSin;
+            
+            if (startPoint.x < point.x)
+            {
+                rotate.z = angleSin;
+            }
+
+            else
+            {
+                rotate.z = -angleSin + 180;
+            }
+        
+            start.transform.rotation = Quaternion.Euler(rotate);
         }
         
-        start.transform.rotation = Quaternion.Euler(rotate);
     }
     
 }

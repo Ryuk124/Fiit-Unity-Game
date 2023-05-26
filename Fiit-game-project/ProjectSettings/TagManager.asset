@@ -16,6 +16,7 @@ TagManager:
   - Koleso
   - glass
   - lazer
+  - ray
   layers:
   - Default
   - TransparentFX

@@ -7,11 +7,16 @@ using UnityEngine;
 public class telGR : MonoBehaviour
 {
     public bool trig;
-    public int number = 0;
+    public bool exit;
     private Transform destination;
     public bool teleportedGreen;
-
     public bool lazerTpGreen = false;
+    public float deltaX;
+    public float deltaY;
+    public float x;
+    public float y;
+
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -21,93 +26,100 @@ public class telGR : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        destination = GameObject.FindGameObjectWithTag("blue").GetComponent<Transform>();
+        
     }
     
     public void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("lazer") &&
-            !GameObject.FindGameObjectWithTag("blue").GetComponent<telBlu>().lazerTpBlue)
+        if (other.gameObject.CompareTag("lazer") && !GameObject.FindGameObjectWithTag("blue").GetComponent<telBlu>().lazerTpBlue)
         {
             lazerTpGreen = true;
         }
-
-        else
+        if (GameObject.FindGameObjectWithTag("blue") == true)
         {
-            lazerTpGreen = false;
+            if (!other.gameObject.CompareTag("wall") && !other.gameObject.CompareTag("Player") && !other.gameObject.CompareTag("lazer"))
+            {
+                deltaX = Mathf.Abs(other.bounds.center.x - other.bounds.max.x);
+                deltaY = Mathf.Abs(other.bounds.center.y - other.bounds.max.y);
+                trig = true;
+                if (GameObject.FindGameObjectWithTag("blue").GetComponent<telBlu>().teleportedBlue == false)
+                {
+                    Teleport(other);
+                    Debug.Log("sdsds");
+                    exit = false;
+                }
+            
+                else if (GameObject.FindGameObjectWithTag("blue").GetComponent<telBlu>().teleportedBlue == true)
+                {
+                    if (exit == true || GameObject.FindGameObjectWithTag("ray").GetComponent<ExampleScript>().createNowGreen == true)
+                    {
+                        Teleport(other);
+                        GameObject.FindGameObjectWithTag("blue").GetComponent<telBlu>().teleportedBlue = false;
+                        trig = false;
+                        exit = false;
+                    }
+                }
+                //Debug.Log(other.bounds.center.y - other.bounds.max.y +  "DELTAAAAYYYYYYYYYYYYYYY");
+                //Debug.Log(other.bounds.center.x - other.bounds.max.x + "DELTAAAAXXXXXXXXXXXXXXXXXXXXXX");
+            
+            }
         }
-        
-        if (!other.gameObject.CompareTag("wall") &&
-            !other.gameObject.CompareTag("lazer"))
-        {
-            trig = true;
-            number += 1;
-        }
-        
-        if (!other.gameObject.CompareTag("wall") &&  
-            !GameObject.FindGameObjectWithTag("blue").GetComponent<telBlu>().teleportedBlue &&
-            !other.gameObject.CompareTag("lazer"))
-        {
-            Teleport(other);
-        }
-        
-        else if(!other.gameObject.CompareTag("wall") && 
-                GameObject.FindGameObjectWithTag("blue").GetComponent<telBlu>().teleportedBlue &&
-                trig == false &&
-                !other.gameObject.CompareTag("lazer"))
-        {
-            Teleport(other);
-        }
-          
-        
     } 
     
     public void OnTriggerExit2D(Collider2D other)
     {
-        GameObject.FindGameObjectWithTag("blue").GetComponent<telBlu>().teleportedBlue = false;
-        trig = false;
-        number = 0;
+        if (!other.gameObject.CompareTag("wall") && !other.gameObject.CompareTag("Player") && !other.gameObject.CompareTag("lazer"))
+        {
+            if (teleportedGreen == false)
+            {
+                exit = true;
+            }
+        }
+        
+        lazerTpGreen = false;
+
     }
 
     public void Teleport(Collider2D other)
     {
+        GameObject.FindGameObjectWithTag("ray").GetComponent<ExampleScript>().createNowGreen = false;
+        GameObject.FindGameObjectWithTag("blue").GetComponent<telBlu>().exit = false;
+        teleportedGreen = true;
+        
+        
+        destination = GameObject.FindGameObjectWithTag("blue").GetComponent<Transform>();
+        x = destination.position.x;
+        y = destination.position.y;
         var rot = GameObject.FindGameObjectWithTag("blue").transform.rotation.eulerAngles.z;
-        //other.transform.rotation = rot;
-        other.transform.position = new Vector2(destination.position.x, destination.position.y);
         var rbObject = other.GetComponent<IsTeleported>().rb;
         var speed = other.GetComponent<IsTeleported>().Speed;
-        if (rot == 180)
+        Debug.Log(x + "GREEEEEEEEEEEEEEEN");
+        Debug.Log(y + "GREEEEEEEEEEEEEN");
+        if (rot == 0)
         {
-            rbObject.AddForce(transform.up * speed, ForceMode2D.Impulse);
-        }
-        
-        else if (rot == 0)
-        {
+            other.gameObject.transform.position = new Vector2(x + deltaX, y);
             rbObject.AddForce(-transform.up * speed, ForceMode2D.Impulse);
         }
         
-        else if (rot == 90)
-        { 
-            Debug.Log(speed);
-            if (speed >= 70)
-            {
-                rbObject.AddForce(transform.right * (speed + 100), ForceMode2D.Impulse);
-            }
-            
-            else if (speed <= 20)
-            {
-                rbObject.AddForce(transform.right * (speed), ForceMode2D.Impulse);
-            }
-            
-            else
-            {
-                rbObject.AddForce(transform.right * (speed + 30), ForceMode2D.Impulse);
-            }
-            
-            
+        else if (rot == 180)
+        {
+            other.gameObject.transform.position = new Vector2(x - deltaX, y);
+            rbObject.AddForce(transform.up * speed, ForceMode2D.Impulse);
         }
-        teleportedGreen = true;
-        trig = true; 
-        number = 0;
+        
+        else if (rot == 90)
+        {
+            
+            other.gameObject.transform.position = new Vector2(x, y + deltaY);
+            rbObject.AddForce(transform.right * speed*1.5f, ForceMode2D.Impulse);
+        }
+        
+        else if (rot == 270)
+        {
+            other.gameObject.transform.position = new Vector2(x, y - deltaY);
+        }
+        
+        
     }
 }
+
