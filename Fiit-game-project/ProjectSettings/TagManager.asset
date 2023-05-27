@@ -19,6 +19,7 @@ TagManager:
   - ray
   - rope
   - key
+  - KEY
   layers:
   - Default
   - TransparentFX

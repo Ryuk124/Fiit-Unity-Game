@@ -37,7 +37,7 @@ public class telGR : MonoBehaviour
         }
         if (GameObject.FindGameObjectWithTag("blue") == true)
         {
-            if (!other.gameObject.CompareTag("wall") && !other.gameObject.CompareTag("Player") && !other.gameObject.CompareTag("lazer"))
+            if (!other.gameObject.CompareTag("wall") && !other.gameObject.CompareTag("Player") && !other.gameObject.CompareTag("lazer") && !other.gameObject.CompareTag("key") && !other.gameObject.CompareTag("rope"))
             {
                 deltaX = Mathf.Abs(other.bounds.center.x - other.bounds.max.x);
                 deltaY = Mathf.Abs(other.bounds.center.y - other.bounds.max.y);

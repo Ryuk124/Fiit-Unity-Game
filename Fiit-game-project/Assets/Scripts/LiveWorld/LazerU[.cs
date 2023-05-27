@@ -16,6 +16,7 @@ public class LazerUP : MonoBehaviour
     public int getBluePortal;
     public bool koleso = false;
     public int number = 0;
+    public GameObject player;
     void Start()
     {
         
@@ -56,7 +57,7 @@ public class LazerUP : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            Debug.Log("xixixixixii");
+            player.transform.position = new Vector2(-15, 2.4f);
         }
     }
 }

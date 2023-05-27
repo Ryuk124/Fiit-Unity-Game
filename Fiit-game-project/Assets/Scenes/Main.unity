@@ -2968,7 +2968,7 @@ Transform:
   - {fileID: 1230392753}
   - {fileID: 460764632}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &161716180
 GameObject:
@@ -6768,13 +6768,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9482ce6e7e05d4b428dac2e8f66ca85c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  kostl: 0
-  afterJump: 0
+  IsAgred: 0
+  IsJump: 0
+  PlayerCoordinate: {x: 0, y: 0, z: 0}
+  SlugCoordinate: {x: 0, y: 0, z: 0}
+  SoundAfterJump: {fileID: 0}
   jumpForce: 12
   isGrounded: 0
-  playerCoordinate: {x: 0, y: 0, z: 0}
-  slugCoordinate: {x: 0, y: 0, z: 0}
-  soundAfterJump: {fileID: 0}
 --- !u!1001 &358043006
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10334,7 +10334,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SoundOfMove: {fileID: 572040325}
-  soundOfHit: {fileID: 572040324}
+  SoundOfHit: {fileID: 0}
   Wait: 0
   flipRight: 1
   AttackPoint: {fileID: 738280484}
@@ -12740,13 +12740,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9482ce6e7e05d4b428dac2e8f66ca85c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  kostl: 0
-  afterJump: 0
+  IsAgred: 0
+  IsJump: 0
+  PlayerCoordinate: {x: 0, y: 0, z: 0}
+  SlugCoordinate: {x: 0, y: 0, z: 0}
+  SoundAfterJump: {fileID: 0}
   jumpForce: 12
   isGrounded: 0
-  playerCoordinate: {x: 0, y: 0, z: 0}
-  slugCoordinate: {x: 0, y: 0, z: 0}
-  soundAfterJump: {fileID: 0}
 --- !u!114 &682320414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15919,7 +15919,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bcf22e59ad3b154a849c9ab40a58805, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 5
+  maxSpeed: 7
   isGrounded: 0
   jumpForce: 30
   isRecharged: 1
@@ -25229,7 +25229,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SoundOfMove: {fileID: 1322379201}
-  soundOfHit: {fileID: 1322379200}
+  SoundOfHit: {fileID: 0}
   Wait: 0
   flipRight: 1
   AttackPoint: {fileID: 513619353}
@@ -33043,13 +33043,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9482ce6e7e05d4b428dac2e8f66ca85c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  kostl: 0
-  afterJump: 0
+  IsAgred: 0
+  IsJump: 0
+  PlayerCoordinate: {x: 0, y: 0, z: 0}
+  SlugCoordinate: {x: 0, y: 0, z: 0}
+  SoundAfterJump: {fileID: 0}
   jumpForce: 12
   isGrounded: 0
-  playerCoordinate: {x: 0, y: 0, z: 0}
-  slugCoordinate: {x: 0, y: 0, z: 0}
-  soundAfterJump: {fileID: 0}
 --- !u!114 &1696175474
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34656,7 +34656,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SoundOfMove: {fileID: 1746062919}
-  soundOfHit: {fileID: 1746062918}
+  SoundOfHit: {fileID: 0}
   Wait: 0
   flipRight: 1
   AttackPoint: {fileID: 2124645382}
@@ -36862,7 +36862,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SoundOfMove: {fileID: 1831641605}
-  soundOfHit: {fileID: 1831641604}
+  SoundOfHit: {fileID: 0}
   Wait: 0
   flipRight: 1
   AttackPoint: {fileID: 451570636}
@@ -40530,13 +40530,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9482ce6e7e05d4b428dac2e8f66ca85c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  kostl: 0
-  afterJump: 0
+  IsAgred: 0
+  IsJump: 0
+  PlayerCoordinate: {x: 0, y: 0, z: 0}
+  SlugCoordinate: {x: 0, y: 0, z: 0}
+  SoundAfterJump: {fileID: 0}
   jumpForce: 12
   isGrounded: 0
-  playerCoordinate: {x: 0, y: 0, z: 0}
-  slugCoordinate: {x: 0, y: 0, z: 0}
-  soundAfterJump: {fileID: 0}
 --- !u!114 &2036455156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42626,6 +42626,68 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2113267162 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 976300425769904148, guid: c509cfc116d50f248a0bf8b8598e1d0d, type: 3}
+  m_PrefabInstance: {fileID: 4106219756930448231}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &2113267163
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2113267162}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.1, y: 5.9}
+    newSize: {x: 3.1, y: 5.9}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.1, y: 5.9}
+  m_EdgeRadius: 0
+--- !u!114 &2113267168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2113267162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b95fb90640dc1b24cb07d36c858d41be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2116319583
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43446,7 +43508,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 976300425769904148, guid: c509cfc116d50f248a0bf8b8598e1d0d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2113267163}
+    - targetCorrespondingSourceObject: {fileID: 976300425769904148, guid: c509cfc116d50f248a0bf8b8598e1d0d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2113267168}
   m_SourcePrefab: {fileID: 100100000, guid: c509cfc116d50f248a0bf8b8598e1d0d, type: 3}
 --- !u!1001 &7294380888851362021
 PrefabInstance:

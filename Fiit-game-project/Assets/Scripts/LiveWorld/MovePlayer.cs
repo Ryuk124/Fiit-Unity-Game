@@ -107,6 +107,7 @@ public class MovePlayer : MonoBehaviour
         yield return new WaitForSeconds(0.3f);
         isAttack = false;
     }
+    
 }
 
 public enum StatesMove

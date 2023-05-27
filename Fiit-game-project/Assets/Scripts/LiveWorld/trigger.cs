@@ -25,7 +25,7 @@ public class trigger : MonoBehaviour
         {
             Debug.Log("AAAAAAAAAAAAAAA");
             key.GetComponent<DistanceJoint2D>().connectedBody = lastRope;
-            key.tag = "Untagged";
+            key.tag = "KEY";
             Destroy(this.gameObject);
             
         }
