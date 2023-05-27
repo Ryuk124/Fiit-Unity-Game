@@ -23,7 +23,6 @@ public class LazerUP : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(coleso.transform.rotation.eulerAngles.z);
         RaycastHit2D hit = Physics2D.Raycast(startPoint.transform.position,-transform.up);
         if (hit)
         {
@@ -51,5 +50,13 @@ public class LazerUP : MonoBehaviour
         var length = 0.994f;
         scale = distanceMouse / length;
         startPoint.transform.localScale = new Vector2(3.116098f, scale);
+    }
+    
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            Debug.Log("xixixixixii");
+        }
     }
 }

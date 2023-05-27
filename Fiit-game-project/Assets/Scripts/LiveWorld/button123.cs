@@ -25,7 +25,6 @@ public class button : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            Debug.Log("FGDFSGDGG");
             luk.GetComponent<lukopen>().open = true;
             Destroy(button1);
             Instantiate(button2, new Vector3(-30.4431f,-46.46f,0),Quaternion.identity);

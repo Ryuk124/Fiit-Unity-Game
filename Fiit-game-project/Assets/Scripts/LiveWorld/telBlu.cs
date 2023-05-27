@@ -60,7 +60,7 @@ public class telBlu : MonoBehaviour
     public void OnTriggerExit2D(Collider2D other)
     {
         if (!other.gameObject.CompareTag("wall") && !other.gameObject.CompareTag("Player") &&
-            !other.gameObject.CompareTag("lazer"))
+            !other.gameObject.CompareTag("lazer")  && !other.gameObject.CompareTag("rope") && !other.gameObject.CompareTag("key"))
         {
             if (teleportedBlue == false)
             {
@@ -84,8 +84,6 @@ public class telBlu : MonoBehaviour
         var rbObject = other.GetComponent<IsTeleported>().rb;
         var speed = other.GetComponent<IsTeleported>().Speed;
         var obj = other.gameObject;
-        Debug.Log(x + "BLUUUUUUUUUUU");
-        Debug.Log(y + "BLUUUUUUUUUUUUUU");
         if (rot == 0)
         {
             other.gameObject.transform.position =

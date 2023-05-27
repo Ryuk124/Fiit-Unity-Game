@@ -17,6 +17,8 @@ TagManager:
   - glass
   - lazer
   - ray
+  - rope
+  - key
   layers:
   - Default
   - TransparentFX

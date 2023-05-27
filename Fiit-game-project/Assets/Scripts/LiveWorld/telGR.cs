@@ -45,7 +45,6 @@ public class telGR : MonoBehaviour
                 if (GameObject.FindGameObjectWithTag("blue").GetComponent<telBlu>().teleportedBlue == false)
                 {
                     Teleport(other);
-                    Debug.Log("sdsds");
                     exit = false;
                 }
             
@@ -59,8 +58,7 @@ public class telGR : MonoBehaviour
                         exit = false;
                     }
                 }
-                //Debug.Log(other.bounds.center.y - other.bounds.max.y +  "DELTAAAAYYYYYYYYYYYYYYY");
-                //Debug.Log(other.bounds.center.x - other.bounds.max.x + "DELTAAAAXXXXXXXXXXXXXXXXXXXXXX");
+                
             
             }
         }
@@ -68,7 +66,7 @@ public class telGR : MonoBehaviour
     
     public void OnTriggerExit2D(Collider2D other)
     {
-        if (!other.gameObject.CompareTag("wall") && !other.gameObject.CompareTag("Player") && !other.gameObject.CompareTag("lazer"))
+        if (!other.gameObject.CompareTag("wall") && !other.gameObject.CompareTag("Player") && !other.gameObject.CompareTag("lazer") && !other.gameObject.CompareTag("rope") && !other.gameObject.CompareTag("key"))
         {
             if (teleportedGreen == false)
             {
@@ -93,8 +91,6 @@ public class telGR : MonoBehaviour
         var rot = GameObject.FindGameObjectWithTag("blue").transform.rotation.eulerAngles.z;
         var rbObject = other.GetComponent<IsTeleported>().rb;
         var speed = other.GetComponent<IsTeleported>().Speed;
-        Debug.Log(x + "GREEEEEEEEEEEEEEEN");
-        Debug.Log(y + "GREEEEEEEEEEEEEN");
         if (rot == 0)
         {
             other.gameObject.transform.position = new Vector2(x + deltaX, y);
