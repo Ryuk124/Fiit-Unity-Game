@@ -8,14 +8,18 @@ public class MovePlayer : MonoBehaviour
     public float maxSpeed = 10f;
     private Rigidbody2D rb;
     public bool flipRight = true;
+    public bool isMoving = false;
+    public bool isAttack = false;
+    private Animator anim;
     [SerializeField] private bool isGrounded = false;
     [SerializeField] private float jumpForce = 0.01f;
 
-
+    private void SetState(StatesMove value) => anim.SetInteger("state", (int)value);
 
     // Start is called before the first frame update
-    private void Awake()
+    private void Awake()    
     {
+        anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
     }
     void Start()
@@ -36,10 +40,39 @@ public class MovePlayer : MonoBehaviour
         {
             Flip();
         }
-
+        
+        if (move == 0) isMoving = false;
+        
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             Jump();
+        }
+
+        if (isGrounded && !isMoving && !isAttack)
+        {
+            SetState(StatesMove.afk);
+        }
+        
+        if (isGrounded && move != 0)
+        {
+            isMoving = true;
+            SetState(StatesMove.run);
+        }
+
+        if (move == 0) isMoving = false;
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            isAttack = true;
+            SetState(StatesMove.hitleft);
+            StartCoroutine(AttackAnimation());
+        }
+        
+        if (Input.GetMouseButtonDown(1))
+        {
+            isAttack = true;
+            SetState(StatesMove.hitright);
+            StartCoroutine(AttackAnimation());
         }
     }
     
@@ -55,6 +88,7 @@ public class MovePlayer : MonoBehaviour
     private void OnCollisionExit2D(Collision2D collision)
     {
         isGrounded = false;
+        SetState(StatesMove.jump);
     }
     private void Jump()
     {
@@ -67,4 +101,19 @@ public class MovePlayer : MonoBehaviour
         theScale.x *= -1;
         transform.localScale = theScale;
     }
+    
+    private IEnumerator AttackAnimation()
+    {
+        yield return new WaitForSeconds(0.3f);
+        isAttack = false;
+    }
+}
+
+public enum StatesMove
+{
+    afk,
+    jump,
+    run,
+    hitleft,
+    hitright
 }

@@ -23,7 +23,7 @@ public class LazerUP : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(getBluePortal);
+        Debug.Log(coleso.transform.rotation.eulerAngles.z);
         RaycastHit2D hit = Physics2D.Raycast(startPoint.transform.position,-transform.up);
         if (hit)
         {
@@ -34,7 +34,7 @@ public class LazerUP : MonoBehaviour
             (point.x - startPoint.transform.position.x) * (point.x - startPoint.transform.position.x)
             + (point.y - startPoint.transform.position.y) * (point.y - startPoint.transform.position.y)));
         
-        if (coleso.transform.rotation.eulerAngles.z >= 150 && coleso.transform.rotation.eulerAngles.z <= 180)
+        if (coleso.transform.rotation.eulerAngles.z >= 300 && coleso.transform.rotation.eulerAngles.z <= 330)
         {
             
             ScaleRayWithoutContact(point, distanceHit);
