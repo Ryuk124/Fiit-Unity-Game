@@ -16,7 +16,7 @@ public class telGR : MonoBehaviour
     public float x;
     public float y;
 
-    
+    public GameObject main;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,7 +35,7 @@ public class telGR : MonoBehaviour
         {
             lazerTpGreen = true;
         }
-        if (GameObject.FindGameObjectWithTag("blue") == true)
+        if (GameObject.FindGameObjectWithTag("blue") == true && main.transform.localScale.y <= 0.7f)
         {
             if (!other.gameObject.CompareTag("wall") && !other.gameObject.CompareTag("Player") && !other.gameObject.CompareTag("lazer") && !other.gameObject.CompareTag("key") && !other.gameObject.CompareTag("rope"))
             {
@@ -44,7 +44,6 @@ public class telGR : MonoBehaviour
                 trig = true;
                 if (GameObject.FindGameObjectWithTag("blue").GetComponent<telBlu>().teleportedBlue == false)
                 {
-                    Debug.Log("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAaaa");
                     Teleport(other);
                     exit = false;
                 }

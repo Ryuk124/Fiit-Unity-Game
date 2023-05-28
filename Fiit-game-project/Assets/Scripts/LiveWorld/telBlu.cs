@@ -14,6 +14,8 @@ public class telBlu : MonoBehaviour
     public float deltaY;
     public float x;
     public float y;
+
+    public GameObject main;
     void Start()
     {
 
@@ -29,7 +31,7 @@ public class telBlu : MonoBehaviour
             lazerTpBlue = true;
         }
 
-        if (GameObject.FindGameObjectWithTag("green") == true)
+        if (GameObject.FindGameObjectWithTag("green") == true && main.transform.localScale.y <= 0.7f)
         {
             if (!other.gameObject.CompareTag("wall") && !other.gameObject.CompareTag("Player") &&
                 !other.gameObject.CompareTag("lazer") && !other.gameObject.CompareTag("key") && !other.gameObject.CompareTag("rope"))

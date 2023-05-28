@@ -26,7 +26,7 @@ public class ButtonKey : MonoBehaviour
             if (other.gameObject.CompareTag("KEY"))
             {
                 Destroy(button1);
-                Instantiate(button2, new Vector3(57.27f,-46.35f,0),Quaternion.identity);
+                Instantiate(button2, new Vector3(53.7f,-46.35f,0),Quaternion.identity);
                 Instantiate(door1, new Vector3(42.5969f,-42.59f,0),Quaternion.identity);
                 door2.GetComponent<Collider2D>().enabled = false;
                 

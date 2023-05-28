@@ -6025,7 +6025,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -4
   m_Sprite: {fileID: 21300000, guid: 7ffd73fb6b3cc424d9aec71a9dea1c4a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -6142,7 +6142,6 @@ GameObject:
   - component: {fileID: 460485592}
   - component: {fileID: 460485593}
   - component: {fileID: 460485594}
-  - component: {fileID: 460485595}
   m_Layer: 0
   m_Name: "\u0432\u0435\u0440\u0435\u0432\u043A\u0430 (2)"
   m_TagString: rope
@@ -6333,20 +6332,6 @@ PolygonCollider2D:
       - {x: 0.1852234, y: -0.44712883}
       - {x: 0.30189008, y: -0.46379548}
   m_UseDelaunayMesh: 0
---- !u!114 &460485595
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 460485587}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b84644fa2008a6a4887ad9b758d47b12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: {fileID: 775272644}
-  lastRope: {fileID: 775272650}
 --- !u!1 &465427643
 GameObject:
   m_ObjectHideFlags: 0
@@ -7047,7 +7032,6 @@ GameObject:
   - component: {fileID: 495813175}
   - component: {fileID: 495813176}
   - component: {fileID: 495813177}
-  - component: {fileID: 495813178}
   m_Layer: 0
   m_Name: "\u0432\u0435\u0440\u0435\u0432\u043A\u0430 (5)"
   m_TagString: rope
@@ -7238,20 +7222,6 @@ PolygonCollider2D:
       - {x: 0.1852234, y: -0.44712883}
       - {x: 0.30189008, y: -0.46379548}
   m_UseDelaunayMesh: 0
---- !u!114 &495813178
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 495813170}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b84644fa2008a6a4887ad9b758d47b12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: {fileID: 775272644}
-  lastRope: {fileID: 775272650}
 --- !u!1 &495928422
 GameObject:
   m_ObjectHideFlags: 0
@@ -7685,7 +7655,6 @@ GameObject:
   - component: {fileID: 511568612}
   - component: {fileID: 511568613}
   - component: {fileID: 511568614}
-  - component: {fileID: 511568615}
   m_Layer: 0
   m_Name: "\u0432\u0435\u0440\u0435\u0432\u043A\u0430 (4)"
   m_TagString: rope
@@ -7876,20 +7845,6 @@ PolygonCollider2D:
       - {x: 0.1852234, y: -0.44712883}
       - {x: 0.30189008, y: -0.46379548}
   m_UseDelaunayMesh: 0
---- !u!114 &511568615
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 511568607}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b84644fa2008a6a4887ad9b758d47b12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: {fileID: 775272644}
-  lastRope: {fileID: 775272650}
 --- !u!1 &511800304
 GameObject:
   m_ObjectHideFlags: 0
@@ -10152,7 +10107,7 @@ GameObject:
   - component: {fileID: 758461903}
   m_Layer: 0
   m_Name: "\u041A\u043D\u043E\u043F\u043A\u04302 (1)"
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11941,7 +11896,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -5
+  m_SortingOrder: -12
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -15522,7 +15477,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -4
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 47a490eca61b2174c8b5e7c287535a13, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -15775,7 +15730,6 @@ GameObject:
   - component: {fileID: 1208088122}
   - component: {fileID: 1208088123}
   - component: {fileID: 1208088124}
-  - component: {fileID: 1208088125}
   m_Layer: 0
   m_Name: "\u0432\u0435\u0440\u0435\u0432\u043A\u0430 (6)"
   m_TagString: rope
@@ -15966,20 +15920,6 @@ PolygonCollider2D:
       - {x: 0.1852234, y: -0.44712883}
       - {x: 0.30189008, y: -0.46379548}
   m_UseDelaunayMesh: 0
---- !u!114 &1208088125
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1208088117}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b84644fa2008a6a4887ad9b758d47b12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: {fileID: 775272644}
-  lastRope: {fileID: 775272650}
 --- !u!1 &1209107516
 GameObject:
   m_ObjectHideFlags: 0
@@ -19377,7 +19317,6 @@ GameObject:
   - component: {fileID: 1552258605}
   - component: {fileID: 1552258606}
   - component: {fileID: 1552258607}
-  - component: {fileID: 1552258608}
   m_Layer: 0
   m_Name: "\u0432\u0435\u0440\u0435\u0432\u043A\u0430 (3)"
   m_TagString: rope
@@ -19568,20 +19507,6 @@ PolygonCollider2D:
       - {x: 0.1852234, y: -0.44712883}
       - {x: 0.30189008, y: -0.46379548}
   m_UseDelaunayMesh: 0
---- !u!114 &1552258608
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1552258600}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b84644fa2008a6a4887ad9b758d47b12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: {fileID: 775272644}
-  lastRope: {fileID: 775272650}
 --- !u!1 &1562764689
 GameObject:
   m_ObjectHideFlags: 0
@@ -21611,7 +21536,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -5
+  m_SortingOrder: -12
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -21804,10 +21729,9 @@ GameObject:
   - component: {fileID: 1788870306}
   - component: {fileID: 1788870307}
   - component: {fileID: 1788870308}
-  - component: {fileID: 1788870309}
   m_Layer: 0
   m_Name: "\u0432\u0435\u0440\u0435\u0432\u043A\u0430 (1)"
-  m_TagString: key
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21995,20 +21919,6 @@ PolygonCollider2D:
       - {x: 0.1852234, y: -0.44712883}
       - {x: 0.30189008, y: -0.46379548}
   m_UseDelaunayMesh: 0
---- !u!114 &1788870309
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1788870301}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b84644fa2008a6a4887ad9b758d47b12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: {fileID: 775272644}
-  lastRope: {fileID: 775272650}
 --- !u!1 &1791006069
 GameObject:
   m_ObjectHideFlags: 0
@@ -22634,7 +22544,6 @@ GameObject:
   - component: {fileID: 1809133059}
   - component: {fileID: 1809133058}
   - component: {fileID: 1809133060}
-  - component: {fileID: 1809133061}
   m_Layer: 0
   m_Name: "\u0432\u0435\u0440\u0435\u0432\u043A\u0430 (7)"
   m_TagString: lastRope
@@ -22825,20 +22734,6 @@ PolygonCollider2D:
       - {x: 0.1852234, y: -0.44712883}
       - {x: 0.30189008, y: -0.46379548}
   m_UseDelaunayMesh: 0
---- !u!114 &1809133061
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1809133053}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b84644fa2008a6a4887ad9b758d47b12, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  key: {fileID: 775272644}
-  lastRope: {fileID: 775272650}
 --- !u!1 &1811050392
 GameObject:
   m_ObjectHideFlags: 0
@@ -23905,7 +23800,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -5
+  m_SortingOrder: -12
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -24015,7 +23910,7 @@ GameObject:
   - component: {fileID: 1912621882}
   m_Layer: 0
   m_Name: "\u041A\u043D\u043E\u043F\u043A\u04302"
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

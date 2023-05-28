@@ -201,6 +201,7 @@ MonoBehaviour:
   deltaY: 0
   x: 0
   y: 0
+  main: {fileID: 3847588032725199922}
 --- !u!50 &8553267837135035934
 Rigidbody2D:
   serializedVersion: 4

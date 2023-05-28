@@ -26,6 +26,7 @@ public class lazerKill : MonoBehaviour
 
         if (other.gameObject.CompareTag("rope"))
         {
+            Debug.Log("DASDDDDDDDDDDDD");
             var key = GameObject.FindGameObjectWithTag("key");
             var lastrope = GameObject.FindGameObjectWithTag("lastRope");
             lastrope.GetComponent<HingeJoint2D>().connectedBody = lastrope.GetComponent<Rigidbody2D>();
