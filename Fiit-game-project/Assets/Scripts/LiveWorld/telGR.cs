@@ -44,6 +44,7 @@ public class telGR : MonoBehaviour
                 trig = true;
                 if (GameObject.FindGameObjectWithTag("blue").GetComponent<telBlu>().teleportedBlue == false)
                 {
+                    Debug.Log("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAaaa");
                     Teleport(other);
                     exit = false;
                 }
@@ -93,26 +94,26 @@ public class telGR : MonoBehaviour
         var speed = other.GetComponent<IsTeleported>().Speed;
         if (rot == 0)
         {
-            other.gameObject.transform.position = new Vector2(x + deltaX, y);
+            other.gameObject.transform.position = new Vector2(x + deltaX + 3, y);
             rbObject.AddForce(-transform.up * speed, ForceMode2D.Impulse);
         }
         
         else if (rot == 180)
         {
-            other.gameObject.transform.position = new Vector2(x - deltaX, y);
+            other.gameObject.transform.position = new Vector2(x - deltaX - 3, y);
             rbObject.AddForce(transform.up * speed, ForceMode2D.Impulse);
         }
         
         else if (rot == 90)
         {
             
-            other.gameObject.transform.position = new Vector2(x, y + deltaY);
+            other.gameObject.transform.position = new Vector2(x, y + deltaY + 3);
             rbObject.AddForce(transform.right * speed*1.5f, ForceMode2D.Impulse);
         }
         
         else if (rot == 270)
         {
-            other.gameObject.transform.position = new Vector2(x, y - deltaY);
+            other.gameObject.transform.position = new Vector2(x, y - deltaY - 3);
         }
         
         

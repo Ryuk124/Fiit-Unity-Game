@@ -21,11 +21,13 @@ public class trigger : MonoBehaviour
     
     public void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("lazer"))
+        if (other.gameObject.CompareTag("Lazer"))
         {
-            Debug.Log("AAAAAAAAAAAAAAA");
+            Debug.Log(key.GetComponent<DistanceJoint2D>().connectedBody);
+            Debug.Log(key.GetComponent<DistanceJoint2D>().connectedBody);
             key.GetComponent<DistanceJoint2D>().connectedBody = lastRope;
             key.tag = "KEY";
+            Debug.Log("DESTROY");
             Destroy(this.gameObject);
             
         }

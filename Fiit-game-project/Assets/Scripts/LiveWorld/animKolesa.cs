@@ -26,7 +26,6 @@ public class animKolesa : MonoBehaviour
         {
             oneTime = false;
             GetComponent<Animator>().enabled = true;
-            Debug.Log(transform.rotation.eulerAngles.z);
             State = StatesColesa.start;
             
         }

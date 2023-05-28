@@ -26,7 +26,6 @@ public class telBlu : MonoBehaviour
     {
         if (other.gameObject.CompareTag("lazer") && !GameObject.FindGameObjectWithTag("green").GetComponent<telGR>().lazerTpGreen)
         {
-            Debug.Log(lazerTpBlue);
             lazerTpBlue = true;
         }
 
@@ -87,14 +86,14 @@ public class telBlu : MonoBehaviour
         if (rot == 0)
         {
             other.gameObject.transform.position =
-                new Vector2(x + deltaX, y);
+                new Vector2(x + deltaX + 3, y);
             rbObject.AddForce(-transform.up * speed, ForceMode2D.Impulse);
         }
 
         else if (rot == 180)
         {
             other.gameObject.transform.position =
-                new Vector2(x - deltaX, y);
+                new Vector2(x - deltaX - 3, y);
             rbObject.AddForce(transform.up * speed, ForceMode2D.Impulse);
         }
 
@@ -103,7 +102,7 @@ public class telBlu : MonoBehaviour
             
             
             obj.transform.position =
-                new Vector2(x, y + deltaY);
+                new Vector2(x, y + deltaY + 3);
             
             rbObject.AddForce(transform.right * speed * 1.5f, ForceMode2D.Impulse);
         }
@@ -111,7 +110,7 @@ public class telBlu : MonoBehaviour
         else if (rot == 270)
         {
             other.gameObject.transform.position =
-                new Vector2(x, y - deltaY);
+                new Vector2(x, y - deltaY - 3);
         }
     }
 }    
