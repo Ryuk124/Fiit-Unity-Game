@@ -14,6 +14,8 @@ public class telBlu : MonoBehaviour
     public float deltaY;
     public float x;
     public float y;
+
+    public GameObject main;
     void Start()
     {
 
@@ -26,14 +28,13 @@ public class telBlu : MonoBehaviour
     {
         if (other.gameObject.CompareTag("lazer") && !GameObject.FindGameObjectWithTag("green").GetComponent<telGR>().lazerTpGreen)
         {
-            Debug.Log(lazerTpBlue);
             lazerTpBlue = true;
         }
 
-        if (GameObject.FindGameObjectWithTag("green") == true)
+        if (GameObject.FindGameObjectWithTag("green") == true && main.transform.localScale.y <= 0.7f)
         {
             if (!other.gameObject.CompareTag("wall") && !other.gameObject.CompareTag("Player") &&
-                !other.gameObject.CompareTag("lazer"))
+                !other.gameObject.CompareTag("lazer") && !other.gameObject.CompareTag("key") && !other.gameObject.CompareTag("rope"))
             {
                 deltaX = Mathf.Abs(other.bounds.center.x - other.bounds.max.x);
                 deltaY = Mathf.Abs(other.bounds.center.y - other.bounds.max.y);
@@ -60,7 +61,7 @@ public class telBlu : MonoBehaviour
     public void OnTriggerExit2D(Collider2D other)
     {
         if (!other.gameObject.CompareTag("wall") && !other.gameObject.CompareTag("Player") &&
-            !other.gameObject.CompareTag("lazer"))
+            !other.gameObject.CompareTag("lazer") && !other.gameObject.CompareTag("lazer") && !other.gameObject.CompareTag("rope") && !other.gameObject.CompareTag("key"))
         {
             if (teleportedBlue == false)
             {
@@ -84,19 +85,17 @@ public class telBlu : MonoBehaviour
         var rbObject = other.GetComponent<IsTeleported>().rb;
         var speed = other.GetComponent<IsTeleported>().Speed;
         var obj = other.gameObject;
-        Debug.Log(x + "BLUUUUUUUUUUU");
-        Debug.Log(y + "BLUUUUUUUUUUUUUU");
         if (rot == 0)
         {
             other.gameObject.transform.position =
-                new Vector2(x + deltaX, y);
+                new Vector2(x + deltaX + 3, y);
             rbObject.AddForce(-transform.up * speed, ForceMode2D.Impulse);
         }
 
         else if (rot == 180)
         {
             other.gameObject.transform.position =
-                new Vector2(x - deltaX, y);
+                new Vector2(x - deltaX - 3, y);
             rbObject.AddForce(transform.up * speed, ForceMode2D.Impulse);
         }
 
@@ -105,7 +104,7 @@ public class telBlu : MonoBehaviour
             
             
             obj.transform.position =
-                new Vector2(x, y + deltaY);
+                new Vector2(x, y + deltaY + 3);
             
             rbObject.AddForce(transform.right * speed * 1.5f, ForceMode2D.Impulse);
         }
@@ -113,7 +112,7 @@ public class telBlu : MonoBehaviour
         else if (rot == 270)
         {
             other.gameObject.transform.position =
-                new Vector2(x, y - deltaY);
+                new Vector2(x, y - deltaY - 3);
         }
     }
 }    

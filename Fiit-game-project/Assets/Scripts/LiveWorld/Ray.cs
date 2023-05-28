@@ -72,7 +72,6 @@ public class ExampleScript : MonoBehaviour
             if (hit.normal.y == 1)
             {
                 rotate.z = 90;
-                Debug.Log(hit.normal.x);
             }
             
             else if (hit.normal.y == -1)
@@ -114,7 +113,6 @@ public class ExampleScript : MonoBehaviour
             if (hit.normal.y == 1)
             {
                 rotate.z = 90;
-                Debug.Log(hit.normal.x);
             }
             
             else if (hit.normal.y == -1)

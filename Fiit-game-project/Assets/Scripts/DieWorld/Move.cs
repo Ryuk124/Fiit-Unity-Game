@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -173,6 +174,8 @@ public class Move : MonoBehaviour
         theScale.x *= -1;
         transform.localScale = theScale;
     }
+
+    
 }
 
 public enum States

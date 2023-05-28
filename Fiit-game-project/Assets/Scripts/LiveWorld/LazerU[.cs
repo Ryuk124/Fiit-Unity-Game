@@ -16,6 +16,7 @@ public class LazerUP : MonoBehaviour
     public int getBluePortal;
     public bool koleso = false;
     public int number = 0;
+    public GameObject player;
     void Start()
     {
         
@@ -23,7 +24,6 @@ public class LazerUP : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(getBluePortal);
         RaycastHit2D hit = Physics2D.Raycast(startPoint.transform.position,-transform.up);
         if (hit)
         {
@@ -34,7 +34,7 @@ public class LazerUP : MonoBehaviour
             (point.x - startPoint.transform.position.x) * (point.x - startPoint.transform.position.x)
             + (point.y - startPoint.transform.position.y) * (point.y - startPoint.transform.position.y)));
         
-        if (coleso.transform.rotation.eulerAngles.z >= 150 && coleso.transform.rotation.eulerAngles.z <= 180)
+        if (coleso.transform.rotation.eulerAngles.z >= 300 && coleso.transform.rotation.eulerAngles.z <= 330)
         {
             
             ScaleRayWithoutContact(point, distanceHit);
@@ -51,5 +51,13 @@ public class LazerUP : MonoBehaviour
         var length = 0.994f;
         scale = distanceMouse / length;
         startPoint.transform.localScale = new Vector2(3.116098f, scale);
+    }
+    
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            player.transform.position = new Vector2(-15, 2.4f);
+        }
     }
 }
