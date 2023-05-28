@@ -15,7 +15,7 @@ public class DeathCount : MonoBehaviour
 
     void Update()
     {
-        text.text = $"Убито: {Enemies}";
+        text.text = $"{Enemies}";
         if (Enemies >= deathEnemiesForPortal)
             Portal.SetActive(true);
         else Portal.SetActive(false);
