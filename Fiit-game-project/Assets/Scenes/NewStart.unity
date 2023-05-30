@@ -11147,6 +11147,7 @@ MonoBehaviour:
   SoundAfterJump: {fileID: 547027826}
   SlugJumpX: 100
   SlugJumpY: 30
+  Velocity: 6
   jumpForce: 75
   isGrounded: 0
 --- !u!114 &547027829

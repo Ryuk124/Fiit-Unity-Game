@@ -11,6 +11,7 @@ public class SlugJumping : MonoBehaviour
     public AudioSource SoundAfterJump;
     public int SlugJumpX;
     public int SlugJumpY;
+    public int Velocity;
 
     private bool flipRight = true;
     private Rigidbody2D rb;
@@ -89,9 +90,9 @@ public class SlugJumping : MonoBehaviour
         rb.AddForce(transform.up * jumpForce, ForceMode2D.Impulse);
         if (flipRight)
         {
-            rb.velocity = new Vector2(6, rb.velocity.y);
+            rb.velocity = new Vector2(Velocity, rb.velocity.y);
         }
-        else rb.velocity = new Vector2(-6, rb.velocity.y);
+        else rb.velocity = new Vector2(-Velocity, rb.velocity.y);
     }
 
     private void Flip()
