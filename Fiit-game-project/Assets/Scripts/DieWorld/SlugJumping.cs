@@ -65,7 +65,7 @@ public class SlugJumping : MonoBehaviour
             State = SlugStates11.afk;
             isGrounded = true;
             rb.velocity = Vector2.zero;
-            if (IsJump == true && IsAgred == true)
+            if (IsJump && IsAgred)
             {
                 SoundAfterJump.Play();
                 IsJump = false;
@@ -89,9 +89,9 @@ public class SlugJumping : MonoBehaviour
         rb.AddForce(transform.up * jumpForce, ForceMode2D.Impulse);
         if (flipRight)
         {
-            rb.velocity = new Vector2(3, rb.velocity.y);
+            rb.velocity = new Vector2(8, rb.velocity.y);
         }
-        else rb.velocity = new Vector2(-3, rb.velocity.y);
+        else rb.velocity = new Vector2(-8, rb.velocity.y);
     }
 
     private void Flip()
