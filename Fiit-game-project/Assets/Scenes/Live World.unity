@@ -17975,12 +17975,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb42879528d57e84c9fa16c69b61c6ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 15
+  maxSpeed: 35
   flipRight: 1
   isMoving: 0
   isAttack: 0
   isGrounded: 0
-  jumpForce: 65
+  jumpForce: 63
 --- !u!95 &1361729950
 Animator:
   serializedVersion: 5
