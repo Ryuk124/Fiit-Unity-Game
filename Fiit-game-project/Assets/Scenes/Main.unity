@@ -12917,6 +12917,8 @@ MonoBehaviour:
   PlayerCoordinate: {x: 0, y: 0, z: 0}
   SlugCoordinate: {x: 0, y: 0, z: 0}
   SoundAfterJump: {fileID: 682320411}
+  SlugJumpX: 10
+  SlugJumpY: 3
   jumpForce: 12
   isGrounded: 0
 --- !u!114 &682320414
@@ -16166,6 +16168,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Hp: 5
+  LoadScene: Main
 --- !u!82 &795594843
 AudioSource:
   m_ObjectHideFlags: 0
@@ -31879,6 +31882,8 @@ MonoBehaviour:
   PlayerCoordinate: {x: 0, y: 0, z: 0}
   SlugCoordinate: {x: 0, y: 0, z: 0}
   SoundAfterJump: {fileID: 1696175471}
+  SlugJumpX: 10
+  SlugJumpY: 3
   jumpForce: 12
   isGrounded: 0
 --- !u!114 &1696175474
@@ -38907,6 +38912,8 @@ MonoBehaviour:
   PlayerCoordinate: {x: 0, y: 0, z: 0}
   SlugCoordinate: {x: 0, y: 0, z: 0}
   SoundAfterJump: {fileID: 2036455153}
+  SlugJumpX: 10
+  SlugJumpY: 3
   jumpForce: 12
   isGrounded: 0
 --- !u!114 &2036455156

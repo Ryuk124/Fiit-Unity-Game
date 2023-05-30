@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class Health : MonoBehaviour
 {
     [SerializeField] public float Hp = 3;
+    public string LoadScene;
 
     public void TakeDamage(float damage)
     {
@@ -19,7 +20,7 @@ public class Health : MonoBehaviour
 
     private void Die()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(LoadScene);
     }
 
     // Update is called once per frame
