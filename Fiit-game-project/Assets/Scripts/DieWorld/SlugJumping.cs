@@ -89,9 +89,9 @@ public class SlugJumping : MonoBehaviour
         rb.AddForce(transform.up * jumpForce, ForceMode2D.Impulse);
         if (flipRight)
         {
-            rb.velocity = new Vector2(8, rb.velocity.y);
+            rb.velocity = new Vector2(6, rb.velocity.y);
         }
-        else rb.velocity = new Vector2(-8, rb.velocity.y);
+        else rb.velocity = new Vector2(-6, rb.velocity.y);
     }
 
     private void Flip()

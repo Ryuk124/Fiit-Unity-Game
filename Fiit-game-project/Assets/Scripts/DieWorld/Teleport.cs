@@ -7,8 +7,10 @@ using UnityEngine.SceneManagement;
 public class Teleport : MonoBehaviour
 {
     public string LoadScene;
+    public GameObject Player; 
     public void OnTriggerEnter2D(Collider2D other)
     {
-        SceneManager.LoadScene(LoadScene);
+        if (other.gameObject == Player)
+            SceneManager.LoadScene(LoadScene);
     }
 }

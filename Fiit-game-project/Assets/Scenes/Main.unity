@@ -41037,6 +41037,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LoadScene: Live World
+  Player: {fileID: 795594830}
 --- !u!1001 &2116319583
 PrefabInstance:
   m_ObjectHideFlags: 0
