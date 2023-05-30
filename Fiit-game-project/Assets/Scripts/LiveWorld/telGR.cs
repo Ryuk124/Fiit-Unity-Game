@@ -10,25 +10,14 @@ public class telGR : MonoBehaviour
     public bool exit;
     private Transform destination;
     public bool teleportedGreen;
-    public bool lazerTpGreen = false;
+    public bool lazerTpGreen;
     public float deltaX;
     public float deltaY;
     public float x;
     public float y;
 
     public GameObject main;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    
     public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("lazer") && !GameObject.FindGameObjectWithTag("blue").GetComponent<telBlu>().lazerTpBlue)
@@ -37,7 +26,8 @@ public class telGR : MonoBehaviour
         }
         if (GameObject.FindGameObjectWithTag("blue") == true && main.transform.localScale.y <= 0.7f)
         {
-            if (!other.gameObject.CompareTag("wall") && !other.gameObject.CompareTag("Player") && !other.gameObject.CompareTag("lazer") && !other.gameObject.CompareTag("key") && !other.gameObject.CompareTag("rope"))
+            if (!other.gameObject.CompareTag("wall") && !other.gameObject.CompareTag("Player") && !other.gameObject.CompareTag("lazer") && !other.gameObject.CompareTag("key") 
+                && !other.gameObject.CompareTag("rope") && !other.gameObject.CompareTag("Ground"))
             {
                 deltaX = Mathf.Abs(other.bounds.center.x - other.bounds.max.x);
                 deltaY = Mathf.Abs(other.bounds.center.y - other.bounds.max.y);
@@ -66,7 +56,8 @@ public class telGR : MonoBehaviour
     
     public void OnTriggerExit2D(Collider2D other)
     {
-        if (!other.gameObject.CompareTag("wall") && !other.gameObject.CompareTag("Player") && !other.gameObject.CompareTag("lazer") && !other.gameObject.CompareTag("rope") && !other.gameObject.CompareTag("key"))
+        if (!other.gameObject.CompareTag("wall") && !other.gameObject.CompareTag("Player") && !other.gameObject.CompareTag("lazer") 
+            && !other.gameObject.CompareTag("rope") && !other.gameObject.CompareTag("key") && !other.gameObject.CompareTag("Ground"))
         {
             if (teleportedGreen == false)
             {

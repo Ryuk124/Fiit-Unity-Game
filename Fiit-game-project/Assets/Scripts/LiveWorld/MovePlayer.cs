@@ -22,12 +22,6 @@ public class MovePlayer : MonoBehaviour
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
     }
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
         var move = Input.GetAxis("Horizontal");
@@ -78,10 +72,9 @@ public class MovePlayer : MonoBehaviour
     
     private void OnCollisionStay2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "wall")
+        if (collision.gameObject.tag == "Ground")
         {
             isGrounded = true;
-
         }
         
     }

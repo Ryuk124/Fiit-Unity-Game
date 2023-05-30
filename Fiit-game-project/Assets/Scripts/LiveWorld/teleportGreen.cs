@@ -39,13 +39,14 @@ public class coll : MonoBehaviour
     public void OnTriggerEnter2D(Collider2D other)
     {
         //&& Vector2.Distance(transform.position,other.transform.position) >= delta
-        if (!other.gameObject.CompareTag("wall") && canTeleportedGreen) 
+        if (!other.gameObject.CompareTag("wall") && canTeleportedGreen && !other.gameObject.CompareTag("Ground")) 
         {
             other.transform.position = new Vector2(destination.position.x, destination.position.y);
             teleportedGreen = true;
         }
         
-        else if(!other.gameObject.CompareTag("wall") && !teleportedGreen && !GameObject.FindGameObjectWithTag("blue").GetComponent<teleportBlue>().teleportedBlue)
+        else if(!other.gameObject.CompareTag("wall") && !teleportedGreen && !GameObject.FindGameObjectWithTag("blue").GetComponent<teleportBlue>().teleportedBlue
+                && !other.gameObject.CompareTag("Ground"))
         {
             other.transform.position = new Vector2(destination.position.x, destination.position.y);
             teleportedGreen = true;

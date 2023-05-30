@@ -34,7 +34,8 @@ public class telBlu : MonoBehaviour
         if (GameObject.FindGameObjectWithTag("green") == true && main.transform.localScale.y <= 0.7f)
         {
             if (!other.gameObject.CompareTag("wall") && !other.gameObject.CompareTag("Player") &&
-                !other.gameObject.CompareTag("lazer") && !other.gameObject.CompareTag("key") && !other.gameObject.CompareTag("rope"))
+                !other.gameObject.CompareTag("lazer") && !other.gameObject.CompareTag("key") && !other.gameObject.CompareTag("rope")
+                && !other.gameObject.CompareTag("Ground"))
             {
                 deltaX = Mathf.Abs(other.bounds.center.x - other.bounds.max.x);
                 deltaY = Mathf.Abs(other.bounds.center.y - other.bounds.max.y);
@@ -61,7 +62,8 @@ public class telBlu : MonoBehaviour
     public void OnTriggerExit2D(Collider2D other)
     {
         if (!other.gameObject.CompareTag("wall") && !other.gameObject.CompareTag("Player") &&
-            !other.gameObject.CompareTag("lazer") && !other.gameObject.CompareTag("lazer") && !other.gameObject.CompareTag("rope") && !other.gameObject.CompareTag("key"))
+            !other.gameObject.CompareTag("lazer") && !other.gameObject.CompareTag("lazer") && !other.gameObject.CompareTag("rope") && !other.gameObject.CompareTag("key")
+            && !other.gameObject.CompareTag("Ground"))
         {
             if (teleportedBlue == false)
             {

@@ -89,7 +89,7 @@ public class ExampleScript : MonoBehaviour
                 rotate.z = 180;
             }
 
-            if (hit.collider.CompareTag("wall"))
+            if (hit.collider.CompareTag("wall") || hit.collider.CompareTag("Ground"))
             {
                 cloneGreen = Instantiate(spawnLeft, hit.point, Quaternion.Euler(rotate));
                 greenPortal = true;
@@ -129,7 +129,7 @@ public class ExampleScript : MonoBehaviour
             {
                 rotate.z = 180;
             }
-            if (hit.collider.CompareTag("wall"))
+            if (hit.collider.CompareTag("wall") || hit.collider.CompareTag("Ground"))
             {
                 cloneBlue = Instantiate(spawnRight, hit.point, Quaternion.Euler(rotate));
                 bluePortal = true;
