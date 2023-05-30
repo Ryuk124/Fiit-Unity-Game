@@ -11,6 +11,7 @@ public class DeathCount : MonoBehaviour
     void Start()
     {
         text = GetComponent<TextMeshProUGUI>();
+        Enemies = 0;
     }
 
     void Update()
