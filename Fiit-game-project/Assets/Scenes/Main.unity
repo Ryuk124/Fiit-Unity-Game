@@ -12916,7 +12916,7 @@ MonoBehaviour:
   IsJump: 0
   PlayerCoordinate: {x: 0, y: 0, z: 0}
   SlugCoordinate: {x: 0, y: 0, z: 0}
-  SoundAfterJump: {fileID: 0}
+  SoundAfterJump: {fileID: 682320411}
   jumpForce: 12
   isGrounded: 0
 --- !u!114 &682320414
@@ -31878,7 +31878,7 @@ MonoBehaviour:
   IsJump: 0
   PlayerCoordinate: {x: 0, y: 0, z: 0}
   SlugCoordinate: {x: 0, y: 0, z: 0}
-  SoundAfterJump: {fileID: 0}
+  SoundAfterJump: {fileID: 1696175471}
   jumpForce: 12
   isGrounded: 0
 --- !u!114 &1696175474
@@ -38906,7 +38906,7 @@ MonoBehaviour:
   IsJump: 0
   PlayerCoordinate: {x: 0, y: 0, z: 0}
   SlugCoordinate: {x: 0, y: 0, z: 0}
-  SoundAfterJump: {fileID: 0}
+  SoundAfterJump: {fileID: 2036455153}
   jumpForce: 12
   isGrounded: 0
 --- !u!114 &2036455156
