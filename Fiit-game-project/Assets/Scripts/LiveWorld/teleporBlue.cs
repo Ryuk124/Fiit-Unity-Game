@@ -41,14 +41,15 @@ public class teleportBlue : MonoBehaviour
     {
         trig = true;
         //&& Vector2.Distance(transform.position,other.transform.position) >= delta
-        if (!other.gameObject.CompareTag("wall") && canTeleportedBlue)
+        if (!other.gameObject.CompareTag("wall") && canTeleportedBlue && !other.gameObject.CompareTag("Ground"))
         {
             teleportedBlue = true;
             other.transform.position = new Vector2(destination.position.x, destination.position.y);
             GameObject.FindGameObjectWithTag("green").GetComponent<coll>().teleportedGreen = true;
         }
         
-        else if(!other.gameObject.CompareTag("wall") && !teleportedBlue && !GameObject.FindGameObjectWithTag("green").GetComponent<coll>().teleportedGreen)
+        else if(!other.gameObject.CompareTag("wall") && !teleportedBlue && !GameObject.FindGameObjectWithTag("green").GetComponent<coll>().teleportedGreen
+                && !other.gameObject.CompareTag("Ground"))
         {
             other.transform.position = new Vector2(destination.position.x, destination.position.y);
             teleportedBlue = true;
