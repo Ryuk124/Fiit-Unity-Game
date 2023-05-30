@@ -1792,6 +1792,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Hp: 5
+  LoadScene: 
 --- !u!114 &193738752
 MonoBehaviour:
   m_ObjectHideFlags: 0
