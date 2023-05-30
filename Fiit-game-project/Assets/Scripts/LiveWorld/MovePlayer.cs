@@ -37,7 +37,7 @@ public class MovePlayer : MonoBehaviour
         
         if (move == 0) isMoving = false;
         
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        if (Input.GetKeyDown(KeyCode.W) && isGrounded)
         {
             Jump();
         }
