@@ -222,7 +222,7 @@ GameObject:
   - component: {fileID: 19682535}
   m_Layer: 0
   m_Name: 1620826817_26-phonoteka_org-p-pikselnii-fon-zemli-35 (183)
-  m_TagString: Ground
+  m_TagString: OtherGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -747,7 +747,7 @@ GameObject:
   - component: {fileID: 69353198}
   m_Layer: 0
   m_Name: 1620826817_26-phonoteka_org-p-pikselnii-fon-zemli-35 (182)
-  m_TagString: Ground
+  m_TagString: OtherGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1700,7 +1700,7 @@ GameObject:
   - component: {fileID: 112831074}
   m_Layer: 0
   m_Name: 1620826817_26-phonoteka_org-p-pikselnii-fon-zemli-35 (143)
-  m_TagString: Ground
+  m_TagString: OtherGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3393,7 +3393,7 @@ GameObject:
   - component: {fileID: 190852569}
   m_Layer: 0
   m_Name: 1620826817_26-phonoteka_org-p-pikselnii-fon-zemli-35 (162)
-  m_TagString: Ground
+  m_TagString: OtherGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5644,7 +5644,7 @@ GameObject:
   - component: {fileID: 275177588}
   m_Layer: 0
   m_Name: 1620826817_26-phonoteka_org-p-pikselnii-fon-zemli-35 (158)
-  m_TagString: Ground
+  m_TagString: OtherGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5871,7 +5871,7 @@ GameObject:
   - component: {fileID: 289770433}
   m_Layer: 0
   m_Name: 1620826817_26-phonoteka_org-p-pikselnii-fon-zemli-35 (149)
-  m_TagString: Ground
+  m_TagString: OtherGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6481,7 +6481,7 @@ GameObject:
   - component: {fileID: 307373381}
   m_Layer: 0
   m_Name: 1620826817_26-phonoteka_org-p-pikselnii-fon-zemli-35 (181)
-  m_TagString: Ground
+  m_TagString: OtherGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8266,7 +8266,7 @@ GameObject:
   - component: {fileID: 385374911}
   m_Layer: 0
   m_Name: 1620826817_26-phonoteka_org-p-pikselnii-fon-zemli-35 (147)
-  m_TagString: Ground
+  m_TagString: OtherGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9439,7 +9439,7 @@ GameObject:
   - component: {fileID: 440330349}
   m_Layer: 0
   m_Name: 1620826817_26-phonoteka_org-p-pikselnii-fon-zemli-35 (168)
-  m_TagString: Ground
+  m_TagString: OtherGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10009,7 +10009,7 @@ GameObject:
   - component: {fileID: 451045504}
   m_Layer: 0
   m_Name: 1620826817_26-phonoteka_org-p-pikselnii-fon-zemli-35 (159)
-  m_TagString: Ground
+  m_TagString: OtherGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10946,7 +10946,7 @@ GameObject:
   - component: {fileID: 502852853}
   m_Layer: 0
   m_Name: 1620826817_26-phonoteka_org-p-pikselnii-fon-zemli-35 (151)
-  m_TagString: Ground
+  m_TagString: OtherGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11345,13 +11345,14 @@ GameObject:
   - component: {fileID: 547027828}
   - component: {fileID: 547027827}
   - component: {fileID: 547027826}
+  - component: {fileID: 547027836}
   m_Layer: 3
   m_Name: Slug 2
   m_TagString: slug
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!82 &547027826
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11710,6 +11711,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &547027836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 547027825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c6d2866689525a43a078e3a3a1f48fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Slug: {fileID: 547027825}
 --- !u!1 &548173404
 GameObject:
   m_ObjectHideFlags: 0
@@ -13579,6 +13593,7 @@ GameObject:
   - component: {fileID: 667660327}
   - component: {fileID: 667660326}
   - component: {fileID: 667660325}
+  - component: {fileID: 667660332}
   - component: {fileID: 667660324}
   - component: {fileID: 667660323}
   - component: {fileID: 667660322}
@@ -14168,7 +14183,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 667660320}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.12, y: -0.63, z: 0}
+  m_LocalPosition: {x: -2.62, y: -0.71, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -14176,6 +14191,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &667660332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667660320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c22c42efb0fbd849bebf61791df05fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Slug: {fileID: 547027825}
 --- !u!1 &675564841
 GameObject:
   m_ObjectHideFlags: 0
@@ -14540,7 +14568,7 @@ GameObject:
   - component: {fileID: 711909594}
   m_Layer: 0
   m_Name: 1620826817_26-phonoteka_org-p-pikselnii-fon-zemli-35 (165)
-  m_TagString: Ground
+  m_TagString: OtherGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14684,7 +14712,7 @@ GameObject:
   - component: {fileID: 717531894}
   m_Layer: 0
   m_Name: 1620826817_26-phonoteka_org-p-pikselnii-fon-zemli-35 (176)
-  m_TagString: Ground
+  m_TagString: OtherGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15124,7 +15152,7 @@ GameObject:
   - component: {fileID: 729043218}
   m_Layer: 0
   m_Name: 1620826817_26-phonoteka_org-p-pikselnii-fon-zemli-35 (142)
-  m_TagString: Ground
+  m_TagString: OtherGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16223,7 +16251,7 @@ GameObject:
   - component: {fileID: 767887844}
   m_Layer: 0
   m_Name: 1620826817_26-phonoteka_org-p-pikselnii-fon-zemli-35 (187)
-  m_TagString: Ground
+  m_TagString: OtherGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18522,7 +18550,7 @@ GameObject:
   - component: {fileID: 855319841}
   m_Layer: 0
   m_Name: 1620826817_26-phonoteka_org-p-pikselnii-fon-zemli-35 (172)
-  m_TagString: Ground
+  m_TagString: OtherGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19124,7 +19152,7 @@ GameObject:
   - component: {fileID: 884731789}
   m_Layer: 0
   m_Name: 1620826817_26-phonoteka_org-p-pikselnii-fon-zemli-35 (180)
-  m_TagString: Ground
+  m_TagString: OtherGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20102,7 +20130,7 @@ GameObject:
   - component: {fileID: 927572421}
   m_Layer: 0
   m_Name: 1620826817_26-phonoteka_org-p-pikselnii-fon-zemli-35 (163)
-  m_TagString: Ground
+  m_TagString: OtherGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20246,7 +20274,7 @@ GameObject:
   - component: {fileID: 934131696}
   m_Layer: 0
   m_Name: 1620826817_26-phonoteka_org-p-pikselnii-fon-zemli-35 (171)
-  m_TagString: Ground
+  m_TagString: OtherGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21337,7 +21365,7 @@ GameObject:
   - component: {fileID: 979352005}
   m_Layer: 0
   m_Name: 1620826817_26-phonoteka_org-p-pikselnii-fon-zemli-35 (174)
-  m_TagString: Ground
+  m_TagString: OtherGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21694,7 +21722,7 @@ GameObject:
   - component: {fileID: 993247130}
   m_Layer: 0
   m_Name: 1620826817_26-phonoteka_org-p-pikselnii-fon-zemli-35 (184)
-  m_TagString: Ground
+  m_TagString: OtherGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23132,7 +23160,7 @@ GameObject:
   - component: {fileID: 1030198119}
   m_Layer: 0
   m_Name: 1620826817_26-phonoteka_org-p-pikselnii-fon-zemli-35 (173)
-  m_TagString: Ground
+  m_TagString: OtherGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24521,7 +24549,7 @@ GameObject:
   - component: {fileID: 1089865262}
   m_Layer: 0
   m_Name: 1620826817_26-phonoteka_org-p-pikselnii-fon-zemli-35 (167)
-  m_TagString: Ground
+  m_TagString: OtherGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24665,7 +24693,7 @@ GameObject:
   - component: {fileID: 1097386752}
   m_Layer: 0
   m_Name: 1620826817_26-phonoteka_org-p-pikselnii-fon-zemli-35 (177)
-  m_TagString: Ground
+  m_TagString: OtherGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25515,7 +25543,7 @@ GameObject:
   - component: {fileID: 1108582369}
   m_Layer: 0
   m_Name: 1620826817_26-phonoteka_org-p-pikselnii-fon-zemli-35 (178)
-  m_TagString: Ground
+  m_TagString: OtherGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26911,6 +26939,7 @@ GameObject:
   - component: {fileID: 1173170020}
   - component: {fileID: 1173170019}
   - component: {fileID: 1173170018}
+  - component: {fileID: 1173170022}
   m_Layer: 0
   m_Name: NPC
   m_TagString: Untagged
@@ -27043,13 +27072,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1173170017}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.1, y: -0.98, z: 0}
+  m_LocalPosition: {x: 6.16, y: -1.04, z: 0}
   m_LocalScale: {x: 4.3038, y: 4.3038, z: 4.3038}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1173170022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1173170017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88d8196bf67e75c47b56244db9884ecb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Slug: {fileID: 547027825}
 --- !u!1 &1183416630
 GameObject:
   m_ObjectHideFlags: 0
@@ -27589,7 +27631,7 @@ GameObject:
   - component: {fileID: 1199450198}
   m_Layer: 0
   m_Name: 1620826817_26-phonoteka_org-p-pikselnii-fon-zemli-35 (164)
-  m_TagString: Ground
+  m_TagString: OtherGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29597,7 +29639,7 @@ GameObject:
   - component: {fileID: 1287502013}
   m_Layer: 0
   m_Name: 1620826817_26-phonoteka_org-p-pikselnii-fon-zemli-35 (148)
-  m_TagString: Ground
+  m_TagString: OtherGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30244,7 +30286,7 @@ GameObject:
   - component: {fileID: 1320971152}
   m_Layer: 0
   m_Name: 1620826817_26-phonoteka_org-p-pikselnii-fon-zemli-35 (146)
-  m_TagString: Ground
+  m_TagString: OtherGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31576,7 +31618,7 @@ GameObject:
   - component: {fileID: 1379929907}
   m_Layer: 0
   m_Name: 1620826817_26-phonoteka_org-p-pikselnii-fon-zemli-35 (144)
-  m_TagString: Ground
+  m_TagString: OtherGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32535,7 +32577,7 @@ GameObject:
   - component: {fileID: 1426619861}
   m_Layer: 0
   m_Name: 1620826817_26-phonoteka_org-p-pikselnii-fon-zemli-35 (185)
-  m_TagString: Ground
+  m_TagString: OtherGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33105,7 +33147,7 @@ GameObject:
   - component: {fileID: 1436882789}
   m_Layer: 0
   m_Name: 1620826817_26-phonoteka_org-p-pikselnii-fon-zemli-35 (153)
-  m_TagString: Ground
+  m_TagString: OtherGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33521,7 +33563,7 @@ GameObject:
   - component: {fileID: 1456800835}
   m_Layer: 0
   m_Name: 1620826817_26-phonoteka_org-p-pikselnii-fon-zemli-35 (161)
-  m_TagString: Ground
+  m_TagString: OtherGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -33833,7 +33875,7 @@ GameObject:
   - component: {fileID: 1473459902}
   m_Layer: 0
   m_Name: 1620826817_26-phonoteka_org-p-pikselnii-fon-zemli-35 (179)
-  m_TagString: Ground
+  m_TagString: OtherGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35312,7 +35354,7 @@ GameObject:
   - component: {fileID: 1535165613}
   m_Layer: 0
   m_Name: 1620826817_26-phonoteka_org-p-pikselnii-fon-zemli-35 (152)
-  m_TagString: Ground
+  m_TagString: OtherGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35500,7 +35542,7 @@ GameObject:
   - component: {fileID: 1544922978}
   m_Layer: 0
   m_Name: 1620826817_26-phonoteka_org-p-pikselnii-fon-zemli-35 (154)
-  m_TagString: Ground
+  m_TagString: OtherGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37653,7 +37695,7 @@ GameObject:
   - component: {fileID: 1625262611}
   m_Layer: 0
   m_Name: 1620826817_26-phonoteka_org-p-pikselnii-fon-zemli-35 (160)
-  m_TagString: Ground
+  m_TagString: OtherGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39410,7 +39452,7 @@ GameObject:
   - component: {fileID: 1684813811}
   m_Layer: 0
   m_Name: 1620826817_26-phonoteka_org-p-pikselnii-fon-zemli-35 (175)
-  m_TagString: Ground
+  m_TagString: OtherGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40097,21 +40139,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1726716361}
-  - component: {fileID: 1726716364}
-  - component: {fileID: 1726716372}
-  - component: {fileID: 1726716371}
-  - component: {fileID: 1726716370}
-  - component: {fileID: 1726716369}
-  - component: {fileID: 1726716368}
-  - component: {fileID: 1726716367}
-  - component: {fileID: 1726716366}
-  - component: {fileID: 1726716365}
-  - component: {fileID: 1726716375}
-  - component: {fileID: 1726716374}
-  - component: {fileID: 1726716373}
   m_Layer: 0
   m_Name: poonHill
-  m_TagString: Ground
+  m_TagString: OtherGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -40176,546 +40206,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &1726716364
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1726716360}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -4.965375, y: 0.750394}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.287386, y: 2.500788}
-  m_EdgeRadius: 0
---- !u!61 &1726716365
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1726716360}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 2.051546, y: -3.0773187}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.5430565, y: 4.9824114}
-  m_EdgeRadius: 0
---- !u!61 &1726716366
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1726716360}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.890008, y: -1.3576403}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.72847176, y: 4.9824123}
-  m_EdgeRadius: 0
---- !u!61 &1726716367
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1726716360}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -1.1465349, y: 1.5747609}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.8066082, y: 4.1495214}
-  m_EdgeRadius: 0
---- !u!61 &1726716368
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1726716360}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.08288193, y: 1.1741632}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.1657639, y: 3.3483264}
-  m_EdgeRadius: 0
---- !u!61 &1726716369
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1726716360}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -4.2408037, y: 1.3399278}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.6960964, y: 3.6798556}
-  m_EdgeRadius: 0
---- !u!61 &1726716370
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1726716360}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -2.7074833, y: 1.8234072}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.4918785, y: 4.6468143}
-  m_EdgeRadius: 0
---- !u!61 &1726716371
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1726716360}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -7.0854425, y: -3.7296963}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.0809193, y: 3.7074833}
-  m_EdgeRadius: 0
---- !u!61 &1726716372
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1726716360}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -6.000929, y: -2.7485065}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.9695091, y: 5.4586887}
-  m_EdgeRadius: 0
---- !u!61 &1726716373
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1726716360}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -8.272242, y: -4.4935637}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.79574585, y: 1.8850958}
-  m_EdgeRadius: 0
---- !u!61 &1726716374
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1726716360}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 4.9190893, y: -4.5956903}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.2382946, y: 1.7489274}
-  m_EdgeRadius: 0
---- !u!61 &1726716375
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1726716360}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 3.4723005, y: -4.1361213}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.4765911, y: 2.940402}
-  m_EdgeRadius: 0
 --- !u!1 &1732294884
 GameObject:
   m_ObjectHideFlags: 0
@@ -41934,7 +41424,7 @@ GameObject:
   - component: {fileID: 1814468427}
   m_Layer: 0
   m_Name: 1620826817_26-phonoteka_org-p-pikselnii-fon-zemli-35 (150)
-  m_TagString: Ground
+  m_TagString: OtherGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42245,7 +41735,7 @@ GameObject:
   - component: {fileID: 1827278822}
   m_Layer: 0
   m_Name: 1620826817_26-phonoteka_org-p-pikselnii-fon-zemli-35 (166)
-  m_TagString: Ground
+  m_TagString: OtherGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42822,7 +42312,7 @@ GameObject:
   - component: {fileID: 1852635843}
   m_Layer: 0
   m_Name: 1620826817_26-phonoteka_org-p-pikselnii-fon-zemli-35 (157)
-  m_TagString: Ground
+  m_TagString: OtherGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43431,7 +42921,7 @@ GameObject:
   - component: {fileID: 1895532907}
   m_Layer: 0
   m_Name: 1620826817_26-phonoteka_org-p-pikselnii-fon-zemli-35 (170)
-  m_TagString: Ground
+  m_TagString: OtherGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43574,7 +43064,7 @@ GameObject:
   - component: {fileID: 1896282269}
   m_Layer: 0
   m_Name: 1620826817_26-phonoteka_org-p-pikselnii-fon-zemli-35 (169)
-  m_TagString: Ground
+  m_TagString: OtherGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44504,7 +43994,7 @@ GameObject:
   - component: {fileID: 1920961171}
   m_Layer: 0
   m_Name: 1620826817_26-phonoteka_org-p-pikselnii-fon-zemli-35 (156)
-  m_TagString: Ground
+  m_TagString: OtherGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44731,7 +44221,7 @@ GameObject:
   - component: {fileID: 1931020681}
   m_Layer: 0
   m_Name: 1620826817_26-phonoteka_org-p-pikselnii-fon-zemli-35 (145)
-  m_TagString: Ground
+  m_TagString: OtherGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47929,7 +47419,7 @@ GameObject:
   - component: {fileID: 2077736248}
   m_Layer: 0
   m_Name: 1620826817_26-phonoteka_org-p-pikselnii-fon-zemli-35 (155)
-  m_TagString: Ground
+  m_TagString: OtherGround
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

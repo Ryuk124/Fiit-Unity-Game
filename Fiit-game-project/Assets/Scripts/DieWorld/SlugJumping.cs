@@ -61,7 +61,7 @@ public class SlugJumping : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.collider.CompareTag("Ground") || collision.collider.CompareTag("floor"))
+        if (collision.collider.CompareTag("Ground") || collision.collider.CompareTag("floor") || collision.collider.CompareTag("OtherGround"))
         {
             State = SlugStates11.afk;
             isGrounded = true;
@@ -77,7 +77,7 @@ public class SlugJumping : MonoBehaviour
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.collider.CompareTag("Ground") || collision.collider.CompareTag("floor"))
+        if (collision.collider.CompareTag("Ground") || collision.collider.CompareTag("floor") || collision.collider.CompareTag("OtherGround"))
         {
             State = SlugStates11.jump1;
             IsJump = true;
