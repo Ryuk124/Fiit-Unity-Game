@@ -12919,6 +12919,7 @@ MonoBehaviour:
   SoundAfterJump: {fileID: 682320411}
   SlugJumpX: 10
   SlugJumpY: 3
+  Velocity: 3
   jumpForce: 12
   isGrounded: 0
 --- !u!114 &682320414
@@ -31884,6 +31885,7 @@ MonoBehaviour:
   SoundAfterJump: {fileID: 1696175471}
   SlugJumpX: 10
   SlugJumpY: 3
+  Velocity: 3
   jumpForce: 12
   isGrounded: 0
 --- !u!114 &1696175474
@@ -38914,6 +38916,7 @@ MonoBehaviour:
   SoundAfterJump: {fileID: 2036455153}
   SlugJumpX: 10
   SlugJumpY: 3
+  Velocity: 3
   jumpForce: 12
   isGrounded: 0
 --- !u!114 &2036455156
