@@ -41024,7 +41024,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.1, y: 5.9}
   m_EdgeRadius: 0
---- !u!114 &2113267168
+--- !u!114 &2113267164
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -41033,9 +41033,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2113267162}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b95fb90640dc1b24cb07d36c858d41be, type: 3}
+  m_Script: {fileID: 11500000, guid: 0569c256d13e0984c85963b3efb4d408, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LoadScene: Live World
 --- !u!1001 &2116319583
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41862,7 +41863,7 @@ PrefabInstance:
       addedObject: {fileID: 2113267163}
     - targetCorrespondingSourceObject: {fileID: 976300425769904148, guid: c509cfc116d50f248a0bf8b8598e1d0d, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2113267168}
+      addedObject: {fileID: 2113267164}
   m_SourcePrefab: {fileID: 100100000, guid: c509cfc116d50f248a0bf8b8598e1d0d, type: 3}
 --- !u!1001 &7294380888851362021
 PrefabInstance:
