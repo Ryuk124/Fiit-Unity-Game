@@ -95,13 +95,14 @@ public class SkeletonAgr : MonoBehaviour
         {
             rigidBody.velocity = Vector2.zero;
             Wait += Time.deltaTime;
-
             SetState(SkeletonStates.Hit);
 
+            
             if (Wait >= 2.09f)
             {
                 flag = true;
                 Hit = true;
+                
                 firstEnter = false;
                 Wait = 0f;
             }

@@ -9,6 +9,8 @@ public class SlugJumping : MonoBehaviour
     public Vector3 PlayerCoordinate;
     public Vector3 SlugCoordinate;
     public AudioSource SoundAfterJump;
+    public int SlugJumpX;
+    public int SlugJumpY;
 
     private bool flipRight = true;
     private Rigidbody2D rb;
@@ -41,8 +43,8 @@ public class SlugJumping : MonoBehaviour
         {
             State = SlugStates11.afk;
 
-            if (Math.Abs(SlugCoordinate.x - PlayerCoordinate.x) < 10 &&
-                Math.Abs(SlugCoordinate.y - PlayerCoordinate.y - 2.65) < 3)
+            if (Math.Abs(SlugCoordinate.x - PlayerCoordinate.x) < SlugJumpX &&
+                Math.Abs(SlugCoordinate.y - PlayerCoordinate.y - 2.65) < SlugJumpY)
             {
                 IsAgred = true;
                 if (SlugCoordinate.x > PlayerCoordinate.x && flipRight)

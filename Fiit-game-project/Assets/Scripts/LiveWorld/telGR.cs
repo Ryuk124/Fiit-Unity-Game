@@ -16,7 +16,7 @@ public class telGR : MonoBehaviour
     public float x;
     public float y;
 
-    
+    public GameObject main;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,9 +35,9 @@ public class telGR : MonoBehaviour
         {
             lazerTpGreen = true;
         }
-        if (GameObject.FindGameObjectWithTag("blue") == true)
+        if (GameObject.FindGameObjectWithTag("blue") == true && main.transform.localScale.y <= 0.7f)
         {
-            if (!other.gameObject.CompareTag("wall") && !other.gameObject.CompareTag("Player") && !other.gameObject.CompareTag("lazer"))
+            if (!other.gameObject.CompareTag("wall") && !other.gameObject.CompareTag("Player") && !other.gameObject.CompareTag("lazer") && !other.gameObject.CompareTag("key") && !other.gameObject.CompareTag("rope"))
             {
                 deltaX = Mathf.Abs(other.bounds.center.x - other.bounds.max.x);
                 deltaY = Mathf.Abs(other.bounds.center.y - other.bounds.max.y);
@@ -45,7 +45,6 @@ public class telGR : MonoBehaviour
                 if (GameObject.FindGameObjectWithTag("blue").GetComponent<telBlu>().teleportedBlue == false)
                 {
                     Teleport(other);
-                    Debug.Log("sdsds");
                     exit = false;
                 }
             
@@ -59,8 +58,7 @@ public class telGR : MonoBehaviour
                         exit = false;
                     }
                 }
-                //Debug.Log(other.bounds.center.y - other.bounds.max.y +  "DELTAAAAYYYYYYYYYYYYYYY");
-                //Debug.Log(other.bounds.center.x - other.bounds.max.x + "DELTAAAAXXXXXXXXXXXXXXXXXXXXXX");
+                
             
             }
         }
@@ -68,7 +66,7 @@ public class telGR : MonoBehaviour
     
     public void OnTriggerExit2D(Collider2D other)
     {
-        if (!other.gameObject.CompareTag("wall") && !other.gameObject.CompareTag("Player") && !other.gameObject.CompareTag("lazer"))
+        if (!other.gameObject.CompareTag("wall") && !other.gameObject.CompareTag("Player") && !other.gameObject.CompareTag("lazer") && !other.gameObject.CompareTag("rope") && !other.gameObject.CompareTag("key"))
         {
             if (teleportedGreen == false)
             {
@@ -93,30 +91,28 @@ public class telGR : MonoBehaviour
         var rot = GameObject.FindGameObjectWithTag("blue").transform.rotation.eulerAngles.z;
         var rbObject = other.GetComponent<IsTeleported>().rb;
         var speed = other.GetComponent<IsTeleported>().Speed;
-        Debug.Log(x + "GREEEEEEEEEEEEEEEN");
-        Debug.Log(y + "GREEEEEEEEEEEEEN");
         if (rot == 0)
         {
-            other.gameObject.transform.position = new Vector2(x + deltaX, y);
+            other.gameObject.transform.position = new Vector2(x + deltaX + 3, y);
             rbObject.AddForce(-transform.up * speed, ForceMode2D.Impulse);
         }
         
         else if (rot == 180)
         {
-            other.gameObject.transform.position = new Vector2(x - deltaX, y);
+            other.gameObject.transform.position = new Vector2(x - deltaX - 3, y);
             rbObject.AddForce(transform.up * speed, ForceMode2D.Impulse);
         }
         
         else if (rot == 90)
         {
             
-            other.gameObject.transform.position = new Vector2(x, y + deltaY);
+            other.gameObject.transform.position = new Vector2(x, y + deltaY + 3);
             rbObject.AddForce(transform.right * speed*1.5f, ForceMode2D.Impulse);
         }
         
         else if (rot == 270)
         {
-            other.gameObject.transform.position = new Vector2(x, y - deltaY);
+            other.gameObject.transform.position = new Vector2(x, y - deltaY - 3);
         }
         
         

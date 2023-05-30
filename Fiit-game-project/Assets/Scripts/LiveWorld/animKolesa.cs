@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class animKolesa : MonoBehaviour
 {
-    public GameObject coleso;
     private Animator anim;
+    public bool oneTime = true;
+    public bool boost = false;
+
     private StatesColesa State
     {
         get => (StatesColesa)anim.GetInteger("state");
@@ -20,17 +22,28 @@ public class animKolesa : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        if (transform.rotation.eulerAngles.z > 350)
+        if (transform.rotation.eulerAngles.z >= 300 && transform.rotation.eulerAngles.z <= 330 && oneTime)
         {
-           
+            oneTime = false;
+            GetComponent<Animator>().enabled = true;
             State = StatesColesa.start;
+            
+        }
+
+        else if((transform.rotation.eulerAngles.z < 300 || transform.rotation.eulerAngles.z > 330) && oneTime)
+        {
+            GetComponent<Animator>().enabled = false;
+        }
+
+        if (boost)
+        {
+            State = StatesColesa.boost;  
         }
     }
 
     public void Boost()
     {
-        State = StatesColesa.run;    
+        boost = true;
     }
     
 }
@@ -39,5 +52,5 @@ public enum StatesColesa
 {
     empty,
     start,
-    run
+    boost
 }
