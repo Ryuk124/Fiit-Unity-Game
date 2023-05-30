@@ -10746,7 +10746,7 @@ MonoBehaviour:
   SoundAfterJump: {fileID: 547027826}
   SlugJumpX: 100
   SlugJumpY: 30
-  jumpForce: 10
+  jumpForce: 50
   isGrounded: 0
 --- !u!114 &547027829
 MonoBehaviour:
@@ -10875,7 +10875,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 5
   m_Material: {fileID: 6200000, guid: d35bb0247a5d1214896f67148610e902, type: 2}
   m_IncludeLayers:
     serializedVersion: 2

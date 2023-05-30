@@ -2,10 +2,9 @@ using UnityEngine;
 
 public class StoneDisappear : MonoBehaviour
 {
-    public GameObject slug;
-    private void OnColliderect(Collision collision)
+    void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject == slug)
+        if (collision.gameObject.tag == "slug")
             Destroy(gameObject);
     }
 }
