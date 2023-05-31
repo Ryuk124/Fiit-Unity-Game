@@ -26945,8 +26945,8 @@ MonoBehaviour:
   fireBallCoordinate: {x: 0, y: 0, z: 0}
   objLeft: {fileID: 1785768630}
   objRight: {fileID: 2060652637}
-  placeOfSpawnLeft: {fileID: 1920861574}
-  placeOfSpawnRight: {fileID: 2092588174}
+  placeOfSpawnLeft: {fileID: 2092588174}
+  placeOfSpawnRight: {fileID: 1920861574}
   startTimeBtwSpawns: 2
   startTimeSound: 0
 --- !u!61 &1146142057
