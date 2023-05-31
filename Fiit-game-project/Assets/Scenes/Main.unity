@@ -2232,6 +2232,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   AttackRange: 2
+  Speed: 3
 --- !u!114 &92348888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10319,6 +10320,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   AttackRange: 2
+  Speed: 3
 --- !u!114 &572040328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12112,6 +12114,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   AttackRange: 2
+  Speed: 3
 --- !u!114 &646165009
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37653,6 +37656,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   AttackRange: 2
+  Speed: 3
 --- !u!114 &1926747940
 MonoBehaviour:
   m_ObjectHideFlags: 0
