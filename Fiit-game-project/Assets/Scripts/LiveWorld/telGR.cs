@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class telGR : MonoBehaviour
 {
+    [SerializeField] public AudioSource tp;
+    
     public bool trig;
     public bool exit;
     private Transform destination;
@@ -68,9 +70,10 @@ public class telGR : MonoBehaviour
         lazerTpGreen = false;
 
     }
-
+    
     public void Teleport(Collider2D other)
     {
+        tp.Play();
         GameObject.FindGameObjectWithTag("ray").GetComponent<ExampleScript>().createNowGreen = false;
         GameObject.FindGameObjectWithTag("blue").GetComponent<telBlu>().exit = false;
         teleportedGreen = true;
@@ -105,8 +108,8 @@ public class telGR : MonoBehaviour
         {
             other.gameObject.transform.position = new Vector2(x, y - deltaY - 3);
         }
-        
-        
+                
+
     }
 }
 
