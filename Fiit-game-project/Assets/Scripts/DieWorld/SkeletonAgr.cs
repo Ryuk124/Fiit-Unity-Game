@@ -80,8 +80,8 @@ public class SkeletonAgr : MonoBehaviour
                 Flip();
 
             rigidBody.velocity = flipRight
-                ? new Vector2(-2, rigidBody.velocity.y)
-                : new Vector2(2, rigidBody.velocity.y);
+                ? new Vector2(-3, rigidBody.velocity.y)
+                : new Vector2(3, rigidBody.velocity.y);
             return;
         }
 
