@@ -7,6 +7,7 @@ public class InGamePause : MonoBehaviour
 {
     public static bool IsPaused;
     public GameObject PauseMenuUI;
+    public string LoadScene;
 
     void Update()
     {
@@ -39,9 +40,9 @@ public class InGamePause : MonoBehaviour
         SceneManager.LoadScene("Menu");
     }
 
-    public void Quit()
+    public void Restart()
     {
         Time.timeScale = 1;
-        Application.Quit();
+        SceneManager.LoadScene(LoadScene);
     }
 }
