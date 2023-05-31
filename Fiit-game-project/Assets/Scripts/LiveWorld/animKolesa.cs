@@ -36,7 +36,8 @@ public class animKolesa : MonoBehaviour
 
         if (boost)
         {
-            State = StatesColesa.boost;  
+            State = StatesColesa.boost;
+            GetComponent<Collider2D>().enabled = false;
         }
     }
 

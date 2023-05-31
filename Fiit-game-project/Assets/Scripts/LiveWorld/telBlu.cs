@@ -5,6 +5,9 @@ using UnityEngine.Serialization;
 
 public class telBlu : MonoBehaviour
 {
+    [SerializeField] public AudioSource tp;
+
+    
     public bool trig;
     public bool exit;
     private Transform destination;
@@ -75,6 +78,7 @@ public class telBlu : MonoBehaviour
 
     public void Teleport(Collider2D other)
     {
+        tp.Play();
         GameObject.FindGameObjectWithTag("ray").GetComponent<ExampleScript>().createNowBlue = false;
         GameObject.FindGameObjectWithTag("green").GetComponent<telGR>().exit = false;
         teleportedBlue = true;
