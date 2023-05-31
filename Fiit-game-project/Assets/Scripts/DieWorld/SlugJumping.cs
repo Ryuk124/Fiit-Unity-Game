@@ -11,7 +11,7 @@ public class SlugJumping : MonoBehaviour
     public AudioSource SoundAfterJump;
     public int SlugJumpX;
     public int SlugJumpY;
-    public int Velocity;
+    public float Velocity;
 
     private bool flipRight = true;
     private Rigidbody2D rb;
