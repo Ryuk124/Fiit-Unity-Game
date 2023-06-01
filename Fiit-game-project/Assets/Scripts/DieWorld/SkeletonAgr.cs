@@ -15,6 +15,7 @@ public class SkeletonAgr : MonoBehaviour
     public Vector3 SkeletCoordinate;
     public LayerMask PlayerLayers;
     public float AttackRange;
+    public float Speed;
 
     private bool flag = true;
     private bool firstEnter;
@@ -80,8 +81,8 @@ public class SkeletonAgr : MonoBehaviour
                 Flip();
 
             rigidBody.velocity = flipRight
-                ? new Vector2(-2, rigidBody.velocity.y)
-                : new Vector2(2, rigidBody.velocity.y);
+                ? new Vector2(-Speed, rigidBody.velocity.y)
+                : new Vector2(Speed, rigidBody.velocity.y);
             return;
         }
 
