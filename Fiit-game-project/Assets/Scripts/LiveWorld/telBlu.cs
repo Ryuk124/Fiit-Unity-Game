@@ -29,37 +29,41 @@ public class telBlu : MonoBehaviour
     }
     public void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("lazer") && !GameObject.FindGameObjectWithTag("green").GetComponent<telGR>().lazerTpGreen)
+        if (!other.gameObject.CompareTag("green"))
         {
-            lazerTpBlue = true;
-        }
-
-        if (GameObject.FindGameObjectWithTag("green") == true && main.transform.localScale.y <= 0.7f)
-        {
-            if (!other.gameObject.CompareTag("wall") && !other.gameObject.CompareTag("Player") &&
-                !other.gameObject.CompareTag("lazer") && !other.gameObject.CompareTag("key") && !other.gameObject.CompareTag("rope")
-                && !other.gameObject.CompareTag("Ground"))
+            if (other.gameObject.CompareTag("lazer") && !GameObject.FindGameObjectWithTag("green").GetComponent<telGR>().lazerTpGreen)
             {
-                deltaX = Mathf.Abs(other.bounds.center.x - other.bounds.max.x);
-                deltaY = Mathf.Abs(other.bounds.center.y - other.bounds.max.y);
-                if (GameObject.FindGameObjectWithTag("green").GetComponent<telGR>().teleportedGreen == false)
-                {
-                    Teleport(other);
-                    
-                    exit = false;
-                }
+                lazerTpBlue = true;
+            }
 
-                else if (GameObject.FindGameObjectWithTag("green").GetComponent<telGR>().teleportedGreen == true)
+            if (GameObject.FindGameObjectWithTag("green") == true && main.transform.localScale.y <= 0.7f)
+            {
+                if (!other.gameObject.CompareTag("wall") && !other.gameObject.CompareTag("Player") &&
+                    !other.gameObject.CompareTag("lazer") && !other.gameObject.CompareTag("key") && !other.gameObject.CompareTag("rope")
+                    && !other.gameObject.CompareTag("Ground"))
                 {
-                    if (exit == true || GameObject.FindGameObjectWithTag("ray").GetComponent<ExampleScript>().createNowBlue == true)
+                    deltaX = Mathf.Abs(other.bounds.center.x - other.bounds.max.x);
+                    deltaY = Mathf.Abs(other.bounds.center.y - other.bounds.max.y);
+                    if (GameObject.FindGameObjectWithTag("green").GetComponent<telGR>().teleportedGreen == false)
                     {
                         Teleport(other);
-                        GameObject.FindGameObjectWithTag("green").GetComponent<telGR>().teleportedGreen = false;
+                    
                         exit = false;
+                    }
+
+                    else if (GameObject.FindGameObjectWithTag("green").GetComponent<telGR>().teleportedGreen == true)
+                    {
+                        if (exit == true || GameObject.FindGameObjectWithTag("ray").GetComponent<ExampleScript>().createNowBlue == true)
+                        {
+                            Teleport(other);
+                            GameObject.FindGameObjectWithTag("green").GetComponent<telGR>().teleportedGreen = false;
+                            exit = false;
+                        }
                     }
                 }
             }
         }
+        
     }
 
     public void OnTriggerExit2D(Collider2D other)
