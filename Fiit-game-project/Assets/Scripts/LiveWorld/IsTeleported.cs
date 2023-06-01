@@ -7,6 +7,7 @@ public class IsTeleported : MonoBehaviour
     public float Speed;
     public float UpdateDelay;
      public Rigidbody2D rb;
+    public AudioSource shoot;
 
     // Start is called before the first frame update
     void Start()
@@ -41,6 +42,14 @@ public class IsTeleported : MonoBehaviour
 
             lastPosition = transform.position;
             lastTimestamp = Time.time;
+        }
+    }
+
+    public void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("wall") || other.gameObject.CompareTag("Ground"))
+        {
+            shoot.Play();
         }
     }
 }
