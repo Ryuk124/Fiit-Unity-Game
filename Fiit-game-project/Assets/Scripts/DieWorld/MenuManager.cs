@@ -36,7 +36,7 @@ public class MenuManager : MonoBehaviour
 
     public void PlayGame()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("Test");
     }
 
     //не сработает в самом юнити, только если забилдить и запустить игру

@@ -1,18 +1,17 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ChangeStartAnimation : MonoBehaviour
 {
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+    public float CurrentTime;
     void Update()
     {
-        
+        CurrentTime += Time.fixedDeltaTime;
+        if (CurrentTime >= 500)
+            SceneManager.LoadScene("NewStart");
     }
 }
