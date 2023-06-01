@@ -11,7 +11,8 @@ public class ChangeStartAnimation : MonoBehaviour
     void Update()
     {
         CurrentTime += Time.fixedDeltaTime;
-        if (CurrentTime >= 500)
+        if (CurrentTime >= 270)
             SceneManager.LoadScene("NewStart");
+        Debug.Log(CurrentTime);
     }
 }
