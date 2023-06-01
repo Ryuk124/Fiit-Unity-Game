@@ -22862,7 +22862,7 @@ GameObject:
   - component: {fileID: 1788870306}
   - component: {fileID: 1788870307}
   - component: {fileID: 1788870308}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: "\u0432\u0435\u0440\u0435\u0432\u043A\u0430 (1)"
   m_TagString: wall
   m_Icon: {fileID: 0}
