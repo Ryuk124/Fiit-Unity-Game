@@ -47,9 +47,7 @@ public class IsTeleported : MonoBehaviour
 
     public void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("wall") || other.gameObject.CompareTag("Ground"))
-        {
-            shoot.Play();
-        }
+        if (shoot.isPlaying) return;
+        shoot.Play();
     }
 }
