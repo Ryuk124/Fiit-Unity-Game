@@ -6428,6 +6428,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7641a58c405b6b4d999370ab28b5871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sound: {fileID: 430082792}
   luk: {fileID: 1574934669}
 --- !u!82 &430082792
 AudioSource:
@@ -20161,7 +20162,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1329458368}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f676eb44649b9e47a0b4a1b066da178, type: 3}
   m_Name: 
@@ -20175,7 +20176,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1329458368}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 6bfe9b300839d3347bd811f597549f81, type: 3}

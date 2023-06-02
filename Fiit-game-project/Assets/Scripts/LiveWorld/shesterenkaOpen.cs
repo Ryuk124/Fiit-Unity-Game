@@ -22,10 +22,17 @@ public class shesterenkaOpen : MonoBehaviour
     void Update()
     {
         if (luk.GetComponent<lukopen>().open)
+
         {
+            
             State = StatesShest.start;
-            sound.Play();
         }
+
+    }
+
+    public void open()
+    {
+        sound.Play();
     }
 }
 
