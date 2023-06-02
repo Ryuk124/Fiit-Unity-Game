@@ -45,4 +45,10 @@ public class InGamePause : MonoBehaviour
         Time.timeScale = 1;
         SceneManager.LoadScene(LoadScene);
     }
+
+    public void OnNextLevel()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
 }

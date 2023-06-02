@@ -5,7 +5,7 @@ using UnityEngine;
 public class shesterenkaOpen : MonoBehaviour
 {
     private Animator anim;
-
+    public AudioSource sound;
     public GameObject luk;
     // Start is called before the first frame update
     private StatesShest State
@@ -22,9 +22,17 @@ public class shesterenkaOpen : MonoBehaviour
     void Update()
     {
         if (luk.GetComponent<lukopen>().open)
+
         {
+            
             State = StatesShest.start;
         }
+
+    }
+
+    public void open()
+    {
+        sound.Play();
     }
 }
 

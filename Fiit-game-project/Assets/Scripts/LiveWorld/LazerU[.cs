@@ -17,6 +17,8 @@ public class LazerUP : MonoBehaviour
     public bool koleso = false;
     public int number = 0;
     public GameObject player;
+    public AudioSource push;
+    public bool sound = true;
     void Start()
     {
         
@@ -38,6 +40,11 @@ public class LazerUP : MonoBehaviour
         {
             
             ScaleRayWithoutContact(point, distanceHit);
+            if (sound)
+            {
+                push.Play();
+                sound = false;  
+            }
             koleso = true;
         }
 

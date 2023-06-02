@@ -7,7 +7,7 @@ public class button : MonoBehaviour
 {
     public GameObject button2;
     public GameObject button1;
-    
+    public bool click = false;
     public GameObject luk;
     // Start is called before the first frame update
     void Start()
@@ -25,6 +25,7 @@ public class button : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
+            click = true;
             luk.GetComponent<lukopen>().open = true;
             Destroy(button1);
             Instantiate(button2, new Vector3(-30.4431f,-46.46f,0),Quaternion.identity);
