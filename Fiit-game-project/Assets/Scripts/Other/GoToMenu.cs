@@ -4,10 +4,15 @@ using UnityEngine.Video;
 
 public class GoToMenu : MonoBehaviour
 {
-    public VideoPlayer player;
-    void Update()
+    public VideoPlayer videoPlayer;
+
+    private void Awake()
     {
-        if (!player.isPlaying)
-            SceneManager.LoadScene("Menu");
+        videoPlayer.loopPointReached += EndReached;
+    }
+
+    private void EndReached(UnityEngine.Video.VideoPlayer vp)
+    {
+        SceneManager.LoadScene("Menu");
     }
 }
