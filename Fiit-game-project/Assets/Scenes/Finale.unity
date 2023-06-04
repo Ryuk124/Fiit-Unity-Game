@@ -265,4 +265,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2db7bdcfdb4530c44884f1dbbdb6950f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  videoPlayer: {fileID: 1898002572}
+  player: {fileID: 1898002572}
